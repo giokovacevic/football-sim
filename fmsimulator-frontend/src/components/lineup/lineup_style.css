@@ -1,0 +1,60 @@
+.lineup{
+    width: fit-content;
+    height: fit-content;
+}
+.lineup > .header{
+    margin-bottom: 5px;
+    position: relative;
+    height: 28px;
+    background-color: #0f0f0f;
+    width: 100%;
+}
+.lineup > .header > div{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lineup > .header > .header-formation-menu{
+    margin-left: 5px;
+}
+
+.lineup > .header > .header-ratings{
+    margin-left: 130px;
+}
+.lineup > .header > .header-ratings > .defense > div, .lineup > .header > .header-ratings > .offense > div{
+    float: left;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lineup > .header > .header-ratings > .offense > .offense-text, .lineup > .header > .header-ratings > .defense > .defense-text{
+    width: 20px;
+}
+.lineup > .header > .header-ratings > .defense > .defense-text, .lineup > .header > .header-ratings > .offense > .offense-text{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -3px;
+}
+.lineup > .header > .header-ratings > .offense{
+    margin-left: 15px;
+}
+
+.lineup > .header > .header-save{
+    position: absolute;
+    right: 5px;
+}
+.lineup > .header > .header-save > .save-button{
+    width: 180px;
+    background-color: #1b1b1b;
+    color: #bcbcbc;
+    border: solid 1px #676767;
+    height: 24px;
+    border-radius: 0px;
+}
+.lineup > .header > .header-save > .save-button:hover{
+    background-color: #252525;
+    cursor: pointer;
+}

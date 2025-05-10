@@ -1,0 +1,263 @@
+1,,Arsenal,Arsenal FC,5,4-3-3,,ENG,premierleague,arsenal,,,,-
+2,,Aston Villa,Aston Villa,3,4-3-3,,ENG,premierleague,astonvilla,,,,light
+3,,Chelsea,Chelsea FC,4,4-3-3,,ENG,premierleague,chelsea,,,,-
+4,,Crystal Palace,Crystal Palace,3,4-3-3,,ENG,premierleague,crystalpalace,,,,-
+5,,Everton,Everton FC,3,4-3-3,,ENG,premierleague,everton,,,,-
+6,,Fulham,Fulham FC,3,4-3-3,,ENG,premierleague,fulham,,,,-
+7,,Stoke City,Stoke City FC,3,4-3-3,,ENG,premierleague,stoke,,,,-
+8,,Liverpool,Liverpool FC,4,4-3-3,,ENG,premierleague,liverpool,,,,-
+9,,Manchester City,Manchester City FC,5,4-3-3,,ENG,premierleague,manchestercity,,,,light
+10,,Manchester United,Manchester City FC,4,4-3-3,,ENG,premierleague,manchesterunited,,,,-
+11,,Newcastle,Newcastle United,3,4-3-3,,ENG,premierleague,newcastle,,,,light
+12,,QPR,Queens Park Rangers FC,3,4-3-3,,ENG,premierleague,qpr,,,,light
+13,,Southampton,Southampton FC,3,4-3-3,,ENG,premierleague,southampton,,,,-
+14,,Tottenham,Tottenham Hotspur,5,4-3-3,,ENG,premierleague,tottenham,,,,-
+15,,Bologna,Bologna FC,3,4-2-1-3,,ITA,seriea,bologna,,,,-
+16,,Fiorentina,Fiorentina ACF,3,4-4-2,,ITA,seriea,fiorentina,,,,-
+17,,Inter,Internazionale Milano,5,3-5-2,,ITA,seriea,inter,,,,-
+18,,Juventus,Juventus FC,5,4-3-3,,ITA,seriea,juventus,,,,-
+19,,Lazio,Lazio SS,4,4-2-3-1,,ITA,seriea,lazio,,,,light
+20,,AC Milan,Milan AC,5,4-3-3,,ITA,seriea,milan,,,,-
+21,,Napoli,Napoli SSC,4,4-2-3-1,,ITA,seriea,napoli,,,,-
+22,,Roma,Roma AS,4,4-3-3,,ITA,seriea,roma,,,,-
+23,,Sampdoria,Sampdoria UC,3,4-3-3,,ITA,seriea,sampdoria,,,,-
+24,,Sassuolo,Sassuolo Calcio US,3,4-3-3,,ITA,seriea,sassuolo,,,,-
+25,,Torino,Torino FC,3,4-3-3,,ITA,seriea,torino,,,,-
+26,,Udinese,Udinese Calcio,3,4-3-3,,ITA,seriea,udinese,,,,light
+27,,Athletic Bilbao,Athletic Club Bilbao,3,4-2-1-3,,ESP,laliga1,bilbao,,,,-
+28,,Atletico de Madrid,Atletico de Madrid,4,4-2-1-3,,ESP,laliga1,atleticodemadrid,,,,-
+29,,Barcelona,Barcelona FC,5,4-2-1-3,,ESP,laliga1,barcelona,,,,-
+30,,Deportivo,Deportivo de La Coruna,3,4-3-3,,ESP,laliga1,deportivocoruna,,,,dark
+31,,Getafe,Getafe CF,3,4-3-3,,ESP,laliga1,getafe,,,,-
+32,,Malaga,Malaga CF,3,4-3-3,,ESP,laliga1,malaga,,,,-
+33,,Real Betis,Real Betis,3,4-2-1-3,,ESP,laliga1,betis,,,,-
+34,,Real Madrid,Real Madrid CF,5,4-3-3,,ESP,laliga1,realmadrid,,,,light
+35,,Real Sociedad,Real Sociedad CF,3,4-3-3,,ESP,laliga1,realsociedad,,,,-
+36,,Sevilla,Sevilla FC,4,4-2-1-3,,ESP,laliga1,sevilla,,,,-
+37,,Valencia,Valencia CF,4,4-3-3,,ESP,laliga1,valencia,,,,light
+38,,Villarreal,Villarreal CF,3,4-3-3,,ESP,laliga1,villarreal,,,,-
+39,,Bayer Leverkusen,Bayer 04 Leverkusen,4,4-3-3,,GER,bundesliga1,bayerleverkusen,,,,-
+40,,Bayern Munich,Bayern Munich,5,4-3-3,,GER,bundesliga1,bayern,,,,-
+41,,Borussia Dortmund,Borussia Dortmund,5,4-3-3,,GER,bundesliga1,dortmund,,,,-
+42,,Monchengladbach,Borussia Monchengladbach,4,4-3-3,,GER,bundesliga1,gladbach,,,,light
+43,,Hamburg,Hamburg SV,3,4-3-3,,GER,bundesliga1,hsv,,,,light
+44,,Hannover,Hannover 96,3,4-3-3,,GER,bundesliga1,hannover,,,,-
+45,,Hoffenheim,Hoffenheim TSG 1899,3,4-2-1-3,,GER,bundesliga1,hoffenheim,,,,dark
+46,,Koln,Koln FC,3,4-3-3,,GER,bundesliga1,koln,,,,dark
+47,,Schalke 04,Schalke 04,4,4-3-3,,GER,bundesliga1,schalke,,,,-
+48,,Stuttgart,Stuttgart VfB,3,4-3-3,,GER,bundesliga1,stuttgart,,,,-
+49,,Werder Bremen,Werder Bremen,3,4-3-3,,GER,bundesliga1,werder,,,,-
+50,,Eintracht Frankfurt,Eintracht Frankfurt,3,4-3-3,,GER,bundesliga1,eintracht,,,,dark
+51,,Saint Etienne,AS Saint Etienne,3,4-2-3-1,,FRA,ligue1,asse,,,,dark
+52,,Bordeaux,Bordeaux FC,3,4-2-1-3,,FRA,ligue1,bordeaux,,,,dark
+53,,Lille,Lille OSC,3,4-2-1-3,,FRA,ligue1,lille,,,,dark
+54,,Monaco,Monaco AS,5,4-2-1-3,,MON,ligue1,monaco,,,,light
+55,,Montpellier,Montpellier HSC,3,4-2-3-1,,FRA,ligue1,montpellier,,,,light
+56,,Nice,Nice OGC,4,4-2-3-1,,FRA,ligue1,nice,,,,dark
+57,,Lyon,Olympique Lyonnais,4,4-3-3,,FRA,ligue1,lyon,,,,light
+58,,Marseille,Olympique Marseille,4,4-3-3,,FRA,ligue1,marseille,,,,light
+59,,PSG,Paris Saint-Germain,5,4-2-3-1,,FRA,ligue1,psg,,,,dark
+60,,Strasbourg,Strasbourg FC,3,3-4-1-2,,FRA,ligue1,strasbourg,,,,dark
+61,,Ajax,Ajax FC,4,4-3-3,,NED,belneta,ajax,,,,light
+62,,Anderlecht,Anderlecht RSC,4,4-4-1-1,,BEL,belneta,rsca,,,,-
+63,,Antwerp,Antwerp FC,2,4-3-3,,BEL,belneta,antwerp,,,,dark
+64,,AZ,AZ Alkmaar,3,4-3-3,,NED,belneta,az,,,,-
+65,,Cercle Brugge,Cercle Brugge K.S.V.,2,4-3-3,,BEL,belneta,cerclebrugge,,,,dark
+66,,Club Brugge,Club Brugge KV,3,4-3-3,,BEL,belneta,clubbrugge,,,,-
+67,,Feyenoord,Feyenoord,4,4-3-3,,NED,belneta,feyenoord,,,,light
+68,,Genk,Genk FC,3,4-3-3,,BEL,belneta,genk,,,,dark
+69,,PSV,PSV Eindhoven,4,4-2-1-3,,NED,belneta,psv,,,,-
+70,,Standard,Standard Liege,3,4-3-3,,BEL,belneta,standard,,,,-
+71,,Twente,Twente Enschede FC,2,4-3-3,,NED,belneta,twente,,,,dark
+72,,Dudelange,Dudelange F91,2,4-3-3,,LUX,belneta,dudelange,,,,-
+73,,Benfica,Benfica S.L.,4,4-2-1-3,,POR,primeira1,benfica,,,,dark
+74,,Braga,Braga SC,3,4-2-1-3,,POR,primeira1,braga,,,,dark
+75,,Portimonense,Portimonense S.C.,3,4-2-1-3,,POR,primeira1,portimonense,,,,dark
+76,,Porto,Porto FC,4,4-3-3,,POR,primeira1,porto,,,,light
+77,,Santa Clara,Santa Clara CD,2,4-3-3,,POR,primeira1,santaclara,,,,-
+78,,Sporting,Sporting CP,4,4-3-3,,POR,primeira1,sportinglisabon,,,,-
+79,,Tondela,Tondela C.D.,2,4-3-3,,POR,primeira1,tondela,,,,-
+80,,Vitoria Guimaraes,Vitoria de Guimaraes,3,4-3-3,,POR,primeira1,guimaraes,,,,-
+81,,Austria Wien,Austria Wien FK,2,4-3-3,,AUT,rolexaleague,austriawien,,,,-
+82,,Basel,Basel 1893 FC,4,4-3-3,,SUI,rolexaleague,basel,,,,-
+83,,LASK,LASK,3,4-3-3,,AUT,rolexaleague,lask,,,,-
+84,,Rapid Wien,Rapid Wien SK,2,4-3-3,,AUT,rolexaleague,rapidwien,,,,-
+85,,Salzburg,Salzburg Austria,4,3-4-3,,AUT,rolexaleague,salzburg,,,,light
+86,,St. Gallen,St. Gallen FC,3,4-3-3,,SUI,rolexaleague,stgallen,,,,-
+87,,Sturm Graz,Sturm Graz SK,2,4-3-3,,AUT,rolexaleague,sturmgraz,,,,-
+88,,Vaduz,Vaduz FC,2,4-3-3,,LIE,rolexaleague,vaduz,,,,-
+89,,Young Boys,Young Boys BSC,3,4-3-3,,SUI,rolexaleague,youngboys,,,,light
+90,,Zurich,Zurich FC,2,4-3-3,,SUI,rolexaleague,zurich,,,,-
+91,,CSKA Moscow,CSKA Moscow,4,4-2-3-1,,RUS,russianleague1,cskamoscow,,,,dark
+92,,Dynamo Moscow,Dynamo Moscow,3,4-3-3,,RUS,russianleague1,dynamomoscow,,,,-
+93,,Krasnodar,Krasnodar FC,2,4-2-1-3,,RUS,russianleague1,krasnodar,,,,-
+94,,Lokomotiv Moscow,Lokomotiv Moscow FC,3,4-3-3,,RUS,russianleague1,lokomotivmoscow,,,,-
+95,,Nizhniy Novgorod,Nizhniy Novgorod FC,2,4-3-3,,RUS,russianleague1,nizhniy,,,,-
+96,,Rostov,Rostov FC,2,4-3-3,,RUS,russianleague1,rostov,,,,-
+97,,Rubin Kazan,Rubin Kazan FC,2,4-3-3,,RUS,russianleague1,rubinkazan,,,,-
+98,,Samara,Samara Club,2,4-3-3,,RUS,russianleague1,samara,,,,-
+99,,Spartak Moscow,Spartak Moscow,3,4-3-3,,RUS,russianleague1,spartakmoscow,,,,dark
+100,,Zenit,Zenit SP,4,4-3-3,,RUS,russianleague1,zenit,,,,-
+101,,Antalyaspor,Antalyaspor,2,4-3-3,,TUR,turkishleague1,antalyaspor,,,,-
+102,,Basaksehir,Basaksehir FK,4,4-3-3,,TUR,turkishleague1,basaksehir,,,,-
+103,,Besiktas,Besiktas JK,3,4-3-3,,TUR,turkishleague1,besiktas,,,,-
+104,,Bursaspor,Bursaspor,2,4-3-3,,TUR,turkishleague1,bursaspor,,,,-
+105,,Fenerbahce,Fenerbahce SK,3,4-3-3,,TUR,turkishleague1,fenerbahce,,,,light
+106,,Galatasaray,Galatasaray SK,4,4-4-2,,TUR,turkishleague1,galatasaray,,,,dark
+107,,Konyaspor,Konyaspor,2,4-3-3,,TUR,turkishleague1,konyaspor,,,,-
+108,,Trabzonspor,Trabzonspor,3,4-3-3,,TUR,turkishleague1,trabzonspor,,,,-
+109,,AIK,AIK Fotboll,2,4-3-3,,SWE,scandinavianileague,aik,,,,-
+110,,Vikingur,Vikingur Reykjavik,1,4-3-3,,ISL,scandinavianileague,vikingur,,,,-
+111,,Copenhagen,Copenhagen FC,3,4-2-1-3,,DEN,scandinavianileague,copenhagen,,,,light
+112,,Nordsjaelland,Nordsjaelland FC,1,4-3-3,,DEN,scandinavianileague,nordsjaelland,,,,-
+113,,Hammarby,Hammarby Fotboll,2,4-3-3,,SWE,scandinavianileague,hammarby,,,,-
+114,,HJK,HJK,2,4-3-3,,FIN,scandinavianileague,hjk,,,,-
+115,,Malmo,Malmo FF,3,4-3-3,,SWE,scandinavianileague,malmo,,,,dark
+116,,Midtjylland,Midtjylland FC,2,4-3-3,,DEN,scandinavianileague,midtjylland,,,,-
+117,,Molde,Molde FK,2,4-3-3,,NOR,scandinavianileague,molde,,,,-
+118,,Sarpsborg 08,Sarpsborg 08 FF,1,4-3-3,,NOR,scandinavianileague,sarpsborg,,,,-
+119,,Rosenborg,Rosenborg BK,2,4-3-3,,NOR,scandinavianileague,rosenborg,,,,-
+120,,Klaksvik,KI Klaksvik,1,4-3-3,,FRI,scandinavianileague,klaksvik,,,,-
+121,,AEK Athens,AEK Athens FC,2,4-3-3,,GRE,leaguealpha,aek,,,,-
+122,,APOEL,APOEL,2,4-3-3,,CYP,leaguealpha,apoel,,,,-
+123,,Apollon,Apollon Limassol,1,4-3-3,,CYP,leaguealpha,apollon,,,,-
+124,,Aris Thessaloniki,Aris Thessaloniki FC,2,4-3-3,,GRE,leaguealpha,aris,,,,-
+125,,Olympiacos,Olympiacos Piraeus,3,3-4-1-2,,GRE,leaguealpha,olympiacos,,,,-
+126,,Anorthosis,Anorthosis Famagusta FC,1,4-3-3,,CYP,leaguealpha,anorthosis,,,,-
+127,,Panathinaikos,Panathinaikos Athens,2,4-3-3,,GRE,leaguealpha,panathinaikos,,,,-
+128,,PAOK,PAOK,3,4-3-3,,GRE,leaguealpha,paok,,,,-
+129,,Cardiff,Cardiff City,2,4-3-3,,WAL,premiershipa,cardiff,,,,-
+130,,Celtic,Celtic FC,3,4-3-3,,SCO,premiershipa,celtic,,,,-
+131,,Dundalk,Dundalk FC,1,4-3-3,,IRL,premiershipa,dundalk,,,,-
+132,,Hearts,Heart of Midlothian FC,2,4-3-3,,SCO,premiershipa,hearts,,,,-
+133,,Larne,Larne FC,1,4-3-3,,NIR,premiershipa,larne,,,,-
+134,,Newtown,Newtown AFC,1,4-3-3,,WAL,premiershipa,newtown,,,,-
+135,,Rangers,Rangers FC,3,4-3-3,,SCO,premiershipa,rangers,,,,-
+136,,Shamrock Rovers,Shamrock Rovers FC,2,4-3-3,,IRL,premiershipa,shamrockrovers,,,,-
+137,,Astana,Astana FC,2,4-3-3,,KAZ,eastsuperleague1,astana,,,,-
+138,,BATE Borisov,BATE Borisov,2,4-3-3,,BLR,eastsuperleague1,bate,,,,-
+139,,Dnipro,Dnipro SC,2,4-3-3,,UKR,eastsuperleague1,dnipro,,,,-
+140,,Dynamo Kyiv,Dynamo Kyiv,3,4-2-1-3,,UKR,eastsuperleague1,dynamokyiv,,,,-
+141,,Kairat,Kairat FC,1,4-3-3,,KAZ,eastsuperleague1,kairat,,,,-
+142,,Minsk,Minsk FC,1,4-3-3,,BLR,eastsuperleague1,minsk,,,,-
+143,,Shakhtar Donetsk,Shakhtar Donetsk FC,3,4-3-3,,UKR,eastsuperleague1,shakhtar,,,,-
+144,,Tobol,Tobol FC,1,4-3-3,,KAZ,eastsuperleague1,tobol,,,,-
+145,,Buducnost,Buducnost FK,1,4-3-3,,MNE,adriaticleague1,buducnost,,,,-
+146,,Red Star,Crvena Zvezda FK,2,4-3-3,,SRB,adriaticleague1,redstar,,,,-
+147,,Dinamo Zagreb,Dinamo Zagreb GNK,2,4-3-3,,CRO,adriaticleague1,dinamozagreb,,,,-
+148,,Hajduk,Hajduk Split HNK,2,4-3-3,,CRO,adriaticleague1,hajduk,,,,-
+149,,Maribor,Maribor NK,2,4-3-3,,SVN,adriaticleague1,maribor,,,,-
+150,,Olimpija Ljubljana,Olimpija Ljubljana NK,1,4-3-3,,SVN,adriaticleague1,olimpijaljubljana,,,,-
+151,,Partizan,Partizan FK,2,4-3-3,,SRB,adriaticleague1,partizan,,,,light
+152,,Radnicki Nis,Radnički Niš FK,1,4-3-3,,SRB,adriaticleague1,radnickinis,,,,-
+153,,Rijeka,Rijeka HNK,1,4-3-3,,CRO,adriaticleague1,rijeka,,,,-
+154,,Sarajevo,Sarajevo FK,1,4-3-3,,BIH,adriaticleague1,sarajevo,,,,-
+155,,Vojvodina,Vojvodina FK,1,4-3-3,,SRB,adriaticleague1,vojvodina,,,,-
+156,,Zrinjski,Zrinjski HSK,2,4-3-3,,BIH,adriaticleague1,zrinjski,,,,-
+157,,Cluj,Cluj CFR,2,4-3-3,,ROU,blacksealeague1,cluj,,,,-
+158,,Craiova,Craiova FC 1948,1,4-3-3,,ROU,blacksealeague1,craiova,,,,-
+159,,Debreceni,Debreceni VSC,1,4-3-3,,HUN,blacksealeague1,debreceni,,,,-
+160,,FCSB,Steaua Bucuresti FC,2,4-3-3,,ROU,blacksealeague1,fcsb,,,,-
+161,,Fehervar,Fehervar FC,1,4-3-3,,HUN,blacksealeague1,fehervar,,,,-
+162,,Ferencvarosi,Ferencvarosi TC,2,4-3-3,,HUN,blacksealeague1,ferencvarosi,,,,-
+163,,Levski Sofia,Levski Sofia PFC,1,4-3-3,,BUL,blacksealeague1,levskisofia,,,,-
+164,,Ludogorets,Ludogorets Razgrad PFC,2,4-3-3,,BUL,blacksealeague1,ludogorets,,,,-
+165,,Sheriff Tiraspol,Sheriff Tiraspol FC,2,4-3-3,,MDA,blacksealeague1,sheriff,,,,-
+166,,Sofia CSKA,Sofia CSKA PFC,1,4-3-3,,BUL,blacksealeague1,sofiacska,,,,-
+167,,Dunajska Streda,Dunajska Streda FC,1,4-3-3,,SVK,slovencko1,dunajska,,,,-
+168,,Jablonec,Jablonec FK,1,4-3-3,,CZE,slovencko1,jablonec,,,,-
+169,,Lech,Lech Poznan,1,4-3-3,,POL,slovencko1,lech,,,,-
+170,,Legia,Legia Warsaw,2,4-3-3,,POL,slovencko1,legia,,,,-
+171,,Wisla,Wisla Krakow TS,2,4-3-3,,POL,slovencko1,wisla,,,,-
+172,,Slavia Praha,Slavia Praha SK,1,4-3-3,,CZE,slovencko1,slaviaprague,,,,-
+173,,Slovan Bratislava,Slovan Bratislava ŠK,2,4-3-3,,SVK,slovencko1,slovan,,,,-
+174,,Sparta Praha,Sparta Praha AC,2,4-3-3,,CZE,slovencko1,spartapraha,,,,-
+175,,Spartak Trnava,Spartak Trnava,1,4-3-3,,SVK,slovencko1,trnava,,,,-
+176,,Viktoria Plzen,Viktoria Plzen FC,2,4-4-1-1,,CZE,slovencko1,viktoriaplzen,,,,-
+177,,Dinamo Batumi,Dinamo Batumi FC,1,4-3-3,,GEO,premiyeraliga1,dinamobatumi,,,,-
+178,,Dinamo Tbilisi,Dinamo Tbilisi FC,1,4-3-3,,GEO,premiyeraliga1,dinamotbilisi,,,,-
+179,,Hapoel Beer Sheva,Hapoel Beer Sheva,2,4-3-3,,ISR,premiyeraliga1,beersheva,,,,-
+180,,Beitar Jerusalem,Beitar Jerusalem,1,4-3-3,,ISR,premiyeraliga1,beitar,,,,-
+181,,Maccabi Tel Aviv,Maccabi Tel Aviv,2,4-3-3,,ISR,premiyeraliga1,maccabitelaviv,,,,-
+182,,Neftchi,Neftchi PFK,1,4-3-3,,AZE,premiyeraliga1,neftchi,,,,-
+183,,Pyunik,Pyunik Yerevan FC,1,4-3-3,,ARM,premiyeraliga1,pyunik,,,,-
+184,,Qarabag,Qarabag FK,2,4-3-3,,AZE,premiyeraliga1,qarabag,,,,-
+185,,Flora,Flora FC,1,4-3-3,,EST,balticaa,flora,,,,-
+186,,Kalju,Kalju Nomme FC,1,4-3-3,,EST,balticaa,kalju,,,,-
+187,,Levadia,Levadia FCI,1,4-3-3,,EST,balticaa,levadia,,,,-
+188,,Panevezys,Panevežys FK,1,4-3-3,,LTU,balticaa,panevezys,,,,-
+189,,RFS,RFS,1,4-3-3,,LAT,balticaa,rfs,,,,-
+190,,Riga,Riga FC,2,4-3-3,,LAT,balticaa,riga,,,,-
+191,,Suduva,Suduva FK,1,4-3-3,,LTU,balticaa,suduva,,,,-
+192,,Zalgiris,Žalgiris FK,2,4-3-3,,LTU,balticaa,zalgiris,,,,-
+193,,Kukesi,Kukesi FK,1,4-3-3,,ALB,liges1,kukesi,,,,-
+194,,Rabotnicki,Rabotnički FK,1,4-3-3,,MKD,liges1,rabotnicki,,,,-
+195,,Shkendija,Shkendija KF,1,4-3-3,,MKD,liges1,shkendija,,,,-
+196,,Skenderbeu,Skenderbeu KF,1,4-3-3,,ALB,liges1,skenderbeu,,,,-
+197,,Tirana,Tirana KF,2,4-3-3,,ALB,liges1,tirana,,,,-
+198,,Vardar,Vardar Skopje,2,4-3-3,,MKD,liges1,vardar,,,,-
+199,,Valletta,Valletta FC,2,4-3-3,,MLT,liges1,valletta,,,,-
+200,,Gzira United,Gzira United FC,1,4-3-3,,MLT,liges1,gziraunited,,,,-
+,,Boca Juniors,Boca Juniors CA,3,4-3-3,,ARG,Aa ( Not in League ),boca,,,,-
+,,Racing,Racing Club de Avellaneda,3,4-3-3,,ARG,Aa ( Not in League ),racing,,,,-
+,,River Plate,Club Atletico River Plate,3,4-3-3,,ARG,Aa ( Not in League ),riverplate,,,,-
+,,Leeds,Leeds United,2,4-3-3,,ENG,Aa ( Not in League ),leeds,,,,-
+,,Estudiantes,Estudiantes de La Plata,2,4-3-3,,ARG,Aa ( Not in League ),estudiantes,,,,-
+,,Vitesse,Vitesse SBV,2,4-3-3,,NED,Aa ( Not in League ),vitesse,,,,-
+,,Brondby,Brondby IF,2,4-3-3,,DEN,Aa ( Not in League ),brondby,,,,-
+,,Independiente,Club Atletico Independiente,2,4-3-3,,ARG,Aa ( Not in League ),independiente,,,,-
+,,San Lorenzo,CA San Lorenzo de Almagro,2,4-3-3,,ARG,Aa ( Not in League ),sanlorenzo,,,,-
+,,Velez Sarsfield,CA Velez Sarsfield,2,4-3-3,,ARG,Aa ( Not in League ),velezsarsfield,,,,-
+,,Talleres,CA Talleres de Cordoba,2,4-3-3,,ARG,Aa ( Not in League ),talleres,,,,-
+,,Charleroi,Charleroi SC,1,4-3-3,,BEL,Aa ( Not in League ),charleroi,,,,-
+,,Djurgardens,Djurgardens IF,1,4-3-3,,SWE,Aa ( Not in League ),djurgardens,,,,-
+,,Corinthians,Corinthians Paulista SC,3,4-3-3,,BRA,Brasileirao Serie A,corinthians,,,,-
+,,Gremio,Grêmio Foot-Ball Porto Alegrense,3,4-3-3,,BRA,Brasileirao Serie A,gremio,,,,-
+,,Palmeiras,Palmeiras SE,3,4-3-3,,BRA,Brasileirao Serie A,palmeiras,,,,-
+,,Sao Paulo,Sao Paulo FC,3,4-3-3,,BRA,Brasileirao Serie A,saopaulo,,,,-
+,,Santos,Santos FC,3,4-3-3,,BRA,Brasileirao Serie A,santos,,,,-
+,,Botafogo,Botafogo de Futebol e Regatas,2,4-3-3,,BRA,Brasileirao Serie A,botafogo,,,,-
+,,Flamengo,Flamengo CR,2,4-3-3,,BRA,Brasileirao Serie A,flamengo,,,,-
+,,Fluminense,Fluminense FC,2,4-3-3,,BRA,Brasileirao Serie A,fluminense,,,,-
+,,Cruzeiro,Cruzeiro Esporte Clube,2,4-3-3,,BRA,Brasileirao Serie A,cruzeiro,,,,-
+,,Internacional,Internacional SC,2,4-3-3,,BRA,Brasileirao Serie A,internacional,,,,-
+,,Wolfsburg,Wolfsburg Vfl,2,4-3-3,,GER,Bundesliga 2,wolfsburg,,,,-
+,,Fortuna Dusseldorf,Fortuna Dusseldorf 1895,2,4-3-3,,GER,Bundesliga 2,fortuna,,,,dark
+,,Hertha,Hertha BSC,2,4-3-3,,GER,Bundesliga 2,hertha,,,,light
+,,Augsburg,Augsburg FC,2,4-3-3,,GER,Bundesliga 2,augsburg,,,,-
+,,Bochum,Bochum 1848 VfL,2,4-3-3,,GER,Bundesliga 2,bochum,,,,-
+,,Freiburg,Freiburg SC,2,4-3-3,,GER,Bundesliga 2,freiburg,,,,-
+,,Mainz 05,Mainz 05 1. FSV,2,4-3-3,,GER,Bundesliga 2,mainz,,,,-
+,,Union Berlin,Union Berlin 1. FC,2,4-3-3,,GER,Bundesliga 2,unionberlin,,,,dark
+,,Granada,Granada CF,2,4-3-3,,ESP,La Liga 2,granada,,,,dark
+,,Celta Vigo,Celta Vigo RC,2,4-3-3,,ESP,La Liga 2,celtavigo,,,,-
+,,Elche,Elche CF,2,4-3-3,,ESP,La Liga 2,elche,,,,-
+,,Espanyol,Espanyol RCD,2,4-3-3,,ESP,La Liga 2,espanyol,,,,-
+,,Girona,Girona FC,2,4-3-3,,ESP,La Liga 2,girona,,,,-
+,,Mallorca,Mallorca RCD,2,4-3-3,,ESP,La Liga 2,mallorca,,,,-
+,,Osasuna,Osasuna CA,2,4-3-3,,ESP,La Liga 2,osasuna,,,,-
+,,Real Valladolid,Real Valladolid CF,2,4-3-3,,ESP,La Liga 2,valladolid,,,,-
+,,Angers,Angers SCO,2,4-3-3,,FRA,Ligue 2,angers,,,,light
+,,Nantes,Nantes FC,2,4-2-1-3,,FRA,Ligue 2,nantes,,,,light
+,,Souchaux,Souchaux-Montbeliard FC,2,4-3-3,,FRA,Ligue 2,sochaux,,,,-
+,,Toulouse,Toulouse FC,2,4-2-1-3,,FRA,Ligue 2,toulouse,,,,dark
+,,Paris,Paris FC,2,4-3-3,,FRA,Ligue 2,parisfc,,,,-
+,,Reims,Stade de Reims,2,4-2-1-3,,FRA,Ligue 2,reims,,,,dark
+,,Rennais,Stade Rennais FC,2,4-3-3,,FRA,Ligue 2,rennais,,,,dark
+,,Auxerre,Auxerre AJ,2,4-3-3,,FRA,Ligue 2,auxerre,,,,-
+,,Metz,Metz FC,1,4-3-3,,FRA,Ligue 3,metz,,,,-
+,,Amien,Amien FC,1,4-3-3,,FRA,Ligue 3,,,,,-
+,,Le Havre,Le Havre AC,1,4-3-3,,FRA,Ligue 3,lehavre,,,,-
+,,Brestois,Stade Brestois 29,1,4-3-3,,FRA,Ligue 3,,,,,-
+,,Dijon,Dijon FCO,1,4-3-3,,FRA,Ligue 3,,,,,-
+,,Guingamp,Guingamp EA,1,4-3-3,,FRA,Ligue 3,,,,,-
+,,Troyes,ES Troyes AC,1,4-3-3,,FRA,Ligue 3,,,,,-
+,,Lens,Lens RC,1,4-3-3,,FRA,Ligue 3,,,,,-
+,,Chievo,Chievo Verona AC,2,4-3-3,,ITA,Serie B,chievo,,,,light
+,,Palermo,Palermo FC,2,4-3-3,,ITA,Serie B,palermo,,,,light
+,,Parma,Parma Calcio 1913,2,3-5-2,,ITA,Serie B,parma,,,,light
+,,Empoli,Empoli FC,2,4-4-2,,ITA,Serie B,empoli,,,,dark
+,,Genoa,Genoa CFC,2,4-3-3,,ITA,Serie B,genoa,,,,-
+,,Lecce,Lecce US,2,4-3-3,,ITA,Serie B,lecce,,,,-
+,,Monza,Monza AC,2,4-3-3,,ITA,Serie B,monza,,,,-
+,,Verona,Hellas Verona FC,2,4-3-3,,ITA,Serie B,verona,,,,-
