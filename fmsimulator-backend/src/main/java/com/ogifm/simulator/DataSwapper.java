@@ -43,11 +43,11 @@ public class DataSwapper {
         clubs = loadAllClubs("db_clubs.csv");
         //insertClubs NOT DONE
 
-        this.world.getLeagues().forEach(league -> {
+        /*this.world.getLeagues().forEach(league -> {
             league.print();
-        });
+        });*/
         
-        this.myClub = clubs.get(84); // ligue1 50 4248
+        this.myClub = clubs.get(50); // ligue1 50 4248
     }
 
     public HashMap<String, Country> loadAllCountries(String filename) {
@@ -168,7 +168,7 @@ public class DataSwapper {
 
                 this.world.getLeagues().forEach(league -> {
                     if(league.getType().equals("League")) {
-                        System.out.println(leagueId);
+                        //System.out.println(leagueId);
                         if(league.getId().equals(leagueId)) {
                             league.getCompetitors().add(new Competitor(clubNew, 0, 0, 0, 0, 0));
                         }

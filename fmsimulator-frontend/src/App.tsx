@@ -8,6 +8,7 @@ import DropdownMenu from './components/dropdown_menu/DropdownMenu';
 import Pitch from './components/pitch/Pitch';
 import Lineup from './components/lineup/Lineup';
 import Roster from './components/roster/Roster';
+import Test from './practice_components/Test';
 
 // 
 
@@ -25,6 +26,7 @@ function App() {
   const [currentCountry, setCurrentCountry] = useState<any>(null);
   const [myClub, setMyClub] = useState<any>(null);
   const [dragData, setDragData] = useState<DragData>({mode: "", data: ""});
+
 
   useEffect(()=>{
     fetchFormations();
@@ -158,9 +160,17 @@ function App() {
     console.log(data);
   }
 
+
+
   return (
     <>
-      <div style={{width: '720px' ,float: 'left', marginLeft: '65px'}}>
+      <Test message='test'></Test>
+    </>
+  );
+
+  /* The football code
+  
+  <div style={{width: '720px' ,float: 'left', marginLeft: '65px'}}>
       {myClub ? (<Roster club={myClub} setDragData={setDragData} substitute={postSubstitute}></Roster>)
         : (<div>Loading...</div>)}
       </div>
@@ -168,17 +178,10 @@ function App() {
         {myClub ? (<Lineup myClub={myClub} formations={formations} currentFormation={myClub.roster.lineup.formationDTO} changeFormation={changeFormation} setDragData={setDragData} dragData={dragData} substitute={postSubstitute} save={postSaveLineup} textKey="id" iconKey="_default" iconPath="./assets/formation_default_icon.png"></Lineup>)
         : (<div>Loading...</div>)}
       </div>
-    </>
-  );
 
-  /*<div style={{width: '720px' ,float: 'left', marginLeft: '65px'}}>
-      {myClub ? (<Roster club={myClub} setDragData={setDragData} substitute={postSubstitute}></Roster>)
-        : (<div>Loading...</div>)}
-      </div>
-      <div style={{marginLeft: '800px', marginTop: '0px'}}>
-        {myClub ? (<Lineup myClub={myClub} formations={formations} currentFormation={myClub.roster.lineup.formation} changeFormation={changeFormation} setDragData={setDragData} dragData={dragData} substitute={postSubstitute} save={postSaveLineup} textKey="id" iconKey="_default" iconPath="./assets/formation_default_icon.png"></Lineup>)
-        : (<div>Loading...</div>)}
-      </div>*/
+   */
+
+  /*
 
 
   /*return (
