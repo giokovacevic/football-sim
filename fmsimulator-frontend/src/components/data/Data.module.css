@@ -1,0 +1,41 @@
+.root{
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 100%;
+}
+.column_section_left,
+.column_section_center,
+.column_section_right{
+    float: left;
+}
+
+.column_section_left{
+    float: left;
+    width: 20%;
+}
+.column_section_center{
+    width: 35%;
+}
+.column_section_right{
+    width: 45%;
+}
+.row_section_leagues,
+.row_section_leaguetable,
+.row_section_roster,
+.row_section_pitch{
+     margin-top: 10px;
+}
+.row_section_leagues{
+    display: flex;
+    justify-content: center;
+}
+.row_section_leaguestable{
+
+}
+.row_section_roster{
+
+}
+.row_section_pitch{
+    display: flex;
+    justify-content: center;
+}

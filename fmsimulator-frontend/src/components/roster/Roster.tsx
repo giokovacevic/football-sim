@@ -1,29 +1,30 @@
 import { useState } from "react";
 import "./roster_style.css";
 import RosterMember from "./RosterMember";
+import { Player } from "../../model/player/Player";
+import { Team } from "../../model/team/Team";
+import { Starter } from "../../model/team/Lineup";
+import { Role } from "../../model/player/Role";
 
-function Roster({club, setDragData, substitute}:any) {
+function Roster({team}:{team: Team}) {
     
     return (
         <div className="roster">
             <div className="header" style={{height: '28px'}}>
-                <div className="header-text" style={{lineHeight: '28px'}}>Bench</div>
+                <div className="header-text" style={{lineHeight: '28px'}}>Roster</div>
             </div>
             <div className="bench">
-                {club.roster.bench.map((player:any, index:number) => (
-                    <RosterMember key={index} player={player} setDragData={setDragData} substitute={null}></RosterMember>
+                {team.roster.bench.map((player:Player, index:number) => (
+                    <RosterMember key={player.id} player={player}></RosterMember>
                 ))}
             </div>
-            <div className="header" style={{marginTop: '2px', height: '22px'}}>
-                <div className="header-text">Starters</div>
-            </div>
             <div className="starters">
-                {club.roster.lineup.formationDTO.requiredRoleDTOs.map((role:any, index:number) => {
-                    const starter:any = club.roster.lineup.starters[role.stringValue];
-                    const player:any = starter ? starter.player : null;
+                {team.roster.lineup.formationDTO.requiredRoleDTOs.map((role:Role, index:number) => {
+                    const starter:Starter = team.roster.lineup.starters[role.stringValue];
+                    const player:Player|undefined = starter ? starter.player : undefined;
                     if(player) {
                         return (
-                            <RosterMember key={index} player={player} setDragData={setDragData} substitute={substitute}></RosterMember>
+                            <RosterMember key={player.id} player={player}></RosterMember>
                         );
                     } 
                 })}

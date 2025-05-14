@@ -1,0 +1,52 @@
+function App() {
+  const [playersFixed, setPlayersFixed] = useState<Player[]>([]);
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [countryCode, setCountryCode] = useState<string>("");
+
+  useEffect(() => {
+    fetchPlayers();
+  }, []);
+
+  const fetchPlayers = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/api/football/players/all');
+      const data:Player[] = await response.json();
+      console.log(data);
+      setPlayersFixed(data);
+      setPlayers([...data]);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const handleCountryCodeChanged = (e: React.ChangeEvent<HTMLInputElement>):void => {
+    setCountryCode(e.target.value);
+  }
+
+  const filterByCountry = (countryId:string):void => {
+    const modifiedCountryCode = countryId.trim().toUpperCase();
+    setPlayers(prevPlayers => playersFixed.filter((player) => player.country.id===modifiedCountryCode));
+  }
+
+  const filterByCountryReset = ():void => {
+    setPlayers(prevPlayers => playersFixed);
+  }
+
+  return (
+    <>
+    <div><input type="text" value={countryCode} onChange={handleCountryCodeChanged} placeholder="CTR" maxLength={3}></input></div>
+    <div><button onClick={() => filterByCountry(countryCode)}>Sort By Country Id</button><button onClick={filterByCountryReset}>Reset</button></div>
+      <div>
+        { players
+        ? ( players.map((player) => 
+        <div key={player.id}>
+          <div>&nbsp;<img src={'./country_flag_icons/' + player.country.id + '.png'}></img>&nbsp;{player.lastname}&nbsp;{player.preferredPositions.positionDTOs[0].stringValue}<img src={'club_logo_icons/' + player.contract.teamId + '.png'}></img></div>
+        </div>) )
+        : ( <div>Nije Ucitano</div> )
+        } 
+      </div>
+    </>
+  );
+}
+
+export default App;

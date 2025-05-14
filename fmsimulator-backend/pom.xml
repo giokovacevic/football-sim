@@ -8,10 +8,10 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ogifm</groupId>
-	<artifactId>springfm</artifactId>
+	<groupId>com.ogifmsim</groupId>
+	<artifactId>fmsimulator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springfm</name>
+	<name>fmsimulator</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

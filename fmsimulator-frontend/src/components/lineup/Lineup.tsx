@@ -7,8 +7,8 @@ function Lineup({myClub, formations, currentFormation, changeFormation, dragData
     return (
         <div className="lineup">
             <div className="header">
-                <div className="header-formation-menu">
-                <DropdownMenu items={formations} selectedItem={currentFormation} onSelect={changeFormation} textKey="id" iconKey="_default" iconPath="./assets/formation_default_icon.png"></DropdownMenu>
+                <div className="header-formation-menu"> 
+                   
                 </div>
                 <div className="header-ratings">
                     <div className="defense">
@@ -29,7 +29,7 @@ function Lineup({myClub, formations, currentFormation, changeFormation, dragData
                 </div>
             </div>
             
-            <Pitch editable={true} club={myClub} kits={"dark"} setDragData={setDragData} dragData={dragData} substitute={substitute}/*{myClub.preferredJersey} */></Pitch>
+            <Pitch team={myClub} kits={"dark"}/*{myClub.preferredJersey} */></Pitch>
         </div> //myClub.preferredJersey
     );
 }
