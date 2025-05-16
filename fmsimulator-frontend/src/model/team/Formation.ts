@@ -1,4 +1,4 @@
-import { Role } from "../player/Role";
+import type { Role } from "../player/Role";
 
 export interface Formation{
     readonly id: string,

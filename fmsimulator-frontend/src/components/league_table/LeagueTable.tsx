@@ -1,6 +1,6 @@
-import { Competitor } from "../../model/competition/Competitor";
-import { League } from "../../model/competition/League";
-import { Team } from "../../model/team/Team";
+import type { Competitor } from "../../model/competition/Competitor";
+import type { League } from "../../model/competition/League";
+import type { Team } from "../../model/team/Team";
 import "./comp_style.css";
 import styles from './LeagueTable.module.css';
 

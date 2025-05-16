@@ -1,5 +1,4 @@
-import { Roster } from "./Roster";
-import { Team } from "./Team";
+import type { Team } from "./Team";
 
 export interface Club extends Team{
     readonly rating: number,

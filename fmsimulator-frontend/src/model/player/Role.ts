@@ -1,4 +1,4 @@
-import { Position } from "./Position";
+import type { Position } from "./Position";
 
 export interface Role{
     readonly positionDTO:Position,

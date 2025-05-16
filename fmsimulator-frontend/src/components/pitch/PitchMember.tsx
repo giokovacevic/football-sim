@@ -1,5 +1,5 @@
-import { Role } from "../../model/player/Role";
-import { Starter } from "../../model/team/Lineup";
+import type { Role } from "../../model/player/Role";
+import type { Starter } from "../../model/team/Lineup";
 import "./pitch_style.css";
 
 type PitchMemberProps = {

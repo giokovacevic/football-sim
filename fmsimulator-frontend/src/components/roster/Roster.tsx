@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./roster_style.css";
 import RosterMember from "./RosterMember";
-import { Player } from "../../model/player/Player";
-import { Team } from "../../model/team/Team";
-import { Starter } from "../../model/team/Lineup";
-import { Role } from "../../model/player/Role";
+import type { Player } from "../../model/player/Player";
+import type { Team } from "../../model/team/Team";
+import type { Starter } from "../../model/team/Lineup";
+import type { Role } from "../../model/player/Role";
 
 function Roster({team}:{team: Team}) {
     

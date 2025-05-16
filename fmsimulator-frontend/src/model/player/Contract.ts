@@ -1,4 +1,4 @@
-import { Arrangement } from "./Arrangement";
+import type { Arrangement } from "./Arrangement";
 
 export interface Contract extends Arrangement{
     readonly salary: number,

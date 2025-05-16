@@ -1,5 +1,5 @@
-import { Player } from "../player/Player";
-import { Formation } from "./Formation";
+import type { Player } from "../player/Player";
+import type { Formation } from "./Formation";
 
 export type Starter = {
     readonly player: Player;

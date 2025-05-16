@@ -1,4 +1,4 @@
-import { Player } from "../../model/player/Player";
+import type { Player } from "../../model/player/Player";
 import Positions from "../position/Positions";
 
 function RosterMember({player}:{player: Player}) {

@@ -1,4 +1,4 @@
-import { Position } from "../../model/player/Position";
+import type { Position } from "../../model/player/Position";
 import styles from './Position.module.css';
 
 

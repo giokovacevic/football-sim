@@ -1,5 +1,5 @@
-import { Country } from "../country/Country";
-import { Roster } from "./Roster";
+import type { Country } from "../country/Country";
+import type { Roster } from "./Roster";
 
 export interface Team{
     readonly id: string,

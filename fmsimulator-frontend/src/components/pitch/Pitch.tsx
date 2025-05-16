@@ -1,5 +1,5 @@
-import { Role } from "../../model/player/Role";
-import { Team } from "../../model/team/Team";
+import type { Role } from "../../model/player/Role";
+import type { Team } from "../../model/team/Team";
 import "./pitch_style.css";
 import PitchMember from "./PitchMember";
 

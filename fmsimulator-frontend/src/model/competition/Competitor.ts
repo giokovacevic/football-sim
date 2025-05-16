@@ -1,4 +1,4 @@
-import { Team } from "../team/Team";
+import type { Team } from "../team/Team";
 
 export interface Competitor{
     readonly wins: number,

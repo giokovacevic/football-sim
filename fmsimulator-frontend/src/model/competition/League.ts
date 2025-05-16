@@ -1,7 +1,7 @@
-import { Team } from "../team/Team";
-import { Competitor } from "./Competitor";
-import { Placement } from "./Placement";
-import { Schedule } from "./Schedule";
+import type { Team } from "../team/Team";
+import type { Competitor } from "./Competitor";
+import type { Placement } from "./Placement";
+import type { Schedule } from "./Schedule";
 
 export interface League{
     readonly capacity: number,

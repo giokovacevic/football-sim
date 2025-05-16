@@ -1,11 +1,11 @@
 import {useEffect, useState} from 'react';
-import { League } from '../../model/competition/League';
+import type { League } from '../../model/competition/League';
 import styles from './Data.module.css';
 import DropdownMenu from '../dropdown_menu/DropdownMenu';
 import LeagueTable from '../league_table/LeagueTable';
 import Roster from '../roster/Roster';
 import Pitch from '../pitch/Pitch';
-import { Team } from '../../model/team/Team';
+import type { Team } from '../../model/team/Team';
 
 const Data = () => {
     const [leagues, setLeagues] = useState<League[]>([]);

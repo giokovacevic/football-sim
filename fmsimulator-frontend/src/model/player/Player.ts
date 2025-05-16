@@ -1,7 +1,7 @@
-import { Country } from "../country/Country";
-import { Arrangement } from "./Arrangement";
-import { Contract } from "./Contract";
-import { PreferredPositions } from "./PreferredPositions";
+import type { Country } from "../country/Country";
+import type { Arrangement } from "./Arrangement";
+import type { Contract } from "./Contract";
+import type { PreferredPositions } from "./PreferredPositions";
 
 export interface Player{
     readonly id: number,

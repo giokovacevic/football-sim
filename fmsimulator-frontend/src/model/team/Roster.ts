@@ -1,5 +1,5 @@
-import { Player } from "../player/Player";
-import { Lineup } from "./Lineup";
+import type { Player } from "../player/Player";
+import type { Lineup } from "./Lineup";
 
 export interface Roster{
     readonly bench: Player[],
