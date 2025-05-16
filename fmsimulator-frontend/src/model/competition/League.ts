@@ -1,6 +1,7 @@
 import { Team } from "../team/Team";
 import { Competitor } from "./Competitor";
 import { Placement } from "./Placement";
+import { Schedule } from "./Schedule";
 
 export interface League{
     readonly capacity: number,
@@ -14,7 +15,7 @@ export interface League{
     readonly placements: Placement[]
     readonly relegation: number,
     readonly round: number,
-    readonly schedule: null; //TODO: fix Schedule
+    readonly schedule: Schedule; //TODO: fix Schedule
     readonly type: string,
     readonly teams: Team[];
 }

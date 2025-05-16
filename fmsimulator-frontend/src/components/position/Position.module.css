@@ -1,6 +1,6 @@
-.positions{
+.root{
     width: 100%;
-    height: 18px;
+    height: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -9,10 +9,10 @@
     width: 28px;
     border: solid 1px #4b4b4b;
     margin-right: 2px;
-}
-.position-text{
-    font-size: 13px;
     display: flex;
-    line-height: 15px;
     justify-content: center;
+    align-items: center;
+}
+.position_text{
+    font-size: 13px;
 }

@@ -40,23 +40,27 @@ const Data = () => {
         <div className={styles.root}>
             <div className={styles.column_section_left}>
                 <div className={styles.row_section_leagues}><DropdownMenu items={leagues} onSelect={handleDropdownMenuOnSelect} valueProperty='name' imageProperty={undefined} imagePath='' placeholder='Select a League'></DropdownMenu></div>
-            </div>
-            <div className={styles.column_section_center}>
                 <div className={styles.row_section_leaguetable}>
+                    <div className={styles.leaguetable_wrapper}>
                     {currentLeague 
                     ? 
                     <LeagueTable key={currentLeague.id} league={currentLeague} onCompetitorClick={handleLeagueTableOnClick}></LeagueTable>
                     :
                     null
                     }
+                    </div>
                 </div>
+            </div>
+            <div className={styles.column_section_center}>
                 <div className={styles.row_section_roster}>
+                    <div className={styles.roster_wrapper}>
                     {currentTeam 
                     ? 
                     <Roster key={currentTeam.id} team={currentTeam}></Roster>
                     :
                     null
                     }
+                    </div>
                 </div>
             </div>
             <div className={styles.column_section_right}>

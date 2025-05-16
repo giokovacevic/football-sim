@@ -23,16 +23,14 @@
     background-color: #1d1d1d;
     display: flex;
     flex-direction: row;
-    height: 23px;
-    margin-top: 3px;
+    height: 30px;
+    margin-top: 2px;
 }
 .roster-member:hover{
     background-color: #202020;
-    cursor: pointer;
 }
 .roster-member:hover > .roster-member-rating{
-    font-size: 20px;
-    margin-top: -1px;
+    font-size: 24px;
 }
 .roster-member > div{
     display: flex;
@@ -47,10 +45,9 @@
     width: 40%;
     color: #b2b2b2;
     font-size: 16px;
-    align-items: normal;
 }
 .roster-member > .roster-member-name > span{
-    color: #666666;
+    color: #6e6e6e;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -58,26 +55,27 @@
 .roster-member > .roster-member-positions{
     width: 30%;
     height: 100%;
+    display: flex;
     align-items: center;
 }
 .roster-member > .roster-member-age{
     width: 7%;
     justify-content: center;
     color: #989898;
-    font-size: 14px;
+    font-size: 16px;
 }
 .roster-member > .roster-member-role{
     width: 10%;
     justify-content: center;
 }
 .roster-member > .roster-member-role > .roster-member-role-content{
-    height: 18px;
+    height: 20px;
     font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #019f4b;
-    width: 30px;
+    width: 32px;
     font-weight: bold;
     color: black;
 }
@@ -85,6 +83,6 @@
 .roster-member > .roster-member-rating{
     width: 6%;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }

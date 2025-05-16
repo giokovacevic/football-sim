@@ -1,14 +1,14 @@
 import { Position } from "../../model/player/Position";
-import "./positions_style.css";
+import styles from './Position.module.css';
 
 
 function Positions({positions}:{positions:Position[]}) {
 
     return(
-        <div className="positions">
+        <div className={styles.root}>
             {positions.map((position:Position, index:number) => (
-                <div className="position" key={index}>
-                    <div className="position-text" style={{color: `${position.color}`}}>{position.stringValue}</div>
+                <div className={styles.position} key={index}>
+                    <div className={styles.position_text} style={{color: `${position.color}`}}>{position.stringValue}</div>
                 </div>
             ))}
         </div>
