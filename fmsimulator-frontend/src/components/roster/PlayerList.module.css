@@ -1,0 +1,107 @@
+.playerlist_root{
+    width: 100%;
+}
+
+.playerlistheader_root,
+.playerlistmember_root{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+.playerlistheader_root{
+    background-color: #161616;
+}
+.playerlistmember_root{
+    background-color: #1d1d1d;
+    margin-top: 2px;
+}
+.playerlistmember_root:hover{
+    background-color: #202020;
+}
+.playerlistmember_root:hover > .playerlistmember_rating{
+    font-size: 24px;
+}
+.playerlistmember_root > div,
+.playerlistheader_root > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.playerlistheader_flag,
+.playerlistheader_name,
+.playerlistheader_positions,
+.playerlistheader_age,
+.playerlistheader_role,
+.playerlistheader_rating{
+   color: rgb(139, 139, 139);  
+}
+
+.playerlistheader_flag,
+.playerlistmember_flag{
+    font-size: 14px;
+    width: 7%;
+    justify-content: center;
+}
+
+.playerlistheader_name,
+.playerlistmember_name{
+    width: 40%;
+}
+.playerlistmember_name{
+    color: #c2c2c2;
+    font-size: 16px;
+}
+.playerlistmember_name > span{
+    color: #8b8b8b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.playerlistheader_positions,
+.playerlistmember_positions{
+    width: 30%;
+}
+.playerlistmember_positions{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.playerlistheader_age,
+.playerlistmember_age{
+    width: 7%;
+    justify-content: center;
+}
+.playerlistmember_age{
+    color: #989898;
+    font-size: 18px;
+}
+
+.playerlistheader_role,
+.playerlistmember_role{
+    width: 10%;
+    justify-content: center;
+}
+.playerlistmember_role_content{
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.playerlistheader_rating,
+.playerlistmember_rating{
+    width: 6%;
+    justify-content: center;
+}
+.playerlistmember_rating{
+    font-size: 20px;
+    font-weight: bold;
+}

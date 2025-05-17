@@ -3,7 +3,7 @@ import type { League } from '../../model/competition/League';
 import styles from './Data.module.css';
 import DropdownMenu from '../dropdown_menu/DropdownMenu';
 import LeagueTable from '../league_table/LeagueTable';
-import Roster from '../roster/Roster';
+import Roster from '../old_roster/Roster';
 import Pitch from '../pitch/Pitch';
 import type { Team } from '../../model/team/Team';
 

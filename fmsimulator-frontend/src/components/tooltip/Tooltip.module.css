@@ -1,0 +1,11 @@
+.tooltip_root{
+  position: absolute;
+  background-color: rgb(219, 219, 219);
+  color: black;
+  font-size: 13px;
+  padding: 4px;
+  top: 60%;
+  left: 100%;
+  z-index: 10;
+  white-space: nowrap;
+}

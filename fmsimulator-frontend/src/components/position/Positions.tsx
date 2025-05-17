@@ -1,15 +1,15 @@
-import type { Position } from "../../model/player/Position";
-import styles from './Position.module.css';
+import { useState } from "react";
+import Tooltip from "../tooltip/Tooltip";
+import styles from './Positions.module.css';
+import Position  from './Position';
+import type { Position as IPosition} from "../../model/player/Position";
 
-
-function Positions({positions}:{positions:Position[]}) {
+function Positions({positions}:{positions:IPosition[]}) {
 
     return(
-        <div className={styles.root}>
-            {positions.map((position:Position, index:number) => (
-                <div className={styles.position} key={index}>
-                    <div className={styles.position_text} style={{color: `${position.color}`}}>{position.stringValue}</div>
-                </div>
+        <div className={styles.positions_root}>
+            {positions.map((position:IPosition, index:number) => (
+                <Position key={index} position={position}></Position>
             ))}
         </div>
     );
