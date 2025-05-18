@@ -6,7 +6,7 @@ import styles from './PlayerList.module.css';
 
 type PlayerListMemberProps = {
     player: Player,
-    onClicked?: (player:Player) => void,
+    onPlayerClicked?: (player:Player) => void,
     variant: PlayerListVariant;
 };
 

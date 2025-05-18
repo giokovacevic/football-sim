@@ -1,8 +1,14 @@
 .flag_root {
   height: 100%;
   width: 100%;
-  position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flag_wrapper{
+  position: relative;
+  display: block;
+}
+.flag_wrapper > img{
+  display: block;
 }

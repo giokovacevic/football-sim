@@ -3,5 +3,5 @@ export interface Position{
     readonly name: string,
     readonly color: string,
     readonly peakAge: number,
-    readonly decliningAge: number;
+    readonly decliningAge: number,
 }

@@ -7,7 +7,8 @@ body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
+   /*background-color: rgb(39, 39, 39);*/  /* Test Purposes only */
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -17,5 +18,6 @@ code {
 #root{
   height: 100vh;
   width: 100%;
+ 
   background-color: rgb(39, 39, 39);
 }
