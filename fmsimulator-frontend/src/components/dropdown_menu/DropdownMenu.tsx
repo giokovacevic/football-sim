@@ -29,7 +29,7 @@ function DropdownMenu<T, K extends keyof T>({items, onSelect, valueProperty, ima
     }
 
     return (
-        <div className={styles.dropdown_menu}>
+        <div className={styles.root}>
             <div className={styles.header} onClick={toggleDropdownMenu}>
                 <div className={styles.header_text}>
                     {selectedItem ? String(selectedItem[valueProperty]) : placeholder}
