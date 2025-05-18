@@ -12,8 +12,10 @@ const Position = ({position}:PositionProps) => {
     
     return (
         <div className={styles.position_root}>
-            <div className={styles.position_text} style={{color: `${position.color}`}} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>{position.stringValue}</div>
-            <Tooltip text={position.name} visible={hovered}></Tooltip>
+            <div className={styles.position_content} style={{color: `${position.color}`}} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>{position.stringValue}
+                <Tooltip text={position.name} visible={hovered}></Tooltip>
+            </div>
+            
         </div>
     );
 }

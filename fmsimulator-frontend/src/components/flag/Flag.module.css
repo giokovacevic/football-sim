@@ -7,7 +7,6 @@
 }
 .flag_wrapper{
   position: relative;
-  display: block;
 }
 .flag_wrapper > img{
   display: block;

@@ -74,8 +74,8 @@
 }
 .playerlistmember_positions{
     height: 100%;
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
 }
 .playerlistheader_positions:hover{
     cursor: default;

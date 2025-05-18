@@ -1,21 +1,27 @@
 .positions_root{
     width: 100%;
-    height: 20px;
+    height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .position_root{
-    height: 100%;
     width: 28px;
-    border: solid 1px #4b4b4b;
+    height: 100%;
     margin-right: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
-.position_text{
+.position_content{
+    height: 20px;
+    width: 100%;
+    position: relative;
     font-size: 13px;
+    border: solid 1px #4b4b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .position_root:hover{
     cursor: default;
