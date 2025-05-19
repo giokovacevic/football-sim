@@ -5,7 +5,7 @@ type DropdownMenuProps<T, K extends keyof T> = {
     items: T[],
     onSelect: (item: T) => void,
     valueProperty: K,
-    imageProperty: K | undefined,
+    imageProperty?: K,
     imagePath: string,
     placeholder: string;
 };
@@ -45,7 +45,7 @@ function DropdownMenu<T, K extends keyof T>({items, onSelect, valueProperty, ima
                             <div className={styles.item_icon}>
                                 {imageProperty 
                                 ?
-                                <img src={(imageProperty ? imagePath : (imagePath + item[imageProperty] + ".png"))} alt={imagePath}></img> 
+                                <img src={imagePath + item[imageProperty] + ".png"} alt={imagePath}></img> 
                                 : 
                                 null
                                 }
