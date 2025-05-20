@@ -70,7 +70,7 @@ public enum TacticalFormation {
         }else if(rating >= 65) {
             return "#ffa10a";
         }else if(rating >= 60) {
-            return "#d17428";
+            return "#f25405";
         }else{
             return "#ff0000";
         }  

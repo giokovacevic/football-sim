@@ -57,4 +57,28 @@ public class PreferredPositions {
         return positionDTOs;
     }
 
+    public boolean isGoalkeeper() { 
+        for(Position position : this.positions) {
+            if(position.isGoalkeeper()) return true;
+        }
+        return false;
+    }
+    public boolean isDefender() { 
+        for(Position position : this.positions) {
+            if(position.isDefender()) return true;
+        }
+        return false;
+    }
+    public boolean isMidfielder() { 
+        for(Position position : this.positions) {
+            if(position.isMidfielder()) return true;
+        }
+        return false;
+    }
+    public boolean isForward() { 
+        for(Position position : this.positions) {
+            if(position.isForward()) return true;
+        }
+        return false;
+    }
 }
