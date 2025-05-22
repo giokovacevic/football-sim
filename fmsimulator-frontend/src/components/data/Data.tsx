@@ -6,7 +6,8 @@ import LeagueTable from '../league_table/LeagueTable';
 import Pitch from '../pitch/Pitch';
 import type { Team } from '../../model/team/Team';
 import type { Player } from '../../model/player/Player';
-import PlayerList from '../roster/PlayerList';
+import PlayerList from '../player_list/PlayerList';
+import { getAllLeagues } from '../../services/LeagueService';
 
 const Data = () => {
     const [leagues, setLeagues] = useState<League[]>([]);
@@ -19,14 +20,8 @@ const Data = () => {
     }, []);
 
     const fetchAllLeagues = async () => {
-        try {
-            const response = await fetch('http://localhost:8080/api/football/leagues/all');
-            const data = await response.json();
-            setLeagues(data);
-            console.log(data);
-        } catch (error) {
-            console.log('Error in fetchLeagues: ' + error);
-        }
+        const data = await getAllLeagues();
+        setLeagues(data);
     }
 
     const updatePlayers = (club:Team) => {
@@ -69,7 +64,7 @@ const Data = () => {
                     <div className={styles.roster_wrapper}>
                     {currentTeam 
                     ? 
-                    <PlayerList players={players} variant='lineup' includeHeader={true}></PlayerList>
+                    <PlayerList players={players} currentYear={new Date().getFullYear()} variant='squad' includeHeader={true}></PlayerList>
                     :
                     null
                     }

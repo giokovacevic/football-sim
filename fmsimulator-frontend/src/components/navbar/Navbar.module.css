@@ -1,0 +1,22 @@
+.root{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 400px;
+}
+.root > div{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: #9b9b9b; 
+}
+.link:hover{
+   color: #c2c2c2; 
+}

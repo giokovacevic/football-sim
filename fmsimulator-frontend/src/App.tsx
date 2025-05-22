@@ -1,57 +1,92 @@
 import { useEffect, useState } from 'react';
-import type { Club } from './model/team/Club';
-import PlayerList from './components/roster/PlayerList';
-import type { Player } from './model/player/Player';
+import PlayerList from './components/player_list/PlayerList';
 import Flag from './components/flag/Flag';
 import Data from './components/data/Data';
+import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
+import { getAllCountries, getCountryById } from './services/CountryService';
+import type { Country } from './types/country/Country';
+import { getAllPlayers } from './services/PlayerService';
+import type { Player } from './types/player/Player';
+import type { Club } from './types/team/Club';
+import { getAllClubs, getClubById } from './services/ClubService';
+import { extractFullSquad } from './utils/TeamUtils';
 
 function App() {
-
+  const [countries, setCountries] = useState<Country[]>([]);
   const [clubs, setClubs] = useState<Club[]>([]);
+  const [club, setClub] = useState<Club | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
+  const [country, setCountry] = useState<Country | null>(null);
 
   useEffect(() => {
-    fetchPlayers();
-    //fetchClubs();
+    loadPlayers();
+    //loadCountries();
+    //loadCountry('SRB');
+    //loadClubs();
+    loadClub('realmadrid');
   }, []);
 
-  const fetchPlayers = async () => {
+  const loadCountries = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/football/players/all');
-      const data:Player[] = await response.json();
+      const data = await getAllCountries();
+      console.log(data);
+      setCountries(data);
+    } catch (error) {
+      console.log(`No countries found.`);
+      setCountries([]);
+    }
+  }
+
+  const loadCountry = async (countryId:string) => {
+    try {
+      const data = await getCountryById(countryId);
+      setCountry(data);
+    } catch (error) {
+      console.log(`No country found with such id: ${countryId}`);
+      setCountry(null);
+    }
+  }
+
+  const loadPlayers = async () => {
+    try {
+      const data = await getAllPlayers();
       setPlayers(data);
     } catch (error) {
-      console.log(error);
+      setPlayers([]);
     }
   }
 
-  const fetchClubs = async () => {
+  const loadClubs = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/football/clubs/all');
-      const data:Club[] = await response.json();
+      const data = await getAllClubs();
       setClubs(data);
-      updatePlayers(data[33]);
+      console.log(data);
     } catch (error) {
-      console.log(error);
+      setClubs([]);
     }
   }
 
-  const updatePlayers = (club:Club) => {
-    const benchPlayers:Player[] = [...club.roster.bench];
-    const startingPlayers:Player[] = [];
-    club.roster.lineup.formationDTO.requiredRoleDTOs.forEach((role) => {
-      if(!club.roster.lineup.starters[role.stringValue].empty) {
-        startingPlayers.push(club.roster.lineup.starters[role.stringValue].player);
-      }
-    });
-    setPlayers([...benchPlayers, ...startingPlayers]);
+  const loadClub = async (clubId:string) => {
+    try {
+      const data = await getClubById(clubId);
+      setClub(data);
+    } catch (error) {
+      setClub(null);
+    }
   }
 
   return (
     <>
-      <div>
-        <Data></Data>
-      </div>
+    {/* {country !== null ? <Flag key={country.id} country={country}></Flag> : null} */}
+    {/* <Data></Data> */}
+    {players.length ? <div style={{width:'800px', marginLeft: '20px'}}><PlayerList players={players} currentYear={new Date().getFullYear()} variant='preview' includeHeader={true}></PlayerList></div> : null}
+      {/* <Router>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/lineup' element={<Lineup/>}></Route>
+        </Routes>
+      </Router> */}
     </>
   )
 }

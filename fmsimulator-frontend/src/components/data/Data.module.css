@@ -11,13 +11,13 @@
 
 .column_section_left{
     float: left;
-    width: 25%;
+    width: 21%;
 }
 .column_section_center{
-    width: 35%;
+    width: 40%;
 }
 .column_section_right{
-    width: 40%;
+    width: 39%;
 }
 .row_section_leagues,
 .row_section_leaguetable,

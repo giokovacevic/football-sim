@@ -1,8 +1,6 @@
-import { useState } from "react";
-import Tooltip from "../tooltip/Tooltip";
 import styles from './Positions.module.css';
 import Position  from './Position';
-import type { Position as IPosition} from "../../model/player/Position";
+import type { Position as IPosition} from "../../types/position/Position";
 
 function Positions({positions}:{positions:IPosition[]}) {
 

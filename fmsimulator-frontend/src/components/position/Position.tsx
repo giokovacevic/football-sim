@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import type { Position as IPosition} from '../../model/player/Position';
+import type { Position as IPosition} from '../../types/position/Position';
 import styles from './Positions.module.css';
 import Tooltip from '../tooltip/Tooltip';
+import { getPositionColor } from '../../utils/ColorUtils';
 
 type PositionProps = {
     position: IPosition;
@@ -12,7 +13,7 @@ const Position = ({position}:PositionProps) => {
     
     return (
         <div className={styles.position_root}>
-            <div className={styles.position_content} style={{color: `${position.color}`}} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>{position.stringValue}
+            <div className={styles.position_content} style={{color: `${getPositionColor(position)}`}} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>{position.stringValue}
                 <Tooltip text={position.name} visible={hovered}></Tooltip>
             </div>
             

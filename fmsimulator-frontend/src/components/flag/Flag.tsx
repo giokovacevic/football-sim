@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Country } from '../../model/country/Country';
+import type { Country } from '../../types/country/Country';
 import Tooltip from '../tooltip/Tooltip';
 import styles from './Flag.module.css';
 
