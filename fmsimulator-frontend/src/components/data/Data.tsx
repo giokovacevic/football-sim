@@ -1,13 +1,14 @@
 import {useEffect, useState} from 'react';
-import type { League } from '../../model/competition/League';
+import type { League } from '../../types/competition/League';
 import styles from './Data.module.css';
 import DropdownMenu from '../dropdown_menu/DropdownMenu';
 import LeagueTable from '../league_table/LeagueTable';
 import Pitch from '../pitch/Pitch';
-import type { Team } from '../../model/team/Team';
-import type { Player } from '../../model/player/Player';
+import type { Team } from '../../types/team/Team';
+import type { Player } from '../../types/player/Player';
 import PlayerList from '../player_list/PlayerList';
 import { getAllLeagues } from '../../services/LeagueService';
+import { extractFullSquad } from '../../utils/TeamUtils';
 
 const Data = () => {
     const [leagues, setLeagues] = useState<League[]>([]);
@@ -16,24 +17,13 @@ const Data = () => {
     const [players, setPlayers] = useState<Player[]>([]);
 
     useEffect(() => {
-        fetchAllLeagues();
+        loadAllLeagues();
     }, []);
 
-    const fetchAllLeagues = async () => {
+    const loadAllLeagues = async () => {
         const data = await getAllLeagues();
         setLeagues(data);
     }
-
-    const updatePlayers = (club:Team) => {
-        const benchPlayers:Player[] = [...club.roster.bench];
-        const startingPlayers:Player[] = [];
-        club.roster.lineup.formationDTO.requiredRoleDTOs.forEach((role) => {
-          if(!club.roster.lineup.starters[role.stringValue].empty) {
-            startingPlayers.push(club.roster.lineup.starters[role.stringValue].player);
-          }
-        });
-        setPlayers([...benchPlayers, ...startingPlayers]);
-      }
 
     const handleDropdownMenuOnSelect = (item:League) => {
         setCurrentLeague(item);
@@ -41,7 +31,7 @@ const Data = () => {
 
     const handleLeagueTableOnClick = (team:Team) => {
         setCurrentTeam(team);
-        if(team) updatePlayers(team);
+        if(team) setPlayers(extractFullSquad(team));
     }
 
     return (

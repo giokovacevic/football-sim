@@ -1,4 +1,4 @@
-import type { League } from "../model/competition/League";
+import type { League } from "../types/competition/League";
 import { API_URL } from "../utils/Config";
 
 export const getAllLeagues = async ():Promise<League[]> => {

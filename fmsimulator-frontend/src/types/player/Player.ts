@@ -17,5 +17,5 @@ export interface Player{
     readonly height: number,
     readonly stamina: number,
     readonly contract: Contract;
-    readonly nationalArrangement: Arrangement;
+    readonly nationalArrangement?: Arrangement;
 }

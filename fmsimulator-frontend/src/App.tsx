@@ -10,6 +10,8 @@ import type { Player } from './types/player/Player';
 import type { Club } from './types/team/Club';
 import { getAllClubs, getClubById } from './services/ClubService';
 import { extractFullSquad } from './utils/TeamUtils';
+import { getAllLeagues } from './services/LeagueService';
+import type { League } from './types/competition/League';
 
 function App() {
   const [countries, setCountries] = useState<Country[]>([]);
@@ -17,13 +19,15 @@ function App() {
   const [club, setClub] = useState<Club | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [country, setCountry] = useState<Country | null>(null);
+  const [leagues, setLeagues] = useState<League[]>([]);
 
   useEffect(() => {
-    loadPlayers();
+    //loadPlayers();
     //loadCountries();
     //loadCountry('SRB');
     //loadClubs();
-    loadClub('realmadrid');
+    //loadClub('realmadrid');
+    loadLeagues();
   }, []);
 
   const loadCountries = async () => {
@@ -75,11 +79,22 @@ function App() {
     }
   }
 
+  const loadLeagues = async () => {
+    try {
+      const data = await getAllLeagues();
+      setLeagues(data);
+      console.log(data);
+    } catch (error) {
+      setLeagues([]);
+      console.log('Fail in loading Leagues');
+    }
+  }
+
   return (
     <>
     {/* {country !== null ? <Flag key={country.id} country={country}></Flag> : null} */}
-    {/* <Data></Data> */}
-    {players.length ? <div style={{width:'800px', marginLeft: '20px'}}><PlayerList players={players} currentYear={new Date().getFullYear()} variant='preview' includeHeader={true}></PlayerList></div> : null}
+    <Data></Data>
+    {/* {players.length ? <div style={{width:'800px', marginLeft: '20px'}}><PlayerList players={players} currentYear={new Date().getFullYear()} variant='preview' includeHeader={true}></PlayerList></div> : null} */}
       {/* <Router>
         <Navbar></Navbar>
         <Routes>
