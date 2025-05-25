@@ -1,12 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
-const Navbar = () => {
+type NavbarProps = {
+    items: {name: string, path: string}[],
+};
+
+const Navbar = ({items}: NavbarProps) => {
+    const location = useLocation();
+    const currentPath = location.pathname;
     
     return (
         <nav className={styles.root}>
-            <div><Link to="/" className={styles.link}>Home</Link></div>
-            <div><Link to="/lineup" className={styles.link}>Lineup</Link></div>
+            <div className={styles.items_section}>
+                {items.map(item => (
+                    <Link key={item.path} className={item.path === currentPath ? styles.item_active : styles.item} to={item.path}>{item.name}</Link>
+                ))}
+            </div>
         </nav>
     );
 }

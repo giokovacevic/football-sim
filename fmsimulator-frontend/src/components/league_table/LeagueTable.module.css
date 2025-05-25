@@ -31,6 +31,8 @@
     color: rgb(209, 209, 209);
     font-size: 14px;
     width: 31%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .leaguemember_wins, 
 .leaguemember_draws, 

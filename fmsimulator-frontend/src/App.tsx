@@ -12,6 +12,12 @@ import { getAllClubs, getClubById } from './services/ClubService';
 import { extractFullSquad } from './utils/TeamUtils';
 import { getAllLeagues } from './services/LeagueService';
 import type { League } from './types/competition/League';
+import Pitch from './components/pitch/Pitch';
+import Navbar from './components/navbar/Navbar';
+import Home from './pages/home/Home';
+import Leagues from './pages/leagues/Leagues';
+import Clubs from './pages/clubs/Clubs';
+import Players from './pages/players/Players';
 
 function App() {
   const [countries, setCountries] = useState<Country[]>([]);
@@ -26,8 +32,8 @@ function App() {
     //loadCountries();
     //loadCountry('SRB');
     //loadClubs();
-    //loadClub('realmadrid');
-    loadLeagues();
+    loadClub('parma');
+    //loadLeagues();
   }, []);
 
   const loadCountries = async () => {
@@ -90,10 +96,14 @@ function App() {
     }
   }
 
+  
+
   return (
     <>
+    {/* {club ? <Pitch key={club.id} team={club} kits={club.preferredJersey}></Pitch> : null} */}
+    
     {/* {country !== null ? <Flag key={country.id} country={country}></Flag> : null} */}
-    <Data></Data>
+    {/* <Data></Data> */}
     {/* {players.length ? <div style={{width:'800px', marginLeft: '20px'}}><PlayerList players={players} currentYear={new Date().getFullYear()} variant='preview' includeHeader={true}></PlayerList></div> : null} */}
       {/* <Router>
         <Navbar></Navbar>
@@ -102,6 +112,14 @@ function App() {
           <Route path='/lineup' element={<Lineup/>}></Route>
         </Routes>
       </Router> */}
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/leagues'  element={<Leagues/>}></Route>
+          <Route path='/clubs'  element={<Clubs/>}></Route>
+          <Route path='/players'  element={<Players/>}></Route>
+        </Routes>
+      </Router>
     </>
   )
 }

@@ -9,6 +9,7 @@ import type { Player } from '../../types/player/Player';
 import PlayerList from '../player_list/PlayerList';
 import { getAllLeagues } from '../../services/LeagueService';
 import { extractFullSquad } from '../../utils/TeamUtils';
+import Navbar from '../navbar/Navbar';
 
 const Data = () => {
     const [leagues, setLeagues] = useState<League[]>([]);
@@ -34,8 +35,19 @@ const Data = () => {
         if(team) setPlayers(extractFullSquad(team));
     }
 
+    const links = [{name: 'Home', path: '/'}, {name: 'Leagues', path: '/leagues'}, {name: 'Clubs', path: '/clubs'}, {name: 'Players', path: '/players'}];
+
     return (
         <div className={styles.root}>
+            <Navbar items={links}></Navbar>
+        </div>
+        
+    );
+}
+export default Data;
+/*
+
+ <div className={styles.root}>
             <div className={styles.column_section_left}>
                 <div className={styles.row_section_leagues}><DropdownMenu items={leagues} onSelect={handleDropdownMenuOnSelect} valueProperty='name' imageProperty={undefined} imagePath='' placeholder='Select a League'></DropdownMenu></div>
                 <div className={styles.row_section_leaguetable}>
@@ -72,7 +84,6 @@ const Data = () => {
                 </div>
                 <div></div>
             </div>
-        </div>
-    );
-}
-export default Data;
+        </div> 
+
+*/ 

@@ -1,22 +1,33 @@
 .root{
     display: flex;
     flex-direction: row;
-    height: 80px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
+    background-color: #080808;
 }
-.root > div{
+.items_section{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+.item,
+.item_active{
+    color: #9b9b9b; 
+    text-decoration: none;
     flex: 1;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    color: white;
+    font-size: 18px;
 }
-.link{
-    text-decoration: none;
-    color: #9b9b9b; 
+.item_active{
+    background-color: #2b2b2b;
+    cursor: default;
+    pointer-events: none;
 }
-.link:hover{
-   color: #c2c2c2; 
+.item:hover{
+    color: #dddddd; 
+    background-color: #000000;
 }

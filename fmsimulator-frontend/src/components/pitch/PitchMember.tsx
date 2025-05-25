@@ -19,7 +19,7 @@ function PitchMember({_role, starter, teamId, kits}:PitchMemberProps) {
     return (
         <div className="player-card" style={{top: `${role.y}px`, left: `${role.x}px`}}>
         <div className="player-card-jersey">
-            <img src={(role.stringValue === 'GK' ? jersey + "gk_" + kits + ".png": jersey + kits + ".png")} style={!starter.player ? {opacity: '0.1'} : {opacity: '1.0'}} alt={teamId} onError={(e) => {
+            <img src={(role.stringValue === 'GK' ? jersey + "gk_" + kits + ".png": jersey + kits + ".png")} style={!starter.player ? {opacity: '0.1'} : {opacity: '1.0', filter: 'drop-shadow(0 0 1px rgb(191, 191, 191, 1))'}} alt={teamId} onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.src = defaultJersey;
             }}></img>
