@@ -1,7 +1,7 @@
-import type { Player } from "../types/player/Player";
-import type { Role } from "../types/team/lineup/Role";
+import type { Player } from "../types/models/player/Player";
+import type { Role } from "../types/models/team/lineup/Role";
 import type { Starter } from "../types/team/lineup/Starter";
-import type { Team } from "../types/team/Team"
+import type { Team } from "../types/models/team/Team"
 
 export const extractFullSquad = (team:Team) => {
     let starters:Player[] = [];

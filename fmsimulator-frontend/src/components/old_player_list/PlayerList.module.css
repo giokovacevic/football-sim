@@ -1,0 +1,271 @@
+.playerlist_root{
+    width: 100%;
+    height: 850px;
+    overflow-y: auto;
+    position: relative;
+    min-width: 800px;
+}
+
+.playerlist_root::-webkit-scrollbar {
+  width: 14px;
+}
+
+.playerlist_root::-webkit-scrollbar-track {
+  background: #111; 
+}
+
+.playerlist_root::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 0px;
+}
+
+.playerlist_root::-webkit-scrollbar-thumb:hover {
+  background-color: #b8b8b8;
+}
+
+.playerlistheader_root,
+.playerlistmember_root{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+.playerlistheader_root{
+    position: sticky;
+    top: 0;
+    background-color: #161616;
+    z-index: 999;
+}
+.playerlistmember_root{
+    background-color: #1d1d1d;
+    margin-top: 2px;
+}
+.playerlistmember_root:hover{
+    background: linear-gradient(#2b2b2b, #1b1b1b);
+}
+.playerlistmember_root:hover > .playerlistmember_rating{
+    font-size: 24px;
+}
+.playerlistmember_root:hover > .playerlistmember_name{
+    color: #ececec;
+    font-size: 17px;
+}
+.playerlistmember_root > div,
+.playerlistheader_root > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.playerlistheader_flag,
+.playerlistheader_name,
+.playerlistheader_positions,
+.playerlistheader_age,
+.playerlistheader_role,
+.playerlistheader_stamina,
+.playerlistheader_club,
+.playerlistheader_salary,
+.playerlistheader_contract,
+.playerlistheader_rating{
+    font-size: 15px;
+    color: rgb(139, 139, 139);  
+    cursor: pointer;
+    border-bottom: solid 1px #646464;
+}
+.playerlistheader_flag:hover,
+.playerlistheader_name:hover,
+.playerlistheader_age:hover,
+.playerlistheader_club:hover,
+.playerlistheader_salary:hover,
+.playerlistheader_contract:hover,
+.playerlistheader_rating:hover{
+    border-bottom: solid 1px #cfcfcf;
+    cursor: pointer;
+}
+
+.playerlistheader_flag,
+.playerlistmember_flag{
+    flex: 3;
+    justify-content: center;
+}
+
+.playerlistheader_name,
+.playerlistmember_name{
+    flex: 18;
+}
+.playerlistmember_name{
+    color: #c2c2c2;
+    font-size: 16px;
+    cursor: default;
+}
+.playerlistmember_name > span{
+    color: #8b8b8b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.playerlistheader_positions,
+.playerlistmember_positions{
+    flex: 14;
+}
+.playerlistmember_positions{
+    height: 100%;
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.playerlistheader_positions:hover{
+    cursor: default;
+}
+.playerlistheader_positions_title{
+    width: 35%;
+}
+.playerlistheader_positions_options{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.playerlistheader_positions_option_gk,
+.playerlistheader_positions_option_df,
+.playerlistheader_positions_option_mf,
+.playerlistheader_positions_option_fw{
+    flex: 1;
+    margin-right: 6px;
+    border: solid 1px #777777; 
+    text-align: center;
+    height: 60%;
+    font-size: 12px;
+}
+.playerlistheader_positions_option_gk:hover{
+    border: solid 1px #ffbe19; 
+    color: #ffbe19;
+    cursor: pointer;
+}
+.playerlistheader_positions_option_df:hover{
+    border: solid 1px #02d65a; 
+    color: #02d65a;
+    cursor: pointer;
+}
+.playerlistheader_positions_option_mf:hover{
+    border: solid 1px #ff4747; 
+    color: #ff4747;
+    cursor: pointer;
+}
+.playerlistheader_positions_option_fw:hover{
+    border: solid 1px #409cff; 
+    color: #409cff;
+    cursor: pointer;
+}
+
+.playerlistheader_age,
+.playerlistmember_age{
+    flex: 4;
+    justify-content: center;
+}
+.playerlistmember_age{
+    color: #989898;
+    font-size: 18px;
+    cursor: default;
+}
+
+.playerlistheader_role,
+.playerlistmember_role{
+    flex: 5;
+    justify-content: center;
+}
+.playerlistheader_role{
+    cursor: default;
+}
+.playerlistmember_role_content{
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+}
+
+.playerlistheader_stamina,
+.playerlistmember_stamina{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 6;
+}
+.playerlistheader_stamina{
+    cursor: default;
+}
+.playerlistmember_stamina_wrapper{
+    background-color: #161616;
+    align-items: center;
+    justify-content: center;
+    border: #000000 2px solid;
+}
+.playerlistmember_stamina_content{
+    height: 2px;
+}
+
+.playerlistheader_club,
+.playerlistmember_club{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 5;
+}
+.playerlistmember_club{
+    align-items: center;
+    justify-content: center;
+}
+.playerlistmember_club_logo{
+    position: relative;
+}
+.playerlistmember_club_logo > img{
+    display: block;
+}
+
+.playerlistheader_salary,
+.playerlistmember_salary{
+    flex: 6;
+    justify-content: center;
+}
+.playerlistmember_salary{
+    font-size: 18px;
+    color: #08bb52;
+    align-items: center;
+    cursor: default;
+}
+
+.playerlistheader_contract,
+.playerlistmember_contract{
+    flex: 6;
+    justify-content: center;
+}
+.playerlistheader_contract{
+    cursor: default;
+}
+.playerlistmember_contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.playerlistmember_contract_content{
+    font-size: 15px;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+.playerlistheader_rating,
+.playerlistmember_rating{
+    flex: 4;
+    justify-content: center;
+}
+.playerlistmember_rating{
+    font-size: 22px;
+    font-weight: bold;
+    cursor: default;
+}

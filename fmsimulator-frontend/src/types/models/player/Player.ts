@@ -1,4 +1,4 @@
-import type { Country } from "../country/Country";
+import type { Country } from "./../country/Country"
 import type { Position } from "../position/Position";
 import type { Arrangement } from "./Arrangement";
 import type { Contract } from "./Contract";

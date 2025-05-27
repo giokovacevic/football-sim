@@ -1,4 +1,4 @@
-import type { Player } from '../../types/player/Player';
+import type { Player } from '../../types/models/player/Player';
 import type { PlayerListVariant } from './PlayerList';
 import styles from './PlayerList.module.css';
 

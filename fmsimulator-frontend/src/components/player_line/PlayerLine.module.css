@@ -1,0 +1,246 @@
+.header_root,
+.line_root{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+.header_root{
+    position: sticky;
+    top: 0;
+    background-color: #161616;
+    z-index: 999;
+}
+.line_root{
+    background-color: #1d1d1d;
+    margin-top: 2px;
+}
+.line_root:hover{
+    background: linear-gradient(#1f1f1f, #111111);
+}
+.line_root:hover > .line_rating{
+    font-size: 24px;
+}
+.line_root:hover > .line_name{
+    color: #ececec;
+    font-size: 17px;
+}
+.line_root > div,
+.header_root > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header_flag,
+.header_name,
+.header_positions,
+.header_age,
+.header_role,
+.header_stamina,
+.header_club,
+.header_salary,
+.header_contract,
+.header_rating{
+    font-size: 15px;
+    color: rgb(139, 139, 139);  
+    cursor: pointer;
+    border-bottom: solid 1px #646464;
+}
+.header_flag:hover,
+.header_name:hover,
+.header_age:hover,
+.header_club:hover,
+.header_salary:hover,
+.header_contract:hover,
+.header_rating:hover{
+    border-bottom: solid 1px #cfcfcf;
+    cursor: pointer;
+}
+
+.header_flag,
+.line_flag{
+    flex: 3;
+    justify-content: center;
+}
+
+.header_name,
+.line_name{
+    flex: 18;
+}
+.line_name{
+    color: #c2c2c2;
+    font-size: 16px;
+    cursor: default;
+}
+.line_name > span{
+    color: #8b8b8b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.header_positions,
+.line_positions{
+    flex: 14;
+}
+.line_positions{
+    height: 100%;
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.header_positions:hover{
+    cursor: default;
+}
+.header_positions_title{
+    width: 35%;
+}
+.header_positions_options{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.header_positions_option_gk,
+.header_positions_option_df,
+.header_positions_option_mf,
+.header_positions_option_fw{
+    flex: 1;
+    margin-right: 6px;
+    border: solid 1px #777777; 
+    text-align: center;
+    height: 60%;
+    font-size: 12px;
+}
+.header_positions_option_gk:hover{
+    border: solid 1px #ffbe19; 
+    color: #ffbe19;
+    cursor: pointer;
+}
+.header_positions_option_df:hover{
+    border: solid 1px #02d65a; 
+    color: #02d65a;
+    cursor: pointer;
+}
+.header_positions_option_mf:hover{
+    border: solid 1px #ff4747; 
+    color: #ff4747;
+    cursor: pointer;
+}
+.header_positions_option_fw:hover{
+    border: solid 1px #409cff; 
+    color: #409cff;
+    cursor: pointer;
+}
+
+.header_age,
+.line_age{
+    flex: 4;
+    justify-content: center;
+}
+.line_age{
+    color: #989898;
+    font-size: 18px;
+    cursor: default;
+}
+
+.header_role,
+.line_role{
+    flex: 5;
+    justify-content: center;
+}
+.header_role{
+    cursor: default;
+}
+.line_role_content{
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+}
+
+.header_stamina,
+.line_stamina{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 6;
+}
+.header_stamina{
+    cursor: default;
+}
+.line_stamina_wrapper{
+    background-color: #161616;
+    align-items: center;
+    justify-content: center;
+    border: #000000 2px solid;
+}
+.line_stamina_content{
+    height: 2px;
+}
+
+.header_club,
+.line_club{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 5;
+}
+.line_club{
+    align-items: center;
+    justify-content: center;
+}
+.line_club_logo{
+    position: relative;
+}
+.line_club_logo > img{
+    display: block;
+}
+
+.header_salary,
+.line_salary{
+    flex: 6;
+    justify-content: center;
+}
+.line_salary{
+    font-size: 18px;
+    color: #08bb52;
+    align-items: center;
+    cursor: default;
+}
+
+.header_contract,
+.line_contract{
+    flex: 6;
+    justify-content: center;
+}
+.header_contract{
+    cursor: default;
+}
+.line_contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.line_contract_content{
+    font-size: 15px;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+.header_rating,
+.line_rating{
+    flex: 4;
+    justify-content: center;
+}
+.line_rating{
+    font-size: 22px;
+    font-weight: bold;
+    cursor: default;
+}

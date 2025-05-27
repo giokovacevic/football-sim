@@ -1,5 +1,5 @@
-import type { Player } from "../types/player/Player";
-import type { Position } from "../types/position/Position";
+import type { Player } from "../types/models/player/Player";
+import type { Position } from "../types/models/position/Position";
 import { filterByPositionType } from "./FilteringUtils";
 
 export const comparePlayerByRating = (a: Player, b:Player) => {

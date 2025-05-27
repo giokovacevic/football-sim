@@ -1,4 +1,4 @@
-import type { Position } from "../types/position/Position";
+import type { Position } from "../types/models/position/Position";
 
 export const getRatingColor = (rating:number) =>  {
     if(rating >= 95) {

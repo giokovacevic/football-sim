@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import type { Country } from '../../types/country/Country';
+import type { Country } from '../../types/models/country/Country';
 import Tooltip from '../tooltip/Tooltip';
 import styles from './Flag.module.css';
 
 const Flag = ({country}:{country:Country}) => {
     const [hovered, setHovered] = useState<boolean>(false);
-
 
     return (
         <div className={styles.flag_root}>

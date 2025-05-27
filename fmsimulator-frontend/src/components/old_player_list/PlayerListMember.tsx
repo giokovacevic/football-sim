@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Player } from '../../types/player/Player';
+import type { Player } from '../../types/models/player/Player';
 import { getContractColor, getPositionColor, getRatingColor, getStaminaColor } from '../../utils/ColorUtils';
 import { getCurrentStaminaWidth } from '../../utils/PlayerUtils';
 import Flag from '../flag/Flag';

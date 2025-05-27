@@ -1,4 +1,4 @@
-import type { Position } from "../types/position/Position";
+import type { Position } from "../types/models/position/Position";
 
 export const filterByPositionType = (positions: Position[], type: string):boolean => {
     for(const position of positions) {

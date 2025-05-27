@@ -1,12 +1,12 @@
 import {useEffect, useState} from 'react';
-import type { League } from '../../types/competition/League';
+import type { League } from '../../types/models/competition/League';
 import styles from './Data.module.css';
 import DropdownMenu from '../dropdown_menu/DropdownMenu';
 import LeagueTable from '../league_table/LeagueTable';
 import Pitch from '../pitch/Pitch';
-import type { Team } from '../../types/team/Team';
-import type { Player } from '../../types/player/Player';
-import PlayerList from '../player_list/PlayerList';
+import type { Team } from '../../types/models/team/Team';
+import type { Player } from '../../types/models/player/Player';
+import PlayerList from '../old_player_list/PlayerList';
 import { getAllLeagues } from '../../services/LeagueService';
 import { extractFullSquad } from '../../utils/TeamUtils';
 import Navbar from '../navbar/Navbar';

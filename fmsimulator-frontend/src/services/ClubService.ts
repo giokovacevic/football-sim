@@ -1,4 +1,4 @@
-import type { Club } from "../types/team/Club";
+import type { Club } from "../types/models/team/Club";
 import { API_URL } from "../utils/Config";
 
 export const getAllClubs = async ():Promise<Club[]> => {

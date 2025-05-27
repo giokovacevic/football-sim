@@ -1,4 +1,4 @@
-import type { Role } from "../../types/team/lineup/Role";
+import type { Role } from "../../types/models/team/lineup/Role";
 import type { Starter } from "../../types/team/lineup/Starter";
 import { getPositionColor, getRatingColor } from "../../utils/ColorUtils";
 import "./pitch_style.css";

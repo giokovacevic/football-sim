@@ -1,4 +1,4 @@
-import type { Country } from "../types/country/Country";
+import type { Country } from "../types/models/country/Country";
 import { API_URL } from "../utils/Config";
 
 export const getAllCountries = async ():Promise<Country[]> => {

@@ -1,4 +1,4 @@
-import type { Position } from "../../position/Position";
+import type { Position } from "./../../position/Position";
 
 export interface Role{
     readonly stringValue: string,
