@@ -12,8 +12,8 @@ public class Match {
         this.host = host;
         this.guest = guest;
         this.score = new int[2];
-        this.score[0] = 0;
-        this.score[1] = 0;
+        this.score[0] = -1;
+        this.score[1] = -1;
         this.neutral = neutral;
     }
 

@@ -11,15 +11,17 @@ import java.util.Map;
 import java.util.Scanner;
 
 import com.ogifmsim.fmsimulator.config.DatabaseConnection;
+import com.ogifmsim.fmsimulator.dto.CountryDTO;
 import com.ogifmsim.fmsimulator.model.country.Country;
 
 public class CountryService {
+    private final static String CSV_URL = "db_countries.csv";
 
     private static CountryService instance = null;
     private static Map<String, Country> countries = null;
 
     private CountryService() {
-        if(countries == null) countries = loadAllCountries("db_countries.csv");
+        if(countries == null) countries = loadAllCountries(CSV_URL);
     }
 
     public static CountryService getInstance() {
@@ -31,16 +33,30 @@ public class CountryService {
 
     public List<Country> getAllCountries() {
         if(countries == null) {
-            countries = loadAllCountries("db_countries.csv");
+            countries = loadAllCountries(CSV_URL);
         }
         return new ArrayList<>(countries.values());
     }
 
+    public List<CountryDTO> getAllCountriesDTO() {
+        List<CountryDTO> countriesDTO = new ArrayList<>();
+        for(Country country : getAllCountries()) {
+            countriesDTO.add(new CountryDTO(country));
+        }
+        return countriesDTO;
+    }
+
     public Country getCountryById(String countryId) {
         if(countries == null) {
-            countries = loadAllCountries("db_countries.csv");
+            countries = loadAllCountries(CSV_URL);
         }
         if(countries.containsKey(countryId)) return countries.get(countryId);
+        return null;
+    }
+
+    public CountryDTO getCountryByIdDTO(String countryId) {
+        Country country = getCountryById(countryId);
+        if(country != null) return new CountryDTO(getCountryById(countryId));
         return null;
     }
      

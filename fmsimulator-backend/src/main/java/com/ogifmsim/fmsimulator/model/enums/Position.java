@@ -1,28 +1,29 @@
 package com.ogifmsim.fmsimulator.model.enums;
 
 public enum Position {
-    GK("GK", "Goalkeeper", 28, 38),
-    CB("CB", "Centre Back",27, 37),
-    LB("LB","Left Back",26, 36),
-    RB("RB","Right Back", 26, 36),
-    DM("DM","Defensive Midfield", 27, 37),
-    CM("CM","Central Midfield", 26, 36),
-    LM("LM","Left Midfield", 26, 36),
-    RM("RM","Right Midfield", 26, 36),
-    AM("AM","Attacking Midfield", 26, 36),
-    LW("LW","Left Wing", 26, 36),
-    RW("RW","Right Wing", 26, 36),
-    CF("CF","Centre Forward", 27, 37),
-    SS("SS","Second Striker", 26, 36),
-    ST("ST","Striker", 26, 36),
-    UD("undefined","undefined", 0, 0);
+    GK("GK", "Goalkeeper", "gk", 28, 38),
+    CB("CB", "Centre Back","df",27, 37),
+    LB("LB","Left Back","df",26, 36),
+    RB("RB","Right Back","df", 26, 36),
+    DM("DM","Defensive Midfield","mf", 27, 37),
+    CM("CM","Central Midfield","mf", 26, 36),
+    LM("LM","Left Midfield","mf", 26, 36),
+    RM("RM","Right Midfield","mf", 26, 36),
+    AM("AM","Attacking Midfield","mf", 26, 36),
+    LW("LW","Left Wing","fw", 26, 36),
+    RW("RW","Right Wing","fw", 26, 36),
+    CF("CF","Centre Forward","fw", 27, 37),
+    SS("SS","Second Striker","fw", 26, 36),
+    ST("ST","Striker","fw", 26, 36),
+    UD("undefined","undefined","ud", 0, 0);
 
-    private final String stringValue, name;
+    private final String stringValue, name, type;
     private final int peakAge, decliningAge;
 
-    private Position(String stringValue,String name, int peakAge, int decliningAge) {
+    private Position(String stringValue,String name, String type, int peakAge, int decliningAge) {
         this.stringValue = stringValue;
         this.name = name;
+        this.type = type;
         this.peakAge = peakAge;
         this.decliningAge = decliningAge;
     }
@@ -62,34 +63,20 @@ public enum Position {
         };
     }
 
-    public String getColor() {
-        if (this.isMidfielder()) {
-            return "#fa332f";
-        } else if (this.isDefender()) {
-            return "#02d65a";
-        } else if (this.isForward()) {
-            return "#409cff";
-        } else if (this.isGoalkeeper()) {
-            return "#ffbe19";
-        } else {
-            return "#4f4f4f";
-        }
-    }
-
     public boolean isGoalkeeper() {
-        return (this == Position.GK);
+        return (this.type.equals("gk"));
     }
 
     public boolean isDefender() {
-        return ((this == Position.CB) || (this == Position.LB) || (this == Position.RB));
+        return (this.type.equals("df"));
     }
 
     public boolean isMidfielder() {
-        return ((this == Position.DM) || (this == Position.CM) || (this == Position.AM) || (this == Position.LM) || (this == Position.RM));
+        return (this.type.equals("mf"));
     }
 
     public boolean isForward() {
-        return ((this == Position.CF) || (this == Position.LW) || (this == Position.RW) || (this == Position.SS) || (this == Position.ST));
+        return (this.type.equals("fw"));
     }
 
     @Override
@@ -103,6 +90,10 @@ public enum Position {
 
     public String getName() {
         return this.name;
+    }
+
+    public String getType() {
+        return this.type;
     }
 
     public int getPeakAge() {

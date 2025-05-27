@@ -1,69 +1,178 @@
-1,-,,NED,10,Desheven,Georgie,ST CF,93,28,187,0,,barcelona,130.0,3,CF,Right,-
-2,-,,GER,12,Denhager,Manuel,CB,91,32,193,0,,dortmund,117.0,2,sub,Left,-
-3,CF,,FRA,9,Insite,Dale,ST CF,92,29,186,0,,monaco,122.0,4,CF,Right,-
 4,CF,,POR,8,Sousa,Nicolas,CF ST,92,30,189,0,,realmadrid,123.0,2,CF,Right,Compact
+8,-,,URU,6,Diego,Oltran,CB,90,32,190,0,,realmadrid,109.0,2,RCB,Right,Compact
+32,LCB,,BRA,7,Rafaelo,-,CB,87,32,186,0,,psg,87.0,2,RCB,Right,Compact
+37,CF,,TUR,9,Burak,Jarizim,CF ST,87,29,190,0,,galatasaray,87.5,3,ST,Right,Compact
+40,-,,COL,9,Douniga,Unis,CF ST,87,28,185,0,,valencia,86.8,2,CF,Right,Compact
+52,LCB,,FRA,4,Donak,Kevin,CB,86,35,184,0,,psg,81.0,1,LCB,Right,Compact
+57,-,,POL,9,Wjoroczek,Goran,CF,86,30,189,0,,liverpool,80.7,2,sub,Right,Compact
+76,-,,POL,15,Hubsz,Janeck,CB,85,31,190,0,,dortmund,75.0,1,sub,Right,Compact
+78,RCB,,BRA,15,Marlos,-,CB,85,28,189,0,,sevilla,76.0,2,sub,Right,Compact
+82,-,,ALG,9,Brahimi,Naslam,CF ST,85,31,189,0,,astonvilla,76.0,3,sub,Right,Compact
+83,-,,PAR,7,Ramirez,Costa,CF ST,85,31,187,0,,atleticodemadrid,75.5,3,sub,Right,Compact
+97,sub,,FRA,12,Mendel,Benjo,GK,84,29,186,0,,lyon,68.0,2,GK,Right,Compact
+125,-,,ITA,3,Caitil,Fabio,GK,84,34,185,0,,torino,70.0,2,GK,Right,Compact
+142,CB,,GRE,8,Arkonstatopoulos,Stratis,CB,83,30,189,0,,malaga,64.0,1,sub,Right,Compact
+172,-,,SWE,2,Webelan,Christian,CB,82,25,187,0,,cskamoscow,50.0,3,LCB,Right,Compact
+190,-,,SCO,2,Host,Brad,GK,82,33,185,0,,celtic,57.0,3,GK,Right,Compact
+242,-,,SWE,6,Dalsberg,Olssen,CB,80,35,190,0,,krasnodar,49.0,2,RCB,Right,Compact
+243,-,,CIV,8,Delot,Fadi,CB,80,23,184,82,,salzburg,26.5,1,LCB,Right,Compact
+274,-,,FRA,9,Kean,Gailles,CB,79,34,187,0,,lille,44.0,3,RCB,Right,Compact
+278,-,,FRA,6,Kadeu,Mateo,CB,79,24,190,80,,youngboys,32.0,2,sub,Right,Compact
+318,-,,AUT,12,Gudsen,Kevin-Marcs,CB,77,32,182,0,,salzburg,38.0,1,RCB,Right,Compact
+392,-,,NED,12,Woorer,Halrs,CB,76,35,186,0,,az,31.0,3,sub,Right,Compact
+438,-,,CIV,25,Dian,Kamon,CB,74,24,190,75,,bordeaux,12.0,3,sub,Right,Compact
+441,-,,BRA,30,Antonio,-,CB,75,24,190,77,,porto,13.0,2,RCB,Right,Compact
+442,-,,WAL,4,Gilbert,Dylan,CB,74,26,186,0,,porto,14.0,1,sub,Right,Compact
+443,-,,NGR,14,Gabelwemi,Ebu,CB,74,28,186,0,,psv,24.2,4,RCB,Right,Compact
+453,-,,KSA,25,Mohammed,Hassan,CF ST,75,28,185,0,,panathinaikos,28.5,2,sub,Right,Compact
+477,-,,EST,0,Braks,Stefen,CB,72,29,185,0,,FA,0.0,0,sub,Right,Compact
+531,sub,,GRE,10,Totsidis,Luis,CB,72,33,182,0,,paok,18.0,2,sub,Right,Compact
+613,-,,SEN,15,Kalidba,Sammuel,CB,69,23,189,70,,toulouse,9.3,4,RCB,Right,Compact
+673,-,,FRA,26,Doufi,Jonathan,CB,67,34,180,0,,strasbourg,6.8,2,sub,Right,Compact
+754,-,,GUI,4,Kuyaté,Francis,CB,74,24,186,80,,napoli,22.0,3,sub,Right,Compact
+828,-,,RUS,15,Voronsin,Petr,CB,73,26,189,80,,cskamoscow,18.7,2,sub,Right,Compact
+838,-,,BEL,6,Kadeba,Jupp,CB,76,24,186,79,,standard,13.8,2,sub,Right,Compact
+858,-,,MNE,10,Murošanin,Uroš,CB,70,22,190,80,,buducnost,1.0,1,sub,Right,Compact
+865,-,,CZE,10,Ozdrenski,Micail,CF,73,25,187,77,,viktoriaplzen,15.0,1,CF,Right,Compact
+893,-,,MEX,4,María,Hijeda,CB,84,26,187,86,,atleticodemadrid,29.0,2,sub,Right,Compact
+916,-,,SRB,1,Jankov,Milan,GK,70,22,189,80,,vojvodina,5.0,3,sub,Right,Compact
+953,-,,DEN,6,Aers,Erik,CB,86,30,190,0,,arsenal,81.0,3,RCB,Right,Compact
+968,-,,AUT,28,Odafoe,Djidji,CB,73,26,185,0,,lask,12.2,2,sub,Right,Compact
+1009,-,,BRA,6,Becao,Rodrygo Medina,CB,75,25,186,80,,santos,20.0,1,sub,Right,Compact
+1020,-,,ARG,22,Guno,Cerez,RB,74,33,172,0,,boca,24.4,2,sub,Right,Compact
+1126,-,,FRA,5,Ouard,Dirduin,RM RB,71,33,173,0,,nantes,15.5,3,RB,Right,Compact
+1227,-,,MDA,7,Danayev,Bogdan,CB,67,33,182,0,,sheriff,7.2,2,sub,Left,Compact
+1229,-,,JPN,8,Machida,Kueda,RB,74,31,172,0,,rangers,24.5,3,sub,Right,Compact
+1230,-,,SCO,3,Lucas,Gary,CB,71,34,180,0,,rangers,15.6,2,sub,Right,Compact
+1232,GK,,CIV,4,Kanam,Ibo,GK,64,28,189,0,,gagnoa,3.3,2,sub,Right,Compact
+1237,sub,,GRE,17,Kiriadis,Antolis,CB,73,24,189,77,,fortuna,9.6,2,RCB,Left,Compact
+41,-,,NED,20,Williams,Caiver,CF ST LW,87,28,185,0,,manchesterunited,87.0,3,sub,Right,Lean
+205,-,,EGY,1,Islani,Al-Kadem,AM,81,25,175,0,,cskamoscow,23.0,1,AM,Left,Lean
+354,-,,FRA,9,Sakadia,Adisunga,CB,77,24,195,78,,strasbourg,17.0,3,LCB,Right,Lean
+398,-,,DRC,24,Kubake,Denis,CB,76,27,187,0,,werder,22.0,1,sub,Right,Lean
+406,-,,SEN,10,Niange,Monsah,CF ST,76,25,185,0,,strasbourg,20.0,2,ST,Right,Lean
+439,-,,CIV,13,Siliby,Tarrel,CB,75,31,185,0,,galatasaray,28.3,3,LCB,Left,Lean
+444,-,,CMR,13,Kodele,Jouseph,CB,75,25,190,79,,strasbourg,16.0,2,CB,Right,Lean
+691,-,,JPN,19,Ibuzuno,Kaisa,LW LM AM,71,23,174,72,,lille,7.0,3,sub,Right,Lean
+868,-,,GAB,5,Boulanga,Abdou,ST CF,75,28,183,0,,paok,28.0,4,sub,Right,Lean
+878,-,,DRC,18,Dikanbe,Malunga,CB,72,22,197,78,,rsca,1.0,1,RCB,Right,Lean
+949,-,,KOR,3,Min,Dae-Woo,CM,76,25,174,79,,bologna,17.0,3,sub,Right,Lean
+983,-,,CNG,3,Mapou,Jordan,CB,79,27,195,0,,celtic,21.0,1,sub,Right,Lean
+1148,sub,,TUR,7,Yeldizim,Karim,CM,73,24,185,81,,antalyaspor,12.1,2,sub,Right,Lean
+1217,-,,SEN,11,Baba Didu,Ismaila,CF ST,76,27,185,0,,sevilla,29.0,3,sub,Left,Lean
+1218,-,,TUN,15,Ben Sehddane,Sahleel,SS AM,75,22,178,85,,az,12.0,2,sub,Left,Lean
+1219,-,,ISL,24,Gustafsson,Adalfye,RW RM,69,20,180,80,,copenhagen,2.2,3,RW,Left,Lean
+1222,-,,ARG,29,Dominguez,Lucas,LW LM,76,21,177,81,,juventus,37.0,4,sub,Right,Lean
+1223,-,,IRL,6,McCallanough,Connor,RB,78,25,180,0,,everton,28.7,3,sub,Right,Lean
+1231,-,,RUS,19,Smolnikov,Aleksandr,LW AM,67,18,178,78,,nizhniy,1.0,5,sub,Right,Lean
+1234,-,,ITA,2,Valentine,Rudolfo,CB,72,32,190,0,,dinamozagreb,21.0,3,sub,Right,Lean
+1235,-,,CIV,27,Touré,Abile,DM,61,18,187,81,,sochaux,1.0,5,sub,Left,Lean
 5,-,,GER,1,Kahn,Jans,CF ST,91,30,191,0,,bayern,117.0,3,sub,Right,Normal
 6,-,,SVK,21,Škran,Marczin,GK,90,30,197,0,,inter,116.0,4,GK,Right,Normal
 7,-,,ESP,2,Moreno,Juan,LB,91,32,172,0,,barcelona,115.0,2,LB,Left,Normal
-8,-,,URU,6,Diego,Oltran,CB,90,32,190,0,,realmadrid,109.0,2,RCB,Right,Compact
+11,LCM,,FRA,8,Ram,Allan,CM,90,30,181,0,,psg,110.0,3,CM,Right,Normal
+13,-,,ITA,8,Bonifaccio,Leandro,CB,89,32,196,0,,juventus,100.0,1,sub,Right,Normal
+22,DM,,FRA,9,Dodoualy,Adounal,CM DM,88,25,189,89,,lyon,60.0,2,RCM,Right,Normal
+29,-,,CHI,4,Diaz,Eric,CB,87,25,188,88,,barcelona,54.0,2,RCB,Right,Normal
+30,-,,CZE,3,Vyrocil,Tomaš,CB,88,31,193,0,,inter,93.5,3,sub,Right,Normal
+33,-,,BEL,2,Wael,Tim,CB,87,32,192,0,,tottenham,87.0,2,sub,Right,Normal
+34,-,,ARG,28,Calsemior,Fabio,DM,87,31,178,0,,barcelona,87.5,3,DM,Right,Normal
+42,-,,NOR,10,Frederic,Robert,CM,87,35,185,0,,basel,86.7,3,sub,Both,Normal
+43,sub,,POR,4,Fela,Diogo,CM,87,33,182,0,,realmadrid,87.5,2,RCM,Left,Normal
+45,LCM,,POR,10,Fernandes,Sergio,CM AM,87,25,185,88,,porto,49.0,2,RCM,Right,Normal
+46,-,,GER,15,Ben-Haase,Thomas,GK,87,33,187,0,,bayern,87.3,1,GK,Right,Normal
+54,DM,,BRA,14,Corenjo,Guaro,DM,86,30,178,0,,milan,82.0,3,sub,Right,Normal
+55,-,,NED,2,Dast,Robin,CM,82,33,180,0,,feyenoord,58.0,3,RCM,Right,Normal
+58,-,,HUN,3,Lavrenovics,Marton,CF ST,84,29,186,0,,cskamoscow,71.0,3,CF,Right,Normal
+60,-,,SUI,4,Freuer,Chris,CM,86,32,183,0,,dortmund,81.3,2,sub,Right,Normal
+61,RCM,,FRA,16,Mattias,George,CM,86,29,180,0,,juventus,82.0,3,sub,Right,Normal
+64,-,,URU,8,Hernandes,Gerald,CM DM,86,29,179,0,,manchestercity,80.8,3,sub,Right,Normal
+65,-,,ITA,12,Scadella,Giliamo,GK,83,28,186,0,,milan,64.0,2,GK,Right,Normal
+66,sub,,BRA,9,Alberto,Fernando,GK,86,33,189,0,,barcelona,80.7,2,GK,Right,Normal
+75,sub,,BRA,10,Gustavo Augusto,Victor,ST SS AM,85,27,180,0,,monaco,76.0,2,AM,Right,Normal
+79,-,,MEX,10,Saul,Alejandro,CM DM,85,30,180,0,,atleticodemadrid,75.5,3,sub,Right,Normal
+95,-,,GER,5,Jurel,Tomas,GK,85,30,185,0,,arsenal,75.0,3,GK,Right,Normal
+107,-,,NED,4,Duyk,Stiven,CB,84,34,185,0,,everton,69.0,1,sub,Right,Normal
+109,-,,SRB,2,Dejanović,Aleksandar,CB,82,34,192,0,,schalke,58.6,1,sub,Right,Normal
+209,-,,RUS,18,Goncharenko,Nikolay,CB,81,27,194,0,,cskamoscow,36.0,1,RCB,Right,Normal
+213,-,,CZE,12,Bedarek,Andrej,CB,81,31,193,0,,southampton,54.0,2,sub,Right,Normal
+240,sub,,FRA,8,Cornet,Liam,CB,80,30,185,0,,bordeaux,48.4,3,LCB,Right,Normal
+273,-,,GER,14,Benedict,Draht,CB,79,35,198,0,,basaksehir,44.1,2,sub,Right,Normal
+312,-,,SUI,18,Ababa,Zarick,CB,78,23,189,79,,basel,19.5,2,sub,Right,Normal
+313,-,,DEN,4,Gjudorssen,Hanse,CB,77,34,186,0,,copenhagen,35.1,3,RCB,Right,Normal
+351,-,,FRA,7,Ardouar,Dwaen,CB,77,30,186,0,,bordeaux,35.0,3,RCB,Right,Normal
+440,-,,ARG,12,Romero,Alvaro,CB,75,24,184,76,,montpellier,19.0,2,LCB,Right,Normal
+473,-,,SVK,14,Holeč,Stefanislav,CB,74,22,188,76,,lazio,22.0,3,sub,Right,Normal
+474,-,,FRA,24,Abadie,Jean-Veron,CB,74,23,184,76,,lyon,13.0,3,sub,Right,Normal
+475,-,,NED,12,Haalgert,Jan Kalver,CB,74,36,198,0,,psv,24.0,2,sub,Right,Normal
+476,-,,CRO,18,Rudžek,Davornik,CB,74,24,184,75,,strasbourg,8.0,1,RCB,Right,Normal
+581,-,,FRA,26,Felauer,Tony,CB,70,34,184,0,,asse,12.8,2,sub,Right,Normal
+585,-,,SRB,28,Popović,Nemanja,CB,70,22,188,80,,olympiacos,12.5,3,LCB,Right,Normal
+730,-,,FIN,70,Nel,Arenem,GK,62,18,201,78,,lazio,1.0,5,sub,Left,Normal
+880,-,,FRA,2,Chardenier,Lenglane,CB,72,31,183,0,,lille,18.2,2,LCB,Right,Normal
+964,sub,,GRE,17,Cheurlakis,Luntzis,CB,71,29,188,0,,olympiacos,15.1,1,RCB,Right,Normal
+1036,-,,ISL,5,Arnaldsson,Jasper,CB,75,23,193,85,,bologna,18.5,2,sub,Right,Normal
+1074,sub,,TUR,3,Barih,Ilkay,LB,70,32,174,0,,fenerbahce,13.4,2,sub,Left,Normal
+1151,-,,BRA,12,Samtiano,Luis Gustavo,RB,73,25,180,76,,santos,6.4,1,sub,Right,Normal
+1214,-,,KOR,14,Kwan,Wang-Hyeung,LW,73,24,176,78,,az,16.8,2,sub,Right,Normal
+1215,-,,CZE,7,Hodnik,Lukasz,CB LB,74,26,185,76,,spartapraha,13.0,1,sub,Left,Normal
+1216,-,,GER,9,Kainzweiggler,Artur,CF,76,28,193,0,,werder,37.0,4,sub,Right,Normal
+1220,-,,NOR,19,Zackharin,Harald,AM,69,24,173,73,,copenhagen,4.5,1,sub,Right,Normal
+1221,-,,BRA,1,Palmin Gustavo,Jose Luis,CB,78,25,190,81,,corinthians,17.0,2,sub,Right,Normal
+1224,-,,BEL,9,Kevelen,Tomas,CF,75,26,192,76,,cerclebrugge,12.0,1,CF,Right,Normal
+1225,-,,ITA,13,Dovedella,Marco,DM,78,29,187,0,,milan,40.0,2,sub,Right,Normal
+1226,-,,GER,6,Schtrenz,Felix,RW RM,77,25,178,80,,werder,30.0,3,sub,Left,Normal
+1228,-,,SRB,5,Stanić,Milan,CB,71,32,185,0,,parisfc,16.1,2,sub,Right,Normal
+1233,-,,ITA,8,Comuzzo,Toni,CB,69,20,184,74,,torino,1.5,3,sub,Right,Normal
+1236,-,,NED,29,Hasi,Remem,RM RW,69,19,169,76,,feyenoord,1.0,4,sub,Left,Normal
+1238,-,,GER,10,Drumsch,Gregor,SS ST,71,33,175,0,,fortuna,17.0,3,SS,Right,Normal
+144,sub,,BRA,3,Carlos Gomes,-,CB,83,26,193,85,,valencia,46.0,1,LCB,Right,Ripped
+149,-,,CMR,8,Sagal,Gavier,ST CF,83,25,186,0,,lazio,33.0,1,CF,Right,Ripped
+215,-,,NGR,18,Williamé-Dessien,Adegui,CB,84,30,187,0,,juventus,69.2,2,sub,Right,Ripped
+241,-,,AUT,8,Embileck,Jaram,CB,80,24,190,0,,gladbach,25.0,1,sub,Right,Ripped
+1161,-,,POR,9,Martins,Thiago,RW RM,77,29,180,0,,lokomotivmoscow,37.5,3,sub,Left,Ripped
+17,-,,ENG,18,Ben,Ryan,CB,88,31,202,0,,tottenham,93.5,3,sub,Right,Slim
+279,-,,BEL,2,Clenet,Liamonc,CB DM,79,33,188,0,,genk,43.7,3,sub,Left,Slim
+469,-,,JPN,16,Yamuro,Sanuki,LB LM,75,24,173,0,,salzburg,15.7,2,LM,Left,Slim
+548,-,,MLI,2,Diame,Lato,LB LM,72,22,178,81,,sochaux,1.0,1,LB,Left,Slim
+583,-,,FRA,37,Rebatski,Peter,CB,69,31,185,0,,montpellier,11.0,1,sub,Right,Slim
+1091,-,,SEN,11,Diow,Badamie,LW,67,19,179,78,,rennais,1.0,3,LW,Right,slim
+1135,-,,ITA,23,Chiancellini,Luca,DM,70,19,186,88,,empoli,1.0,4,DM,Right,Slim
+1,-,,NED,10,Desheven,Georgie,ST CF,93,28,187,0,,barcelona,130.0,3,CF,Right,-
+2,-,,GER,12,Denhager,Manuel,CB,91,32,193,0,,dortmund,117.0,2,sub,Left,-
+3,CF,,FRA,9,Insite,Dale,ST CF,92,29,186,0,,monaco,122.0,4,CF,Right,-
 9,CF,,BRA,10,Gustavo,Luisinho,ST CF,90,29,188,0,,milan,108.0,3,sub,Right,-
 10,-,,ITA,10,Piazi,Tony,CM,90,31,180,0,,juventus,111.0,3,sub,Right,-
-11,LCM,,FRA,8,Ram,Allan,CM,90,30,181,0,,psg,110.0,3,CM,Right,Normal
 12,-,,ESP,7,Pereyra,Carlos,AM SS RW,89,31,185,0,,valencia,103.0,3,RW,Left,-
-13,-,,ITA,8,Bonifaccio,Leandro,CB,89,32,196,0,,juventus,100.0,1,sub,Right,Normal
 14,-,,SEN,20,Adebaye,Ian,DM,89,30,187,0,,arsenal,101.0,3,DM,Right,-
 15,sub,,FRA,9,Poresan,Adrian,ST CF,89,27,189,0,,asse,77.0,3,CF,Right,-
 16,LW,,BRA,10,Selaze,Joao,ST CF LW,89,29,180,0,,psg,100.0,4,CF,Right,-
-17,-,,ENG,18,Ben,Ryan,CB,88,31,202,0,,tottenham,93.5,3,sub,Right,Slim
 18,-,,CZE,6,Nedelec,Kedar,CF,87,29,188,0,,roma,87.0,2,sub,Right,-
 19,-,,GER,10,Eger,Tomas,CF ST,88,24,188,90,,schalke,49.0,2,sub,Right,-
 20,-,,RUS,28,Ignashevich,Egor,CF ST,88,29,187,0,,spartakmoscow,95.0,3,CF,Right,-
 21,RCM,,POR,11,Cassadia,Victor,CM AM,88,31,183,0,,realmadrid,93.7,3,LCM,Right,-
-22,DM,,FRA,9,Dodoualy,Adounal,CM DM,88,25,189,89,,lyon,60.0,2,RCM,Right,Normal
 23,-,,ESP,2,Ibanez,Juan,GK,88,28,197,0,,valencia,93.5,2,GK,Left,-
 24,-,,GER,10,Wetzmeller,Stefen,LW SS AM,88,26,177,0,,salzburg,83.0,1,LW,Right,-
 25,-,,ITA,2,Ambrossio,Antonio,RB,88,30,178,0,,juventus,95.0,3,sub,Right,-
 26,AM,,BRA,7,De Leminues,Santos,AM,87,29,179,0,,tottenham,87.5,2,sub,Left,-
 27,sub,,BRA,7,Nacao,Rodrigo,AM LW,87,28,176,0,,realmadrid,87.0,3,LW,Right,-
 28,-,,ITA,6,Ascera,Luca,CB,87,33,187,0,,milan,88.0,1,sub,Right,-
-29,-,,CHI,4,Diaz,Eric,CB,87,25,188,88,,barcelona,54.0,2,RCB,Right,Normal
-30,-,,CZE,3,Vyrocil,Tomaš,CB,88,31,193,0,,inter,93.5,3,sub,Right,Normal
 31,-,,URU,11,Suarez,Lisandro,CB,87,28,187,0,,manchestercity,86.7,3,sub,Right,-
-32,LCB,,BRA,7,Rafaelo,-,CB,87,32,186,0,,psg,87.0,2,RCB,Right,Compact
-33,-,,BEL,2,Wael,Tim,CB,87,32,192,0,,tottenham,87.0,2,sub,Right,Normal
-34,-,,ARG,28,Calsemior,Fabio,DM,87,31,178,0,,barcelona,87.5,3,DM,Right,Normal
 35,sub,,FRA,8,Gainaro,Leivo,ST CF,87,32,187,0,,arsenal,87.0,2,CF,Right,-
 36,-,,VEN,17,Caradia,Elzan,ST CF,87,31,189,0,,benfica,88.0,3,CF,Right,-
-37,CF,,TUR,9,Burak,Jarizim,CF ST,87,29,190,0,,galatasaray,87.5,3,ST,Right,Compact
 38,-,,ARG,9,Canaro,Augusto,ST CF,87,34,184,0,,juventus,87.0,1,sub,Left,-
 39,-,,DEN,9,Niklaasen,Casper,CF ST,87,28,189,0,,salzburg,87.0,1,CF,Right,-
-40,-,,COL,9,Douniga,Unis,CF ST,87,28,185,0,,valencia,86.8,2,CF,Right,Compact
-41,-,,NED,20,Williams,Caiver,CF ST LW,87,28,185,0,,manchesterunited,87.0,3,sub,Right,Lean
-42,-,,NOR,10,Frederic,Robert,CM,87,35,185,0,,basel,86.7,3,sub,Both,Normal
-43,sub,,POR,4,Fela,Diogo,CM,87,33,182,0,,realmadrid,87.5,2,RCM,Left,Normal
 44,-,,ESP,12,Partiol,Lucas,CM,87,30,179,0,,sevilla,87.0,3,sub,Right,-
-45,LCM,,POR,10,Fernandes,Sergio,CM AM,87,25,185,88,,porto,49.0,2,RCM,Right,Normal
-46,-,,GER,15,Ben-Haase,Thomas,GK,87,33,187,0,,bayern,87.3,1,GK,Right,Normal
 47,GK,,BRA,7,Neto,-,GK,87,29,192,0,,chelsea,87.0,3,GK,Right,-
 48,GK,,FRA,15,Harris,Jonathan,GK,87,31,196,0,,psg,86.8,1,GK,Right,-
 49,LB,,BRA,2,Jesis,Neto,LB,87,29,175,0,,manchestercity,88.0,3,sub,Left,-
 50,-,,SCO,9,Forest,Gilles,RW ST,87,30,181,0,,manchestercity,87.5,2,sub,Left,-
 51,RCB,,FRA,6,Mearre,Antoan,CB,86,28,187,0,,manchestercity,82.0,4,sub,Left,-
-52,LCB,,FRA,4,Donak,Kevin,CB,86,35,184,0,,psg,81.0,1,LCB,Right,Compact
 53,-,,ESP,20,Baregas,Ciro,CB,86,34,186,0,,realmadrid,82.0,2,LCB,Right,-
-54,DM,,BRA,14,Corenjo,Guaro,DM,86,30,178,0,,milan,82.0,3,sub,Right,Normal
-55,-,,NED,2,Dast,Robin,CM,82,33,180,0,,feyenoord,58.0,3,RCM,Right,Normal
 56,-,,FRA,16,Nensante,Villem,CF ST,86,26,186,0,,celtic,80.8,4,sub,Right,-
-57,-,,POL,9,Wjoroczek,Goran,CF,86,30,189,0,,liverpool,80.7,2,sub,Right,Compact
-58,-,,HUN,3,Lavrenovics,Marton,CF ST,84,29,186,0,,cskamoscow,71.0,3,CF,Right,Normal
 59,-,,GER,7,Baddster,Nick,CM,86,32,182,0,,bayern,81.0,1,sub,Right,-
-60,-,,SUI,4,Freuer,Chris,CM,86,32,183,0,,dortmund,81.3,2,sub,Right,Normal
-61,RCM,,FRA,16,Mattias,George,CM,86,29,180,0,,juventus,82.0,3,sub,Right,Normal
 62,-,,ROU,10,Stefancu,Niculaie,CM AM,86,28,183,0,,inter,81.0,4,sub,Right,-
 63,-,,ESP,3,Raya Pinto,Jose,CB,76,36,183,0,,villarreal,30.0,2,sub,Right,-
-64,-,,URU,8,Hernandes,Gerald,CM DM,86,29,179,0,,manchestercity,80.8,3,sub,Right,Normal
-65,-,,ITA,12,Scadella,Giliamo,GK,83,28,186,0,,milan,64.0,2,GK,Right,Normal
-66,sub,,BRA,9,Alberto,Fernando,GK,86,33,189,0,,barcelona,80.7,2,GK,Right,Normal
 67,-,,ARG,13,Collazo,Joao,LB LM,86,28,172,0,,psg,80.5,3,LB,Left,-
 68,RB,,POR,24,Guerreiro,-,RB,86,28,176,0,,bayerleverkusen,82.0,2,RB,Right,-
 69,RB,,FRA,2,Adestelo,Gervonte,RB,86,30,186,0,,realmadrid,82.0,3,RB,Right,-
@@ -72,15 +181,9 @@
 72,-,,ESP,1,Andrevilla,Capal,CM AM,85,31,181,0,,bilbao,77.0,3,sub,Right,-
 73,-,,FRA,10,Vassan,Niguel,AM SS,85,29,175,0,,sevilla,75.0,3,sub,Left,-
 74,-,,JPN,5,Endo,Hami,AM RW SS,85,28,176,0,,schalke,74.7,2,sub,Left,-
-75,sub,,BRA,10,Gustavo Augusto,Victor,ST SS AM,85,27,180,0,,monaco,76.0,2,AM,Right,Normal
-76,-,,POL,15,Hubsz,Janeck,CB,85,31,190,0,,dortmund,75.0,1,sub,Right,Compact
 77,sub,,FRA,5,Savon,Marco,CB,85,31,185,0,,lyon,74.6,3,RCB,Right,-
-78,RCB,,BRA,15,Marlos,-,CB,85,28,189,0,,sevilla,76.0,2,sub,Right,Compact
-79,-,,MEX,10,Saul,Alejandro,CM DM,85,30,180,0,,atleticodemadrid,75.5,3,sub,Right,Normal
 80,CM,,BRA,3,Imaila,Zuan,DM CM,85,23,177,86,,gremio,23.0,2,sub,Right,-
 81,-,,NED,3,der Wurt,Roon,DM,85,32,184,0,,realmadrid,75.0,2,DM,Right,-
-82,-,,ALG,9,Brahimi,Naslam,CF ST,85,31,189,0,,astonvilla,76.0,3,sub,Right,Compact
-83,-,,PAR,7,Ramirez,Costa,CF ST,85,31,187,0,,atleticodemadrid,75.5,3,sub,Right,Compact
 84,-,,ITA,10,Lazenni,Peronio,ST CF,85,29,180,0,,napoli,76.0,3,sub,Left,-
 85,-,,BEL,4,Mairazu,Amir,ST CF,85,28,183,0,,psv,75.0,3,CF,Right,-
 86,-,,ESP,8,Rodriguez,Jarry,ST CF,85,31,184,0,,tottenham,75.4,2,sub,Right,-
@@ -92,9 +195,7 @@
 92,-,,UKR,26,Fedolovich,Nikolay,CM AM,85,33,182,0,,dynamokyiv,77.0,3,AM,Right,-
 93,-,,CRO,11,Biršević,Toni,CM AM,83,33,181,0,,cskamoscow,63.7,3,RAM,Right,-
 94,sub,,FRA,6,Michaels,Fler,CM DM,85,29,182,0,,psg,75.0,2,DM,Right,-
-95,-,,GER,5,Jurel,Tomas,GK,85,30,185,0,,arsenal,75.0,3,GK,Right,Normal
 96,-,,NIR,2,Maddison,Gary,GK,85,31,194,0,,manchesterunited,75.4,2,GK,Right,-
-97,sub,,FRA,12,Mendel,Benjo,GK,84,29,186,0,,lyon,68.0,2,GK,Right,Compact
 98,-,,URU,1,Armano,Lucas,GK,83,31,186,0,,realmadrid,63.6,2,GK,Left,-
 99,-,,ESP,6,Carlos,Juan Andreas,LW SS,85,27,176,0,,barcelona,75.3,3,LW,Right,-
 100,LW,,FRA,10,Tremis,Antoan,LW AM,85,31,180,0,,marseille,74.7,3,LW,Both,-
@@ -104,9 +205,7 @@
 104,-,,ESP,8,Sene,Marqisio,AM,84,22,173,85,,barcelona,1.0,3,AM,Both,-
 105,-,,ALB,18,Ramizaj,Elmis,AM SS,79,30,178,0,,napoli,44.0,3,sub,Right,-
 106,-,,GER,17,Litenhainer,David,CB,84,33,189,0,,bayerleverkusen,70.0,1,LCB,Right,-
-107,-,,NED,4,Duyk,Stiven,CB,84,34,185,0,,everton,69.0,1,sub,Right,Normal
 108,sub,,BRA,4,Bede,-,CB,84,32,188,0,,monaco,70.0,2,RCB,Right,-
-109,-,,SRB,2,Dejanović,Aleksandar,CB,82,34,192,0,,schalke,58.6,1,sub,Right,Normal
 110,DM,,TUR,20,Tocun,Ahmet,DM,84,29,182,0,,bayern,69.0,3,sub,Right,-
 111,-,,ARG,18,Veron,Lucas,DM CM,84,30,179,0,,inter,69.0,2,sub,Right,-
 112,-,,ENG,10,Stevens,Robbie,DM CM,84,32,181,0,,liverpool,70.0,2,sub,Right,-
@@ -122,7 +221,6 @@
 122,-,,ESP,10,Navar,Elas,CM,84,31,180,0,,malaga,69.5,2,sub,Right,-
 123,sub,,BRA,8,Amateus,Antonio Silva Mateus,DM CM,84,28,178,0,,benfica,70.0,1,DM,Right,-
 124,DM,,POR,6,Eite,Alvaro,DM CM,84,32,177,0,,porto,70.0,3,DM,Right,-
-125,-,,ITA,3,Caitil,Fabio,GK,84,34,185,0,,torino,70.0,2,GK,Right,Compact
 126,-,,URU,6,Cerspe,Enzo,LB,84,29,175,0,,atleticodemadrid,69.0,3,sub,Left,-
 127,-,,IRN,8,Bendaddi,Rahmedi,LB CB,84,28,182,0,,inter,69.0,4,sub,Left,-
 128,LB,,FRA,4,Erkwane,Antonio,LB,84,28,177,0,,lyon,70.0,3,LB,Left,-
@@ -139,14 +237,11 @@
 139,-,,CMR,13,Lagaba,Mourrier,CB,83,28,194,0,,arsenal,63.5,3,LCB,Left,-
 140,-,,GER,13,Greifer,Oskar,CB,83,27,186,0,,gladbach,43.0,1,sub,Right,-
 141,-,,BRA,3,Ivano,Felipes,CB,83,25,188,0,,lazio,43.0,3,LCB,Right,-
-142,CB,,GRE,8,Arkonstatopoulos,Stratis,CB,83,30,189,0,,malaga,64.0,1,sub,Right,Compact
 143,sub,,FRA,3,Ardiok,Gair,CB,83,29,185,0,,manchesterunited,63.5,3,sub,Left,-
-144,sub,,BRA,3,Carlos Gomes,-,CB,83,26,193,85,,valencia,46.0,1,LCB,Right,Ripped
 145,-,,ITA,7,Saneli,Vitorio,CB RB,83,35,185,0,,sampdoria,63.5,3,sub,Right,-
 146,-,,NED,5,Salitandjo,Alex,DM,83,23,185,85,,feyenoord,40.0,1,DM,Right,-
 147,sub,,POR,13,Jeivéle,Carlos,DM,83,28,184,0,,sportinglisabon,65.0,2,DM,Right,-
 148,-,,ARG,6,Encapar,Fenerico,DM,83,29,178,0,,villarreal,63.5,3,sub,Right,-
-149,-,,CMR,8,Sagal,Gavier,ST CF,83,25,186,0,,lazio,33.0,1,CF,Right,Ripped
 150,-,,SWE,11,Lener,Alexander,CF ST,76,27,191,0,,malaga,23.5,2,sub,Right,-
 151,-,,FRA,3,Ledese,Arduar,ST CF,83,25,187,0,,nice,38.0,2,CF,Left,-
 152,-,,ITA,10,Sossale,Tolan,ST CF,83,26,181,85,,torino,49.0,2,sub,Right,-
@@ -169,7 +264,6 @@
 169,-,,ITA,10,Boressi,Andrea,AM SS,82,35,172,0,,sampdoria,59.0,2,sub,Right,-
 170,RW,,FRA,4,Quersant,Graham,RW AM,82,26,179,0,,nice,58.0,1,RAM,Left,-
 171,-,,SUI,17,de Braagi,Alex,CB,82,33,191,0,,barcelona,58.5,1,LCB,Right,-
-172,-,,SWE,2,Webelan,Christian,CB,82,25,187,0,,cskamoscow,50.0,3,LCB,Right,Compact
 173,-,,BRA,5,Celon,Raulo,CB,82,25,187,83,,everton,26.0,2,sub,Right,-
 174,-,,FRA,3,Khadza,Steve,CB,82,34,183,0,,monaco,58.5,2,LCB,Right,-
 175,-,,ARG,11,Fabrizio,Otavian,CB,82,31,185,0,,lyon,58.7,2,LCB,Right,-
@@ -187,7 +281,6 @@
 187,-,,ESP,5,Ramos,Alan,CM,82,28,180,0,,roma,58.0,4,sub,Right,-
 188,-,,ARG,2,Lessandro,-,CM AM,82,27,176,0,,psg,58.5,2,LAM,Right,-
 189,-,,GER,11,Sven,Yurff,GK,82,28,183,0,,dortmund,59.0,4,GK,Left,-
-190,-,,SCO,2,Host,Brad,GK,82,33,185,0,,celtic,57.0,3,GK,Right,Compact
 191,-,,ARG,2,Perez,Alaran,LB,82,30,173,0,,milan,59.0,2,sub,Left,-
 192,-,,ALB,3,Jirzhum,Alem,LB,82,27,175,0,,rsca,59.0,2,LB,Left,-
 193,LB,,POR,16,Fereiro,Alen,LB,82,28,177,0,,benfica,58.3,2,LB,Left,-
@@ -202,17 +295,13 @@
 202,-,,CAR,8,Mamadou,Akhono,DM CM AM,82,28,179,0,,chelsea,58.0,3,sub,Right,-
 203,AM,,TUR,11,Chunguzrari,Ali,AM,81,26,180,0,,astonvilla,39.4,2,sub,Right,-
 204,-,,SRB,11,Aranđelović,Aleksandar,AM,81,24,182,0,,benfica,44.0,3,AM,Right,-
-205,-,,EGY,1,Islani,Al-Kadem,AM,81,25,175,0,,cskamoscow,23.0,1,AM,Left,Lean
 206,-,,CZE,4,Hičzi,Tomaš,AM,81,22,175,83,,viktoriaplzen,20.0,3,AM,Right,-
 207,-,,FRA,8,Duehason,Pieter,AM CM,81,33,179,0,,strasbourg,54.0,3,CM,Right,-
 208,-,,NOR,6,Winds,Jernal,AM RM,81,29,177,0,,newcastle,54.0,2,sub,Left,-
-209,-,,RUS,18,Goncharenko,Nikolay,CB,81,27,194,0,,cskamoscow,36.0,1,RCB,Right,Normal
 210,-,,BRA,16,Pronense,Marcellas,CB,81,25,188,83,,nice,29.0,3,RCB,Left,-
 211,-,,BRA,23,Tinialdo,Pinaro,CB,81,26,183,0,,realmadrid,36.0,1,sub,Both,-
 212,-,,ARG,6,Feran,Parasscente de Nildo,CB,81,29,188,0,,salzburg,53.0,2,CB,Right,-
-213,-,,CZE,12,Bedarek,Andrej,CB,81,31,193,0,,southampton,54.0,2,sub,Right,Normal
 214,-,,ESP,2,Mirante,-,CB,81,32,187,0,,villarreal,53.0,1,sub,Right,-
-215,-,,NGR,18,Williamé-Dessien,Adegui,CB,84,30,187,0,,juventus,69.2,2,sub,Right,Ripped
 216,-,,CHI,5,Sanches,Pablo,DM,81,27,179,0,,rsca,53.2,2,DM,Right,-
 217,-,,BEL,3,Stelnex,Kriesse,DM,81,22,181,85,,standard,9.0,1,sub,Right,-
 218,-,,DRC,6,Dekole,Mandien,DM CB,81,26,188,82,,tottenham,46.0,2,sub,Right,-
@@ -237,10 +326,6 @@
 237,-,,ENG,10,Hunter,Johnson,ST SS,80,26,179,0,,manchestercity,48.5,3,sub,Right,-
 238,sub,,FRA,6,Leconse,Lemar,RW RM AM,80,26,176,0,,asse,29.6,2,RAM,Left,-
 239,sub,,GRE,1,Kianikkalis,Lucas,CB,69,30,188,0,,paok,12.0,2,sub,Right,-
-240,sub,,FRA,8,Cornet,Liam,CB,80,30,185,0,,bordeaux,48.4,3,LCB,Right,Normal
-241,-,,AUT,8,Embileck,Jaram,CB,80,24,190,0,,gladbach,25.0,1,sub,Right,Ripped
-242,-,,SWE,6,Dalsberg,Olssen,CB,80,35,190,0,,krasnodar,49.0,2,RCB,Right,Compact
-243,-,,CIV,8,Delot,Fadi,CB,80,23,184,82,,salzburg,26.5,1,LCB,Right,Compact
 244,-,,ESP,1,Pineralles,Juan Aleix,CB,76,32,192,0,,valencia,32.4,4,RCB,Left,-
 245,-,,NGR,28,Médo,Ahmed,DM,72,24,183,74,,valencia,8.4,2,sub,Right,-
 246,-,,BRA,8,Merder,-,DM,80,32,177,0,,zenit,49.0,2,sub,Right,-
@@ -270,13 +355,9 @@
 270,-,,ROU,8,Casvaru,Marius,AM RW,79,23,179,80,,ajax,29.5,3,RW,Left,-
 271,sub,,FRA,11,Bernaudés,Strooman,AM CM RW,80,32,174,0,,psg,47.5,2,RAM,Both,-
 272,RCB,,GRE,34,Derafakis,Gravanis,CB,79,32,186,0,,barcelona,46.0,2,sub,Right,-
-273,-,,GER,14,Benedict,Draht,CB,79,35,198,0,,basaksehir,44.1,2,sub,Right,Normal
-274,-,,FRA,9,Kean,Gailles,CB,79,34,187,0,,lille,44.0,3,RCB,Right,Compact
 275,-,,BRA,7,Tolian,Christian,CB,79,30,183,0,,psv,43.6,2,LCB,Right,-
 276,-,,WAL,8,Ward,Sam,CB,79,31,188,0,,southampton,44.0,1,sub,Right,-
 277,-,,ARG,20,Meder,Ranc,CB,79,35,178,0,,sportinglisabon,44.0,2,RCB,Both,-
-278,-,,FRA,6,Kadeu,Mateo,CB,79,24,190,80,,youngboys,32.0,2,sub,Right,Compact
-279,-,,BEL,2,Clenet,Liamonc,CB DM,79,33,188,0,,genk,43.7,3,sub,Left,Slim
 280,-,,ARG,17,Gaitan,Serantan,DM,79,33,177,0,,braga,44.0,1,DM,Right,-
 281,-,,CIV,18,Deide,Luc,DM,72,28,179,0,,malaga,18.2,2,sub,Right,-
 282,DM,,GRE,4,Zietsasi,Iris,DM,79,30,180,0,,paok,44.5,2,sub,Left,-
@@ -309,13 +390,10 @@
 309,-,,CIV,3,Baló,Jean-Moussa,LW,78,24,177,79,,lille,3.0,1,LW,Right,-
 310,-,,NED,28,Knooijpers,Chris,CB,78,21,189,83,,ajax,13.0,3,RCB,Right,-
 311,-,,BRA,8,Torena,Gabriel,CB,78,23,188,79,,asse,17.8,3,RCB,Right,-
-312,-,,SUI,18,Ababa,Zarick,CB,78,23,189,79,,basel,19.5,2,sub,Right,Normal
-313,-,,DEN,4,Gjudorssen,Hanse,CB,77,34,186,0,,copenhagen,35.1,3,RCB,Right,Normal
 314,-,,NED,13,Jakoopp,Willem,CB,75,27,186,0,,feyenoord,23.3,2,sub,Right,-
 315,LCB,,GRE,9,Panolas,Manos,CB,78,31,189,0,,lazio,39.6,3,RCB,Left,-
 316,LCB,,POR,9,Berales,Nuno,CB,78,26,188,0,,porto,39.0,1,LCB,Right,-
 317,-,,ESP,6,Fanco,Iamelado,CB,78,24,188,81,,realsociedad,29.0,3,sub,Both,-
-318,-,,AUT,12,Gudsen,Kevin-Marcs,CB,77,32,182,0,,salzburg,38.0,1,RCB,Right,Compact
 319,-,,NED,5,Van Dekens,Henry,DM,78,20,179,87,,ajax,1.0,3,DM,Right,-
 320,-,,ARG,6,Vierao,Alexander,DM,78,29,177,0,,lokomotivmoscow,39.5,2,sub,Right,-
 321,-,,ESP,8,Estrende,Luis,DM,78,29,178,0,,realsociedad,39.2,3,sub,Right,-
@@ -348,10 +426,8 @@
 348,-,,BFA,11,Grandes,Tylas,RW AM,77,29,179,0,,asse,35.0,3,AM,Left,-
 349,-,,ITA,17,Miniriaoliggni,Luchia,CB,75,36,184,0,,milan,27.5,2,sub,Right,-
 350,RCB,,POR,12,Patric,Marc da Silva Patricio,CB,77,26,187,0,,benfica,22.0,1,LCB,Right,-
-351,-,,FRA,7,Ardouar,Dwaen,CB,77,30,186,0,,bordeaux,35.0,3,RCB,Right,Normal
 352,-,,BRA,12,Maihos,-,CB,77,29,185,0,,dynamomoscow,36.0,3,sub,Right,-
 353,LCB,,TUR,11,Sanali,Erzahan,CB,77,32,185,0,,feyenoord,35.4,3,RCB,Right,-
-354,-,,FRA,9,Sakadia,Adisunga,CB,77,24,195,78,,strasbourg,17.0,3,LCB,Right,Lean
 355,-,,FRA,5,Mende,Joao,DM CB,77,27,182,0,,lille,36.0,2,DM,Right,-
 356,-,,FRA,2,Ediakoné,Napierre,DM CB,77,25,185,81,,lyon,24.0,3,sub,Right,-
 357,-,,ARG,2,Rico,Canaris,ST,77,30,179,0,,getafe,35.0,2,sub,Right,-
@@ -389,13 +465,11 @@
 389,-,,BRA,16,Fabinha,Enelizo,ST CF,76,31,185,0,,lyon,31.0,3,CF,Right,-
 390,-,,BRA,19,Cabral,Lucas,ST SS AM,76,30,179,0,,asse,31.2,2,LAM,Right,-
 391,-,,TUN,5,Al-Shalri,Ehmat,RW SS,76,27,175,0,,marseille,30.5,3,RW,Left,-
-392,-,,NED,12,Woorer,Halrs,CB,76,35,186,0,,az,31.0,3,sub,Right,Compact
 393,RCB,,TUR,7,Ehitagle,Melih,CB,75,28,188,0,,fenerbahce,29.6,2,sub,Right,-
 394,-,,FRA,13,Bourze,Kevin,CB,73,32,180,0,,monaco,23.0,2,sub,Right,-
 395,-,,MOR,6,Bataid,Haif,CB,76,30,187,0,,nice,31.0,3,LCB,Left,-
 396,-,,NOR,8,Erghaer,Thomas,CB,76,32,187,0,,hsv,31.4,2,RCB,Right,-
 397,sub,,POR,11,Mecainario,Alfredo,CB,76,33,195,0,,sportinglisabon,31.0,2,LCB,Left,-
-398,-,,DRC,24,Kubake,Denis,CB,76,27,187,0,,werder,22.0,1,sub,Right,Lean
 399,-,,SUI,4,Berdac,Kristian,CB DM,76,24,188,77,,benfica,22.0,3,sub,Right,-
 400,-,,FRA,16,Sokhonal,Ake,DM,76,24,183,81,,bordeaux,18.0,2,DM,Right,-
 401,-,,CRO,6,Gojen,Marko,DM,76,27,180,0,,bayerleverkusen,30.0,1,DM,Right,-
@@ -403,13 +477,12 @@
 403,-,,ESP,21,Pedroza,Lenrique,ST CF SS,76,36,181,0,,barcelona,31.0,1,sub,Left,-
 404,-,,URU,2,Hilder,Tobias,ST CF,76,33,182,0,,lokomotivmoscow,31.7,1,sub,Right,-
 405,-,,FRA,8,Renard,Luis,ST CF,76,35,185,0,,nice,31.0,3,sub,Right,-
-406,-,,SEN,10,Niange,Monsah,CF ST,76,25,185,0,,strasbourg,20.0,2,ST,Right,Lean
 407,-,,FRA,11,Abousakin,Onji,CF,76,23,189,78,,toulouse,21.0,3,CF,Right,-
 408,-,,SRL,12,Cer,Mammalou,ST SS AM,76,27,181,0,,nice,31.3,3,LAM,Right,-
 409,-,,FRA,22,Adale,Gael,ST CF LW,76,21,184,78,,psg,9.0,2,sub,Right,-
 410,-,,ALB,4,Geriji,Berim,ST SS,73,24,178,76,,mallorca,6.2,2,sub,Right,-
 411,-,,ISR,5,Osman,Deken,AM RW,74,20,179,80,,clubbrugge,6.0,3,sub,Left,-
-412,-,,BEL,6,Vanmaer,Michael,CM AM,75,38,179,0,,sochaux,28.7,1,AM,Right,-
+412,-,,BEL,6,Vanmaer,Michael,CM AM,75,38,179,0,,sochaux,28.7,1,LCM,Right,-
 413,-,,ITA,24,Di Alerdi,Vavide Luccio,CM DM,75,32,178,0,,psg,29.2,1,sub,Right,-
 414,-,,URU,5,Hastan,Jeorjes,CM DM,76,29,178,0,,sampdoria,31.0,3,sub,Right,-
 415,-,,RUS,23,Seniin,Leon,GK,75,34,185,0,,cskamoscow,25.4,2,GK,Right,-
@@ -435,13 +508,6 @@
 435,LAM,,TUR,10,Dalbay,Kotus,AM,76,28,171,0,,trabzonspor,32.0,3,sub,Right,-
 436,-,,BEL,2,Vittknaeper,Matthijs,CB,76,35,184,0,,clubbrugge,31.0,3,sub,Right,-
 437,sub,,TUR,1,Alalian,Ismail,AM LM,71,25,170,72,,antalyaspor,11.0,2,sub,Right,-
-438,-,,CIV,25,Dian,Kamon,CB,74,24,190,75,,bordeaux,12.0,3,sub,Right,Compact
-439,-,,CIV,13,Siliby,Tarrel,CB,75,31,185,0,,galatasaray,28.3,3,LCB,Left,Lean
-440,-,,ARG,12,Romero,Alvaro,CB,75,24,184,76,,montpellier,19.0,2,LCB,Right,Normal
-441,-,,BRA,30,Antonio,-,CB,75,24,190,77,,porto,13.0,2,RCB,Right,Compact
-442,-,,WAL,4,Gilbert,Dylan,CB,74,26,186,0,,porto,14.0,1,sub,Right,Compact
-443,-,,NGR,14,Gabelwemi,Ebu,CB,74,28,186,0,,psv,24.2,4,RCB,Right,Compact
-444,-,,CMR,13,Kodele,Jouseph,CB,75,25,190,79,,strasbourg,16.0,2,CB,Right,Lean
 445,-,,RUS,12,Sabotnik,Denis,DM,75,27,183,0,,cskamoscow,26.0,2,DM,Right,-
 446,-,,NGR,8,Ebo,Max,DM,75,22,179,78,,crystalpalace,12.6,3,sub,Right,-
 447,-,,CRO,15,Ilić,Strvoj,DM CM,75,35,177,0,,strasbourg,27.5,1,DM,Right,-
@@ -450,7 +516,6 @@
 450,sub,,TUR,8,Kayspoli,Cavik,ST CF,72,24,186,74,,galatasaray,9.0,1,sub,Right,-
 451,-,,IRN,5,Akmed,Karbash,ST SS CF,75,29,177,0,,krasnodar,28.0,3,CF,Right,-
 452,-,,NOR,9,Sorennsen,Malgherar,CF ST,74,26,188,77,,rosenborg,13.0,1,sub,Right,-
-453,-,,KSA,25,Mohammed,Hassan,CF ST,75,28,185,0,,panathinaikos,28.5,2,sub,Right,Compact
 454,-,,POR,5,Alves,Miacel,CM,75,28,176,0,,deportivocoruna,27.7,3,LCM,Right,-
 455,sub,,TUR,11,Igshav,Becek,CM,74,26,186,0,,fenerbahce,22.3,3,sub,Right,-
 456,-,,FRA,8,Fahre,Fabian,CM,75,33,180,0,,montpellier,30.0,3,CM,Right,-
@@ -466,15 +531,9 @@
 466,-,,ITA,2,Vanchini,Sebastian,LB CB,75,34,183,0,,lazio,28.3,3,LB,Left,-
 467,-,,IRN,6,Sakhanbashal,Riad,LB LM,75,29,176,0,,rsca,27.5,1,LM,Left,-
 468,-,,SUI,8,Ferchet,Donaire,LB LM CM,75,31,179,0,,lille,28.0,3,LB,Left,-
-469,-,,JPN,16,Yamuro,Sanuki,LB LM,75,24,173,0,,salzburg,15.7,2,LM,Left,Slim
 470,-,,BEL,22,Hemmen,Phil,RB RM,75,30,176,0,,strasbourg,27.7,2,RM,Right,-
 471,-,,POR,5,Jole,Miguel,RW RM,75,24,174,77,,santaclara,19.5,2,sub,Left,-
 472,-,,DEN,10,Dorengardt,Nicolas,AM RW,74,22,177,86,,copenhagen,16.4,3,AM,Left,-
-473,-,,SVK,14,Holeč,Stefanislav,CB,74,22,188,76,,lazio,22.0,3,sub,Right,Normal
-474,-,,FRA,24,Abadie,Jean-Veron,CB,74,23,184,76,,lyon,13.0,3,sub,Right,Normal
-475,-,,NED,12,Haalgert,Jan Kalver,CB,74,36,198,0,,psv,24.0,2,sub,Right,Normal
-476,-,,CRO,18,Rudžek,Davornik,CB,74,24,184,75,,strasbourg,8.0,1,RCB,Right,Normal
-477,-,,EST,0,Braks,Stefen,CB,72,29,185,0,,FA,0.0,0,sub,Right,Compact
 478,-,,GAM,24,Vincent,Gelon,DM,74,28,177,0,,asse,24.0,1,DM,Right,-
 479,sub,,TUR,4,Gokhanoglou,Kalim,DM,74,29,189,0,,galatasaray,24.8,1,DM,Right,-
 480,-,,CRC,24,Tavres,Nicolas,DM,74,28,178,0,,salzburg,24.5,2,sub,Right,-
@@ -528,7 +587,6 @@
 528,-,,BRA,5,Vivinha,-,AM,72,28,174,0,,tondela,18.0,2,sub,Right,-
 529,-,,FRA,28,Selvonante,Harry,CB,72,32,183,0,,asse,18.0,2,LCB,Right,-
 530,sub,,TUR,7,Narikal,Oguz,CB,70,31,187,0,,galatasaray,14.0,3,RCB,Right,-
-531,sub,,GRE,10,Totsidis,Luis,CB,72,33,182,0,,paok,18.0,2,sub,Right,Compact
 532,-,,MDA,27,Vershalau,Kevin,CB RB,72,33,184,0,,asse,18.0,1,sub,Right,-
 533,-,,NGR,14,Obone,Diagoa,DM CM,72,22,176,73,,montpellier,8.0,1,sub,Right,-
 534,-,,RUS,13,Bredsnov,Ramadzin,DM CM,72,32,179,0,,rostov,18.2,3,RCM,Right,-
@@ -545,7 +603,6 @@
 545,-,,ECU,7,Eduardo,-,LB,72,31,178,0,,nice,18.0,1,sub,Left,-
 546,-,,FRA,16,Poirenan,John-Saint,LB,72,28,179,0,,psg,18.0,3,sub,Left,-
 547,-,,SRB,2,Stevanović,Lazar,LB,72,22,177,77,,toulouse,1.0,1,LB,Left,-
-548,-,,MLI,2,Diame,Lato,LB LM,72,22,178,81,,sochaux,1.0,1,LB,Left,Slim
 549,-,,CMR,2,Bakari,Elesse,RB,72,31,175,0,,samara,18.5,3,sub,Right,-
 550,-,,FRA,22,Denaisser,Parciss,RB CB,72,31,176,0,,bordeaux,18.0,3,sub,Right,-
 551,-,,FRA,36,Derkone,Steve,RB CB,71,27,180,0,,psg,14.5,1,sub,Right,-
@@ -570,19 +627,16 @@
 570,-,,FRA,22,Sididi,Ndiam,LB,71,24,177,72,,marseille,10.5,2,sub,Left,-
 571,-,,GHA,27,Princeton,Raesh,LB CB,71,24,181,74,,psg,7.0,3,sub,Left,-
 572,-,,ROU,20,Levia,Andriu,LB LM,71,30,175,0,,benfica,15.7,3,sub,Left,-
-573,-,,FRA,28,Oluenka,Anthony,RW ST,69,20,180,81,,lyon,5.5,3,sub,Left,-
+573,-,,MOR,21,Mehri,Yunes,RW RM,71,25,174,73,,lyon,7.5,2,sub,Left,-
 574,-,,BOL,2,Asindrel,Arioz,RB,71,32,174,0,,marseille,15.3,2,sub,Right,-
 575,-,,NOR,2,Jata,Mahdi,RB,71,27,170,0,,molde,15.6,3,sub,Right,-
 576,-,,FRA,12,Simeon,Gionardo,RB,71,24,177,77,,toulouse,8.0,2,RB,Right,-
 577,-,,BRA,14,Enlito,-,RB RM,72,24,174,75,,porto,16.2,2,sub,Right,-
 578,-,,MDA,15,Misleru,Tomas,RW SS,71,33,175,0,,bordeaux,15.5,1,RW,Left,-
-579,-,,FRA,15,Florant,Claroun,AM RM,68,27,175,0,,sochaux,8.2,2,sub,Left,-
+579,-,,FRA,15,Florant,Claroun,AM RM,67,27,175,0,,sochaux,7.0,2,sub,Left,-
 580,-,,TUN,13,Razvan,Marris,AM SS RW,70,26,173,0,,toulouse,9.0,1,AM,Left,-
-581,-,,FRA,26,Felauer,Tony,CB,70,34,184,0,,asse,12.8,2,sub,Right,Normal
 582,-,,TOG,36,Tshalili,Mpaku,CB,70,20,188,78,,monaco,1.0,3,sub,Right,-
-583,-,,FRA,37,Rebatski,Peter,CB,69,31,185,0,,montpellier,11.0,1,sub,Right,Slim
 584,-,,GER,23,Tahrer,Nick,CB,69,22,184,75,,nice,1.3,4,sub,Right,-
-585,-,,SRB,28,Popović,Nemanja,CB,70,22,188,80,,olympiacos,12.5,3,LCB,Right,Normal
 586,-,,GHA,25,Temba,-,CB,70,28,179,0,,portimonense,13.0,2,LCB,Right,-
 587,-,,RUS,26,Nikolayev,Ivan,CB,70,24,196,72,,rostov,8.6,3,RCB,Right,-
 588,-,,GUI,4,Soudoua,Mitchell,DM,70,30,174,0,,krasnodar,13.0,2,DM,Left,-
@@ -610,13 +664,12 @@
 610,-,,RUS,27,Kochir,Darim,CB,69,33,183,0,,rostov,10.9,1,LCB,Right,-
 611,-,,BRA,11,Merce,-,CB,70,31,180,0,,sochaux,12.6,3,RCB,Right,-
 612,-,,POL,37,Grabowiak,Tomaszek,CB,67,38,186,0,,strasbourg,8.7,1,sub,Right,-
-613,-,,SEN,15,Kalidba,Sammuel,CB,69,23,189,70,,toulouse,9.3,4,RCB,Right,Compact
 614,-,,DRC,22,Mbombo,Izak,CB DM,69,22,182,73,,asse,1.0,1,sub,Right,-
 615,-,,CMR,17,Eyodemba,Ukayo,DM CB,69,25,186,0,,bordeaux,7.0,2,sub,Left,-
 616,-,,RUS,51,Zhirin,Eolyn,SS ST CF,69,36,179,0,,rostov,11.0,1,sub,Right,-
 617,-,,FRA,9,Makanga,Bavin,ST CF,69,25,183,70,,sochaux,7.0,2,CF,Right,-
 618,-,,SUI,13,Drei,Christian,CM,69,23,179,75,,marseille,7.0,3,sub,Right,-
-619,-,,MTQ,14,Maté,Frank,CM,70,29,175,0,,sochaux,13.0,3,CM,Right,-
+619,-,,MTQ,14,Maté,Frank,CM,70,29,175,0,,sochaux,13.0,3,RCM,Right,-
 620,-,,FRA,28,Mattie,Raymon,DM CM,69,25,178,0,,lille,5.0,2,sub,Right,-
 621,-,,AZE,22,Temogamedov,Nuradik,CM LM,69,29,176,0,,rostov,10.8,3,LCM,Right,-
 622,-,,FRA,23,Bailly,Patrick,GK,69,24,193,0,,marseille,6.5,2,sub,Right,-
@@ -661,7 +714,7 @@
 661,-,,KEN,5,Okalo,Diya,LW,66,19,175,69,,toulouse,1.0,3,LW,Right,-
 662,-,,ITA,29,Sciali,Gianluca,LW AM,68,28,174,0,,marseille,8.8,1,sub,Right,-
 663,-,,ESP,6,Paréz,Iago,LW,75,24,177,0,,braga,7.0,1,LW,Right,-
-664,-,,MOR,18,Harim Alit,Alim,RB,67,35,176,0,,nice,8.6,1,sub,Right,-
+664,-,,MOR,18,Hramali,Alim,RB,68,29,176,0,,nice,8.6,1,sub,Right,-
 665,-,,FRA,27,Okaldu,Adam,RB CB,68,28,182,0,,lille,8.6,4,sub,Right,-
 666,-,,FRA,46,Rion,Jalbert,RW,68,29,175,0,,bordeaux,8.6,3,sub,Left,-
 667,-,,FRA,26,Pierri,Danny,RW RM,68,26,175,0,,monaco,6.6,1,sub,Left,-
@@ -670,7 +723,6 @@
 670,-,,DEN,4,Solge,Bjoern,LW LM,72,20,174,77,,midtjylland,1.0,3,sub,Right,-
 671,-,,FRA,28,Labond,Lukas,RB,71,30,175,0,,montpellier,16.2,1,sub,Right,-
 672,-,,POR,37,Courmalaes,Nevel,CB,67,38,184,0,,porto,7.0,2,sub,Left,-
-673,-,,FRA,26,Doufi,Jonathan,CB,67,34,180,0,,strasbourg,6.8,2,sub,Right,Compact
 674,-,,FRA,22,Harricks,Benoit,CB,67,38,184,0,,toulouse,7.0,1,LCB,Right,-
 675,-,,SEN,11,Idrissi,Ismail,CM,77,22,182,81,,crystalpalace,28.0,3,sub,Right,-
 676,-,,FRA,27,Leprome,Daniel,DM,67,27,177,0,,lyon,6.8,3,sub,Right,-
@@ -686,9 +738,8 @@
 686,-,,POR,6,Gleapense,Rodrigo,RB,67,23,174,68,,benfica,5.3,2,sub,Right,-
 687,-,,FRA,17,Vernier,Lorian,RB,69,23,173,75,,lyon,8.0,3,sub,Right,-
 688,-,,FRA,26,Carlson,Franck,RB,67,33,173,0,,psg,6.8,2,sub,Right,-
-689,-,,FRA,8,Beghereides,Lucas,RB CB,69,32,179,0,,sochaux,12.0,2,RB,Right,-
+689,-,,FRA,8,Beghereides,Lucas,RB CB,68,32,179,0,,sochaux,6.8,2,RB,Right,-
 690,-,,GRE,26,Niakis,Feris,RW,67,21,175,77,,salzburg,7.0,3,sub,Left,-
-691,-,,JPN,19,Ibuzuno,Kaisa,LW LM AM,71,23,174,72,,lille,7.0,3,sub,Right,Lean
 692,-,,FRA,5,Nailan,Jesus,AM RW,66,19,176,75,,psg,1.5,4,sub,Left,-
 693,-,,FRA,25,Mernoe,Kevin,CB,66,36,179,0,,marseille,8.6,2,sub,Right,-
 694,-,,CRO,23,Šelar,Stefan,CM RM,66,20,176,76,,salzburg,1.0,3,sub,Left,-
@@ -727,7 +778,6 @@
 727,-,,CPV,36,Rededi,Giovanni,RW,62,23,176,64,,lyon,1.3,1,sub,Left,-
 728,-,,FRA,22,Ndel,Garsam,RW,64,21,171,67,,sochaux,1.0,1,sub,Left,-
 729,-,,FRA,31,Florés,Rodney,CM AM,63,22,177,74,,nice,1.0,2,sub,Right,-
-730,-,,FIN,70,Nel,Arenem,GK,62,18,201,78,,lazio,1.0,5,sub,Left,Normal
 731,-,,FRA,22,Trintignant,Jourdan,DM,61,18,180,83,,monaco,1.0,5,sub,Right,-
 732,-,,FRA,32,Endanmé,Ndiyame,SS RW AM,57,18,175,76,,psg,1.0,5,sub,Left,-
 733,-,,ITA,22,Serano,Nicolo,RB,59,18,176,86,,lazio,1.0,5,sub,Right,-
@@ -741,7 +791,7 @@
 741,-,,ARG,2,Benite,Alvaro,LB,73,22,171,76,,nantes,13.1,3,LB,Left,-
 742,-,,GER,23,Sanger,Limson,RB RM,78,24,181,79,,stuttgart,31.5,3,sub,Right,-
 743,-,,POR,8,Bruno Luiz,-,ST,76,34,180,0,,guimaraes,32.0,2,sub,Right,-
-744,-,,POL,4,Dancel,Patrszyck,ST CF,74,33,182,0,,rennais,27.0,2,CF,Right,-
+744,-,,POL,4,Dancel,Patrszyck,ST CF,74,33,182,0,,rennais,24.0,2,CF,Right,-
 745,-,,ZBW,17,Rumani,Balik,CB,71,21,188,77,,rennais,4.5,2,LCB,Right,-
 746,-,,URU,12,Gomez,Versil,CB,72,36,183,0,,nantes,20.0,2,RCB,Right,-
 747,-,,GAB,10,Lapay,Saint-Vallen,AM SS,75,23,174,78,,nantes,13.0,2,AM,Left,-
@@ -751,8 +801,7 @@
 751,-,,SEN,13,Sally,Aeruto,CB,73,22,189,81,,angers,7.7,2,sub,Right,-
 752,-,,NGR,2,Npute,Babajide,CM LM,70,21,177,72,,angers,1.0,3,sub,Left,-
 753,-,,TUN,19,Kerzhavi,Pasfarit,ST CF,75,31,185,0,,angers,29.0,3,sub,Right,-
-754,-,,GUI,4,Kuyaté,Francis,CB,74,24,186,80,,napoli,22.0,3,sub,Right,Compact
-755,-,,FRA,23,Magdenogdia,Emanuele,DM CM,71,19,181,87,,rennais,2.0,4,RCM,Right,-
+755,-,,FRA,23,Magdenogdia,Emanuele,DM CM,71,19,181,87,,rennais,1.0,4,RCM,Right,-
 756,-,,FRA,6,Kamu,Incissé,RB RM,79,24,179,80,,marseille,24.0,1,RB,Right,-
 757,-,,COL,35,Villero,Jalin,AM LW,67,18,171,77,,realmadrid,1.0,5,sub,Right,-
 758,-,,MOR,3,Anchiri,Yaiair,CB,74,25,187,78,,astonvilla,13.7,3,sub,Right,-
@@ -825,7 +874,6 @@
 825,-,,ENG,2,Meel,Jordan,CB,76,32,193,0,,qpr,31.2,2,sub,Right,-
 826,-,,NGR,6,Adwaye,Ouneka,ST CF RW,77,25,181,79,,qpr,12.0,1,sub,Left,-
 827,-,,ENG,10,Davison,Aaron,CM,76,34,180,0,,qpr,31.0,3,sub,Right,-
-828,-,,RUS,15,Voronsin,Petr,CB,73,26,189,80,,cskamoscow,18.7,2,sub,Right,Compact
 829,-,,RUS,7,Ivanov,Andrei,AM,75,33,174,0,,cskamoscow,27.7,2,LAM,Left,-
 830,-,,POR,12,Potago,Luis,LB,70,21,176,81,,tondela,1.0,2,sub,Left,-
 831,-,,DEN,1,Ondre-Anderson,Aaige,CM AM,84,30,179,0,,manchesterunited,64.5,2,sub,Right,-
@@ -835,7 +883,6 @@
 835,-,,BEL,14,Digaout,Tim,GK,77,25,192,80,,everton,18.7,3,GK,Right,-
 836,-,,ENG,4,Graye,Cavin,RW,82,22,176,86,,chelsea,44.0,3,sub,Left,-
 837,-,,KOR,1,Koo,Cho-Weon,GK,72,27,182,74,,bochum,6.5,1,GK,Right,-
-838,-,,BEL,6,Kadeba,Jupp,CB,76,24,186,79,,standard,13.8,2,sub,Right,Compact
 839,-,,SVK,10,Kamka,Jan,CM LM,80,27,177,0,,hoffenheim,43.0,1,LM,Left,-
 840,-,,HUN,4,Gyoko,Nevid,RW,73,21,180,84,,ferencvarosi,1.0,1,sub,Left,-
 841,-,,RUS,4,Kiriakhin,Denis,RB,77,30,178,0,,spartakmoscow,35.3,2,RB,Right,-
@@ -855,17 +902,14 @@
 855,-,,POL,7,Szymanow,Lukasz,LB,75,25,178,76,,hoffenheim,19.3,3,LB,Left,-
 856,-,,CIV,20,Kokó,Yandu,CB,69,32,186,0,,ferencvarosi,10.6,1,sub,Right,-
 857,-,,CRO,27,Čolar,Marin,GK,73,38,187,0,,zrinjski,17.5,1,GK,Right,-
-858,-,,MNE,10,Murošanin,Uroš,CB,70,22,190,80,,buducnost,1.0,1,sub,Right,Compact
 859,-,,CZE,6,Sikolarnic,Petr,RB,72,33,177,0,,viktoriaplzen,15.0,3,RB,Right,-
 860,-,,CZE,12,Štuper,Tomas,CM DM,68,34,178,0,,viktoriaplzen,8.6,2,DM,Right,-
 861,-,,CRO,16,Bobić,Nikola,RW RM,68,23,175,71,,zrinjski,5.5,1,sub,Left,-
 862,-,,BIH,3,Hajkić,Zafer,LW AM,69,25,173,74,,sarajevo,5.7,2,sub,Right,-
 863,-,,BIH,13,Zijeković,Stefan,CF ST,72,24,188,76,,zrinjski,8.7,3,sub,Left,-
 864,-,,CZE,1,Kranic,Nikolej,CF ST,71,20,189,87,,slaviaprague,1.0,3,sub,Right,-
-865,-,,CZE,10,Ozdrenski,Micail,CF,73,25,187,77,,viktoriaplzen,15.0,1,CF,Right,Compact
 866,-,,CZE,4,Krat,Petr,CM,68,19,179,79,,slaviaprague,1.0,4,sub,Right,-
-867,-,,SRB,16,Drenović,Nemanja,RB,67,19,180,74,,slaviaprague,1.1,4,sub,Right,-
-868,-,,GAB,5,Boulanga,Abdou,ST CF,75,28,183,0,,paok,28.0,4,sub,Right,Lean
+867,-,,SRB,16,Drenović,Nemanja,RB,68,19,180,74,,slaviaprague,1.1,4,sub,Right,-
 869,-,,CRO,6,Barić,Matej,RB,76,22,176,80,,dinamozagreb,1.0,1,sub,Right,-
 870,-,,CZE,6,Zedela,Martin,DM,71,24,185,77,,slaviaprague,12.5,2,sub,Right,-
 871,-,,POR,12,Jorge,Eldes,CB RB,72,25,182,73,,braga,10.2,1,RB,Right,-
@@ -875,9 +919,7 @@
 875,-,,FRA,17,Diander,Chevery,CB,75,32,184,0,,marseille,28.0,2,LCB,Right,-
 876,-,,LUX,6,Rodrigues,Marc Andre,LB,74,24,176,77,,feyenoord,8.6,2,LB,Left,-
 877,-,,SUR,9,Weelms,Duncan,LW ST,79,23,182,80,,psv,26.0,3,LW,Right,-
-878,-,,DRC,18,Dikanbe,Malunga,CB,72,22,197,78,,rsca,1.0,1,RCB,Right,Lean
 879,sub,,TUR,5,Atin,Saybal,AM,73,23,173,83,,qarabag,8.0,3,sub,Right,-
-880,-,,FRA,2,Chardenier,Lenglane,CB,72,31,183,0,,lille,18.2,2,LCB,Right,Normal
 881,-,,FRA,20,Ugo,Le Cente,CM,70,19,180,81,,lyon,1.0,4,sub,Right,-
 882,-,,NED,7,Haarterer,Ejitweeg,GK,76,25,188,77,,ajax,17.5,2,GK,Right,-
 883,-,,BEL,17,Fekonen,Timhy,LB,77,32,176,0,,clubbrugge,35.2,2,sub,Left,-
@@ -890,7 +932,6 @@
 890,-,,ROU,28,Kasperianou,Gregorio,GK,76,29,193,0,,deportivocoruna,31.7,3,GK,Right,-
 891,-,,ESP,2,David,Ayol,GK,77,25,185,80,,realsociedad,22.0,2,GK,Right,-
 892,-,,SCO,80,Austin,Davey,CF,78,29,185,0,,rangers,40.0,3,sub,Right,-
-893,-,,MEX,4,María,Hijeda,CB,84,26,187,86,,atleticodemadrid,29.0,2,sub,Right,Compact
 894,-,,UKR,3,Kotoplyanko,Konstantyn,DM,75,24,184,79,,dynamokyiv,13.8,3,DM,Right,-
 895,-,,UKR,9,Sidrayev,Denys,ST CF,73,21,185,81,,shakhtar,1.0,2,sub,Right,-
 896,-,,UKR,7,Zhitoryi,Danyl,GK,73,27,187,0,,shakhtar,18.0,3,GK,Right,-
@@ -913,7 +954,6 @@
 913,-,,CIV,3,Tangaré,Richard,AM SS,80,22,179,84,,youngboys,5.0,2,sub,Right,-
 914,-,,SUI,7,Reddier,Thymon,LW,76,25,177,77,,youngboys,14.0,1,sub,Right,-
 915,-,,TUR,2,Kaberi,Adhan,ST SS,69,25,174,70,,bursaspor,4.5,2,sub,Right,-
-916,-,,SRB,1,Jankov,Milan,GK,70,22,189,80,,vojvodina,5.0,3,sub,Right,Compact
 917,-,,MON,8,Brasherre,Christian,CB,68,29,188,0,,reims,8.7,2,RCB,Right,-
 918,-,,FRA,1,Bioup,Didaye,CB,65,21,195,79,,toulouse,1.0,2,sub,Right,-
 919,-,,FRA,11,Badile,Jean-Clarmont,CB,71,21,190,83,,auxerre,1.0,2,sub,Right,-
@@ -946,11 +986,9 @@
 946,-,,POL,25,Peterek,Fabian,CB,66,20,188,79,,sochaux,1.3,3,sub,Right,-
 947,-,,ALG,10,Yassim,Abdul,AM SS,71,24,176,73,,asse,7.0,1,sub,Left,-
 948,-,,TRI,45,Clevel,Lindon,CM AM,67,22,179,75,,nice,2.0,2,sub,Right,-
-949,-,,KOR,3,Min,Dae-Woo,CM,76,25,174,79,,bologna,17.0,3,sub,Right,Lean
 950,-,,FRA,7,Rignou,Jean-LeLuc,ST CF,77,32,182,0,,bologna,36.0,2,sub,Right,-
 951,-,,ITA,6,Fagiolo,Luca,DM,76,23,182,79,,bologna,16.0,3,sub,Right,-
 952,GK,,WAL,2,Strott,Kevin,GK,75,36,189,0,,southampton,27.6,1,sub,Right,-
-953,-,,DEN,6,Aers,Erik,CB,86,30,190,0,,arsenal,81.0,3,RCB,Right,Compact
 954,-,,GER,14,Hinrisch,Tomas,LB,75,32,175,0,,bayerleverkusen,27.5,2,LB,Left,-
 955,-,,CMR,34,Moudeh,Abreim,DM CB,66,20,182,83,,asse,1.0,3,sub,Right,-
 956,-,,FRA,10,Romagnon,Jean-Aclerc,CM,73,34,180,0,,reims,21.8,3,CM,Right,-
@@ -961,11 +999,9 @@
 961,-,,BUL,4,Senderov,Gavril,ST SS,74,30,179,0,,ludogorets,24.4,2,sub,Right,-
 962,-,,BUL,9,Antoniev,Martin,CB,69,21,192,76,,ludogorets,1.0,2,sub,Right,-
 963,-,,PAR,12,Lamas,Thiago,RW RM,74,31,173,0,,olympiacos,26.3,2,RM,Left,-
-964,sub,,GRE,17,Cheurlakis,Luntzis,CB,71,29,188,0,,olympiacos,15.1,1,RCB,Right,Normal
-965,-,,ESP,2,Jirez,Maximiliano,CM,72,23,178,75,,granada,7.0,3,LCM,Right,-
+965,-,,ESP,2,Jirez,Maximiliano,CM,72,23,178,75,,granada,7.0,3,sub,Right,-
 966,-,,ALB,1,Laci,Murat,CB,73,25,183,75,,twente,11.0,1,LCB,Right,-
 967,-,,NED,23,Bower,Edrig,CB,71,36,186,0,,twente,15.3,2,RCB,Right,-
-968,-,,AUT,28,Odafoe,Djidji,CB,73,26,185,0,,lask,12.2,2,sub,Right,Compact
 969,-,,GEO,11,Dauladze,Gaga,RW,71,28,178,0,,reims,15.7,2,RW,Left,-
 970,-,,SVK,6,Petrnek,Marcin,CF,75,23,190,82,,slovan,11.6,3,sub,Right,-
 971,-,,SVK,19,Hrasni,Albert,CB,70,36,188,0,,slovan,13.0,2,sub,Right,-
@@ -980,7 +1016,6 @@
 980,-,,FIN,30,Trekkatiaju,Artur,CM,73,31,177,0,,hjk,21.0,2,sub,Right,-
 981,-,,NOR,6,Frasen,Line,RW RM,68,24,175,69,,rosenborg,6.0,1,sub,Left,-
 982,-,,CIV,4,Bakará,Ousmane,LW,74,25,177,75,,torino,13.5,2,sub,Right,-
-983,-,,CNG,3,Mapou,Jordan,CB,79,27,195,0,,celtic,21.0,1,sub,Right,Lean
 984,-,,ALB,23,Mushu,Anert,GK,74,25,185,75,,braga,19.0,3,GK,Right,-
 985,-,,ESP,6,Issail,Monero,CB,74,26,188,76,,bilbao,15.1,2,sub,Right,-
 986,-,,CRO,8,Rožić,Marko,DM,73,26,178,76,,dinamozagreb,8.0,1,sub,Right,-
@@ -1006,7 +1041,6 @@
 1006,-,,SVN,5,Levden,Aleksej,CM DM,68,25,179,70,,maribor,4.1,2,sub,Right,-
 1007,-,,SVN,27,Samkar,Denis,RB RM,73,30,177,0,,fenerbahce,22.3,2,sub,Right,-
 1008,-,,NED,11,Ostern,Robin,LB,69,35,179,0,,twente,10.5,1,LB,Left,-
-1009,-,,BRA,6,Becao,Rodrygo Medina,CB,75,25,186,80,,santos,20.0,1,sub,Right,Compact
 1010,-,,BRA,41,Cavaleiro,Caio,LW,74,19,177,87,,corinthians,2.2,4,sub,Right,-
 1011,-,,POR,1,Alejandre,Miguel,CB,67,19,187,79,,benfica,1.0,4,sub,Right,-
 1012,-,,ARG,2,Bellardin,Exequiel,AM CM,82,29,174,0,,roma,60.0,3,sub,Left,-
@@ -1017,7 +1051,6 @@
 1017,-,,ITA,66,Trignontte,Alfiedo,GK,74,22,188,77,,napoli,14.0,3,sub,Right,-
 1018,-,,UKR,9,Teofenov,Egor,RB RM,75,30,178,0,,dynamokyiv,28.0,2,RB,Right,-
 1019,-,,BLR,17,Morsovech,Adam,CB,67,36,185,0,,minsk,6.9,2,sub,Right,-
-1020,-,,ARG,22,Guno,Cerez,RB,74,33,172,0,,boca,24.4,2,sub,Right,Compact
 1021,-,,ARG,15,Savarián,Matias,AM,69,18,178,83,,boca,1.0,5,sub,Right,-
 1022,-,,SVN,30,Stanković,Dragan,CM,70,32,180,0,,maribor,13.0,1,sub,Right,-
 1023,-,,BRA,44,Renates,Miguel,DM,74,29,177,0,,lazio,20.4,1,sub,Right,-
@@ -1033,7 +1066,6 @@
 1033,-,,UKR,6,Yurko,Stefan,CB,70,20,190,79,,dnipro,1.0,3,sub,Right,-
 1034,-,,FRA,22,Kambala,Maxim,DM CB,69,20,183,79,,reims,1.0,3,DM,Right,-
 1035,-,,POR,2,Miguelinho,-,DM CM,70,22,174,82,,tondela,3.0,3,sub,Right,-
-1036,-,,ISL,5,Arnaldsson,Jasper,CB,75,23,193,85,,bologna,18.5,2,sub,Right,Normal
 1037,-,,ITA,11,Endreozzi,Alberto,AM,75,34,178,0,,lazio,30.0,1,LAM,Right,-
 1038,-,,SVN,8,Gašper,Jan,CB,68,37,184,0,,olimpijaljubljana,8.7,2,sub,Right,-
 1039,-,,CZE,5,Mranez,Ivany,CB,68,20,187,75,,slaviaprague,1.0,3,sub,Right,-
@@ -1067,11 +1099,10 @@
 1067,-,,RUS,2,Nevotniyev,Denis,GK,74,26,197,76,,spartakmoscow,18.0,2,GK,Right,-
 1068,-,,CZE,13,Vrcnel,Lukasz,CB,69,25,193,71,,slaviaprague,7.1,1,sub,Right,-
 1069,-,,BEL,1,Castan,Simon,GK,75,33,192,0,,feyenoord,28.0,1,GK,Right,-
-1070,-,,ITA,18,Rugnolli,Silvestre,CB,70,19,193,84,,chievo,1.0,4,RCB,Right,-
+1070,-,,ITA,18,Rugnolli,Silvestre,CB,70,19,193,84,,chievo,1.0,4,sub,Right,-
 1071,-,,POR,19,Ignacio,Marc,LW,69,19,181,87,,benfica,1.0,4,sub,Right,-
 1072,-,,FRA,1,Sottor,Kevin,CF,72,33,183,0,,montpellier,19.7,2,sub,Right,-
 1073,-,,POL,3,Konwalski,Bartosz,GK,72,34,189,0,,besiktas,19.1,3,GK,Right,-
-1074,sub,,TUR,3,Barih,Ilkay,LB,70,32,174,0,,fenerbahce,13.4,2,sub,Left,Normal
 1075,-,,BEL,1,Sierro,Danny,GK,80,35,191,0,,rsca,50.0,3,GK,Right,-
 1076,-,,ESP,31,Uáz,Diego,RW,70,21,176,76,,valencia,5.1,3,sub,Left,-
 1077,-,,GER,6,Kain,Patrick,GK,77,29,190,0,,koln,37.5,2,GK,Right,-
@@ -1088,7 +1119,6 @@
 1088,-,,ITA,52,Naldo,Luca,CB RB,63,19,184,70,,lazio,1.0,3,sub,Right,-
 1089,-,,RUS,6,Brezniak,Pavel,CB,76,32,187,0,,spartakmoscow,32.7,2,RCB,Right,-
 1090,-,,GER,12,Weihle,Thomas,DM CM,77,32,183,0,,hoffenheim,37.3,2,DM,Left,-
-1091,-,,SEN,11,Diow,Badamie,LW,67,19,179,78,,rennais,1.2,3,LW,Right,slim
 1092,-,,FRA,9,Nilés,Anthony,ST CF,71,19,188,86,,nantes,1.0,4,CF,Right,-
 1093,-,,UKR,26,Bodalenko,Luka,RB,73,20,180,78,,realsociedad,8.6,3,sub,Right,-
 1094,-,,GER,6,Riemman,Kevin,RB,82,28,178,0,,dortmund,37.3,2,sub,Right,-
@@ -1104,9 +1134,9 @@
 1104,-,,BUL,27,Grachev,Boris,RB,67,32,182,0,,levskisofia,7.2,2,sub,Right,-
 1105,-,,ITA,6,Pittelli,Andrea,CB,66,21,186,73,,parma,1.0,2,CB,Right,-
 1106,-,,ITA,11,Diccianzono,Francesco,LB LM,69,37,177,0,,parma,16.0,1,LM,Left,-
-1107,-,,UGA,2,Gambula,David,CM,67,21,191,78,,rennais,1.4,3,sub,Left,-
+1107,-,,UGA,2,Gambula,David,CM,67,21,191,78,,rennais,1.4,3,LCM,Left,-
 1108,-,,CRO,6,Lovreč,Mari,CM,70,25,184,74,,rijeka,6.8,1,sub,Right,-
-1109,-,,MOZ,14,Marquano,Gonsalo,ST LW,72,25,182,73,,valencia,12.0,1,sub,Right,-
+1109,-,,MOZ,14,Marquano,Gonsalo,ST LW,73,25,182,74,,valencia,12.0,1,sub,Right,-
 1110,-,,ESP,15,Soler,Marc,CM,76,31,180,0,,valencia,33.0,3,RCM,Right,-
 1111,-,,SUI,5,Zimmerman,Maximillian,GK,77,27,195,78,,eintracht,41.0,4,GK,Right,-
 1112,-,,JPN,6,Sato,Unuke,RW,75,26,172,0,,eintracht,23.0,2,RW,Left,-
@@ -1123,16 +1153,14 @@
 1123,-,,FRA,19,Nnokho,Amadou,DM,71,24,190,77,,toulouse,6.4,2,DM,Right,-
 1124,-,,UKR,1,Shuborov,Artem,GK,66,29,194,0,,dnipro,5.7,3,sub,Right,-
 1125,-,,ARG,4,Gianttono,Cancellari,CF,76,28,191,0,,udinese,28.0,2,CF,Left,-
-1126,-,,FRA,5,Ouard,Dirduin,RM RB,71,33,173,0,,nantes,15.5,3,RB,Right,Compact
 1127,-,,SRB,26,Simančić,Luka,CF,63,19,189,81,,santaclara,1.5,4,sub,Right,-
-1128,-,,FRA,9,Marschantt,Marc,GK,69,20,189,77,,rennais,1.5,4,GK,Right,-
+1128,-,,FRA,9,Marschantt,Marc,GK,69,20,189,77,,rennais,1.0,4,GK,Right,-
 1129,-,,ZAM,29,Chambo,Samuel,CB,69,20,186,77,,chelsea,3.1,4,sub,Right,-
 1130,-,,ESP,13,Lopez-Aranguiz,Miguel,CB,72,36,191,0,,valencia,18.2,1,sub,Right,-
 1131,-,,ITA,2,Di Gregorio,Alessandro,CB,74,38,189,0,,parma,23.7,2,RCB,Right,-
 1132,-,,MNE,18,Radošević,Vukašin,CB RB,73,25,188,78,,rapidwien,11.6,1,sub,Right,-
 1133,-,,GER,7,Heinerst,Gregor,CB,74,33,188,0,,eintracht,24.6,2,RCB,Right,-
 1134,-,,BRA,10,Douglas,Rafael,CF ST,80,25,186,84,,palmeiras,32.0,1,sub,Right,-
-1135,-,,ITA,23,Chiancellini,Luca,DM,70,19,186,88,,empoli,1.0,4,DM,Right,Slim
 1136,-,,ITA,6,Piamonte,Lucca,SS,69,26,171,0,,empoli,9.0,1,SS,Left,-
 1137,-,,NGR,8,Ndawo,Odo,CF ST,70,24,186,74,,empoli,2.4,3,ST,Right,-
 1138,-,,ITA,7,Tarnova,Alex,RM RB,78,28,180,0,,fiorentina,29.3,2,sub,Right,-
@@ -1145,10 +1173,8 @@
 1145,-,,VEN,4,Carascaetta,La Minuel,CM AM,83,33,177,0,,riverplate,65.0,3,sub,Right,-
 1146,-,,FRA,28,Sika,Samuel,CB,69,22,199,81,,reims,1.1,1,LCB,Right,-
 1147,-,,ENG,17,Brenson,Terrence,LW SS,77,26,178,0,,fulham,13.0,1,sub,Right,-
-1148,sub,,TUR,7,Yeldizim,Karim,CM,73,24,185,81,,antalyaspor,12.1,2,sub,Right,Lean
 1149,-,,GER,23,Herd,Jamie,LW,75,20,176,82,,dortmund,14.0,3,sub,Right,-
 1150,-,,BRA,4,Bela,Igor,RW RM AM,75,29,174,0,,cruzeiro,30.0,3,sub,Left,-
-1151,-,,BRA,12,Samtiano,Luis Gustavo,RB,73,25,180,76,,santos,6.4,1,sub,Right,Normal
 1152,-,,BRA,3,Minero,Luiz,LW LM,77,30,173,0,,saopaulo,35.4,2,sub,Right,-
 1153,-,,BRA,24,Maugusta,Paulinho Georgio,CB,67,22,186,69,,cruzeiro,2.3,3,sub,Right,-
 1154,-,,BRA,20,Farnal,Thiago,RW RM AM,77,29,172,0,,astonvilla,36.0,3,sub,Left,-
@@ -1158,7 +1184,6 @@
 1158,-,,CRO,18,Erić,Kristian,DM CM,74,26,182,75,,genoa,8.4,1,sub,Left,-
 1159,-,,GER,27,Kramer,Julian,CB,69,38,187,0,,hoffenheim,13.9,2,sub,Right,-
 1160,sub,,BRA,3,Atallo,Marqes,LB,76,33,175,0,,corinthians,32.1,2,sub,Left,-
-1161,-,,POR,9,Martins,Thiago,RW RM,77,29,180,0,,lokomotivmoscow,37.5,3,sub,Left,Ripped
 1162,-,,BEL,21,Praes,Robin,CM,74,22,183,78,,sportinglisabon,17.5,3,sub,Right,-
 1163,-,,ISR,10,Abel,David,CM,73,32,179,0,,maccabitelaviv,25.0,4,sub,Right,-
 1164,-,,ISR,2,Jenev,Ziv,RB RM,70,31,176,0,,maccabitelaviv,12.9,2,sub,Right,-
@@ -1203,7 +1228,7 @@
 1203,-,,IRN,8,Ferdari,Raza,AM RM RW,74,32,172,0,,trabzonspor,26.5,3,sub,Left,-
 1204,-,,GRE,6,Agravis,Tolis,CB,68,25,189,69,,aek,5.0,2,sub,Right,-
 1205,-,,POR,27,Reyes,Fernando,RW,69,21,177,77,,benfica,1.0,2,sub,Left,-
-1206,-,,FRA,18,Bengué,Jordan,CB,65,20,183,72,,rennais,2.2,3,sub,Right,-
+1206,-,,FRA,18,Bengue,Jordan,CB,65,20,183,72,,rennais,2.2,3,sub,Right,-
 1207,-,,BRA,9,Tete,-,AM LW,77,29,178,0,,paok,41.0,3,sub,Right,-
 1208,-,,DEN,9,Haldurn,Mikael,GK,71,28,195,0,,midtjylland,16.0,4,sub,Right,-
 1209,sub,,GRE,6,Fortzalis,Anthonis,RW SS,74,25,180,76,,genk,22.6,3,sub,Left,-
@@ -1211,34 +1236,3 @@
 1211,-,,TUR,12,Ogurlu,Kenan,GK,68,35,186,0,,besiktas,9.2,1,sub,Right,-
 1212,-,,POR,10,Gomes,Mario,CM,76,31,181,0,,besiktas,35.0,3,sub,Right,-
 1213,-,,ENG,23,Bryan-Witts,Jared,CB,73,22,186,80,,tottenham,20.0,3,sub,Right,-
-1214,-,,KOR,14,Kwan,Wang-Hyeung,LW,73,24,176,78,,az,16.8,2,sub,Right,Normal
-1215,-,,CZE,7,Hodnik,Lukasz,CB LB,74,26,185,76,,spartapraha,13.0,1,sub,Left,Normal
-1216,-,,GER,9,Kainzweiggler,Artur,CF,76,28,193,0,,werder,37.0,4,sub,Right,Normal
-1217,-,,SEN,11,Baba Didu,Ismaila,CF ST,76,27,185,0,,sevilla,29.0,3,sub,Left,Lean
-1218,-,,TUN,15,Ben Sehddane,Sahleel,SS AM,75,22,178,85,,az,12.0,2,sub,Left,Lean
-1219,-,,ISL,24,Gustafsson,Adalfye,RW RM,69,20,180,80,,copenhagen,2.2,3,RW,Left,Lean
-1220,-,,NOR,19,Zackharin,Harald,AM,69,24,173,73,,copenhagen,4.5,1,sub,Right,Normal
-1221,-,,BRA,1,Palmin Gustavo,Jose Luis,CB,78,25,190,81,,corinthians,17.0,2,sub,Right,Normal
-1222,-,,ARG,29,Dominguez,Lucas,LW LM,76,21,177,81,,juventus,37.0,4,sub,Right,Lean
-1223,-,,IRL,6,McCallanough,Connor,RB,78,25,180,0,,everton,28.7,3,sub,Right,Lean
-1224,-,,BEL,9,Kevelen,Tomas,CF,75,26,192,76,,cerclebrugge,12.0,1,CF,Right,Normal
-1225,-,,ITA,13,Dovedella,Marco,DM,78,29,187,0,,milan,40.0,2,sub,Right,Normal
-1226,-,,GER,6,Schtrenz,Felix,RW RM,77,25,178,80,,werder,30.0,3,sub,Left,Normal
-1227,-,,MDA,7,Danayev,Bogdan,CB,67,33,182,0,,sheriff,7.2,2,sub,Left,Compact
-1228,-,,SRB,5,Stanić,Milan,CB,71,32,185,0,,parisfc,16.1,2,sub,Right,Normal
-1229,-,,JPN,8,Machida,Kueda,RB,74,31,172,0,,rangers,24.5,3,sub,Right,Compact
-1230,-,,SCO,3,Lucas,Gary,CB,71,34,180,0,,rangers,15.6,2,sub,Right,Compact
-1231,-,,RUS,19,Smolnikov,Aleksandr,LW AM,67,18,178,78,,nizhniy,1.0,5,sub,Right,Lean
-1232,GK,,CIV,4,Kanam,Ibo,GK,64,28,189,0,,gagnoa,3.3,2,sub,Right,Compact
-1233,-,,ITA,8,Comuzzo,Toni,CB,69,20,184,74,,torino,1.5,3,sub,Right,Normal
-1234,-,,ITA,2,Valentine,Rudolfo,CB,72,32,190,0,,dinamozagreb,21.0,3,sub,Right,Lean
-1235,-,,CIV,27,Touré,Abile,DM,61,18,187,81,,sochaux,1.0,5,sub,Left,Lean
-1236,-,,NED,29,Hasi,Remem,RM RW,69,19,169,76,,feyenoord,1.0,4,sub,Left,Normal
-1237,sub,,GRE,17,Kiriadis,Antolis,CB,73,24,189,77,,fortuna,9.6,2,RCB,Left,Compact
-1238,-,,GER,10,Drumsch,Gregor,SS ST,71,33,175,0,,fortuna,17.0,3,SS,Right,Normal
-1239,-,,CMR,14,Mylla,Abdel,ST CF,69,23,182,74,,rennais,5.9,1,sub,Right,-
-1240,-,,ESP,9,Garcini,Thiago,CF ST,72,24,190,75,,granada,12.5,3,CF,Both,-
-1241,-,,MKD,6,Stojanovski,Lazar,LB,68,32,179,0,,vardar,8.8,2,sub,Left,-
-1242,-,,MKD,1,Stojanovski,Goran,GK,72,34,184,0,,mallorca,23.0,2,GK,Right,-
-1243,-,,MOR,22,Habif,Aner,RB RM,68,27,178,0,,rennais,7.2,1,sub,Right,-
-1244,-,,FRA,5,Cedric,Maxouel,DM CM,72,37,180,0,,rennais,24.8,2,LCM,Right,-

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.ogifmsim.fmsimulator.dto.LeagueDTO;
 import com.ogifmsim.fmsimulator.model.competition.league.League;
 import com.ogifmsim.fmsimulator.model.competition.league.LeagueOf10;
 import com.ogifmsim.fmsimulator.model.competition.league.LeagueOf12;
@@ -13,11 +14,13 @@ import com.ogifmsim.fmsimulator.model.competition.league.LeagueOf14;
 import com.ogifmsim.fmsimulator.model.competition.league.LeagueOf8;
 
 public class LeagueService {
+    private final static String CSV_URL = "db_leagues.csv";
+    
     private static LeagueService instance = null;
     private static List<League> leagues = null;
 
     private LeagueService() {
-        leagues = loadAllLeagues("db_leagues.csv");
+        leagues = loadAllLeagues(CSV_URL);
     }
 
     public static LeagueService getInstance() {
@@ -29,9 +32,17 @@ public class LeagueService {
 
     public List<League> getAllLeagues() {
         if(leagues == null) {
-            leagues = loadAllLeagues("db_leagues.csv");
+            leagues = loadAllLeagues(CSV_URL);
         }
         return leagues;
+    }
+
+    public List<LeagueDTO> getAllLeaguesDTO() {
+        List<LeagueDTO> leaguesDTO = new ArrayList<>();
+        for(League league : getAllLeagues()) {
+            leaguesDTO.add(new LeagueDTO(league));
+        }
+        return leaguesDTO;
     }
 
     private List<League> loadAllLeagues(String filename) {

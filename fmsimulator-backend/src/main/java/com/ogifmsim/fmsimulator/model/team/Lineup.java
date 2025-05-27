@@ -2,8 +2,6 @@ package com.ogifmsim.fmsimulator.model.team;
 
 import java.util.HashMap;
 
-import com.ogifmsim.fmsimulator.dto.PositionDTO;
-import com.ogifmsim.fmsimulator.dto.RoleDTO;
 import com.ogifmsim.fmsimulator.dto.TacticalFormationDTO;
 import com.ogifmsim.fmsimulator.model.player.Player;
 import com.ogifmsim.fmsimulator.model.enums.Position;
@@ -112,10 +110,6 @@ public final class Lineup {
         return this.formation;
     }
 
-    public TacticalFormationDTO getFormationDTO() {
-        return new TacticalFormationDTO(this.formation);
-    }
-
     public boolean isViable() {
         return this.viable;
     }
@@ -130,13 +124,5 @@ public final class Lineup {
 
     public HashMap<Role, Starter> getStarters() {
         return this.starters;
-    }
-
-    public String getDefenseRatingColor() {
-        return TacticalFormation.getRatingColor(defense);
-    }
-
-    public String getOffenseRatingColor() {
-        return TacticalFormation.getRatingColor(offense);
     }
 }

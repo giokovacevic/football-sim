@@ -54,28 +54,6 @@ public enum TacticalFormation {
         };
     }
 
-    public static String getRatingColor(int rating) { //new #b0fc0a  #14f200  //old #3cff26 #00bd52
-        if(rating >= 95) {
-            return "#00e0f5";
-        }else if(rating >= 90) {
-            return "#05ffe6";
-        }else if(rating >= 85) {
-            return "#14f200";
-        }else if(rating >= 80) {
-            return "#9df700";
-        }else if(rating >= 75) {
-            return "#ffde3b";
-        }else if(rating >= 70) {
-            return "#d9c17c";
-        }else if(rating >= 65) {
-            return "#ffa10a";
-        }else if(rating >= 60) {
-            return "#f25405";
-        }else{
-            return "#ff0000";
-        }  
-    }
-
     public void print() {
         System.out.printf("\n %s: ", this.id);
         for (Role role : this.requiredRoles) {

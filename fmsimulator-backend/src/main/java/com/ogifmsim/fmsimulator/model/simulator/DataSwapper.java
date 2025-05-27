@@ -34,20 +34,20 @@ public class DataSwapper {
         this.world.setCountries(loadAllCountries("db_countries.csv"));
         //insertCountries();
         
-        this.world.setLeagues(loadAllLeagues("db_leagues.csv"));
+        //this.world.setLeagues(loadAllLeagues("db_leagues.csv"));
         //insertLeagues NOT DONE
 
-        this.world.setFreeAgents(loadAllPlayers("db_players.csv"));
+       // this.world.setFreeAgents(loadAllPlayers("db_players.csv"));
         //insertPlayers();
         
-        clubs = loadAllClubs("db_clubs.csv");
+        //clubs = loadAllClubs("db_clubs.csv");
         //insertClubs NOT DONE
 
         /*this.world.getLeagues().forEach(league -> {
             league.print();
         });*/
         
-        this.myClub = clubs.get(50); // ligue1 50 4248
+        //this.myClub = clubs.get(50); // ligue1 50 4248
     }
 
     public HashMap<String, Country> loadAllCountries(String filename) {
@@ -110,7 +110,7 @@ public class DataSwapper {
         return leagues;
     }
 
-    public ArrayList<Player> loadAllPlayers(String filename) {
+    /*public ArrayList<Player> loadAllPlayers(String filename) {
         ArrayList<Player> playerList = new ArrayList<>();
         // index 4 is a face;
         // change every index from 4 to +1 4 -> 5, 5 -> 6 ...
@@ -138,9 +138,9 @@ public class DataSwapper {
         }
 
         return playerList;
-    }
+    }*/
 
-    public ArrayList<Club> loadAllClubs(String filename) {
+    /*public ArrayList<Club> loadAllClubs(String filename) {
         ArrayList<Club> clubList = new ArrayList<>();
         String lastIdLoaded = "";
         try {
@@ -187,7 +187,7 @@ public class DataSwapper {
         this.world.getFreeAgents().removeIf(p -> !(p.getContract().getTeamId().equals("FA")));
 
         return clubList;
-    }
+    }*/
 
     public World getWorld() {
         return this.world;

@@ -40,9 +40,9 @@
 40,,Bayern Munich,Bayern Munich,5,4-3-3,,GER,bundesliga1,bayern,,,,-
 41,,Borussia Dortmund,Borussia Dortmund,5,4-3-3,,GER,bundesliga1,dortmund,,,,-
 42,,Monchengladbach,Borussia Monchengladbach,4,4-3-3,,GER,bundesliga1,gladbach,,,,light
-43,,Hamburg,Hamburg SV,3,4-3-3,,GER,bundesliga1,hsv,,,,light
+43,,Hamburg,Hamburg SV,3,3-5-2,,GER,bundesliga1,hsv,,,,light
 44,,Hannover,Hannover 96,3,4-3-3,,GER,bundesliga1,hannover,,,,-
-45,,Hoffenheim,Hoffenheim TSG 1899,3,4-2-1-3,,GER,bundesliga1,hoffenheim,,,,dark
+45,,Hoffenheim,Hoffenheim TSG 1899,3,4-4-2,,GER,bundesliga1,hoffenheim,,,,dark
 46,,Koln,Koln FC,3,4-3-3,,GER,bundesliga1,koln,,,,dark
 47,,Schalke 04,Schalke 04,4,4-3-3,,GER,bundesliga1,schalke,,,,-
 48,,Stuttgart,Stuttgart VfB,3,4-3-3,,GER,bundesliga1,stuttgart,,,,-
@@ -198,3 +198,53 @@
 198,,Vardar,Vardar Skopje,2,4-3-3,,MKD,liges1,vardar,,,,-
 199,,Valletta,Valletta FC,2,4-3-3,,MLT,liges1,valletta,,,,-
 200,,Gzira United,Gzira United FC,1,4-3-3,,MLT,liges1,gziraunited,,,,-
+,,Boca Juniors,Boca Juniors CA,3,4-3-3,,ARG,argentineprimera,boca,,,,-
+,,Racing,Racing Club de Avellaneda,3,4-3-3,,ARG,argentineprimera,racing,,,,-
+,,River Plate,Club Atletico River Plate,3,4-3-3,,ARG,argentineprimera,riverplate,,,,-
+,,Estudiantes,Estudiantes de La Plata,2,4-3-3,,ARG,argentineprimera,estudiantes,,,,-
+,,Independiente,Club Atletico Independiente,2,4-3-3,,ARG,argentineprimera,independiente,,,,-
+,,San Lorenzo,CA San Lorenzo de Almagro,2,4-3-3,,ARG,argentineprimera,sanlorenzo,,,,-
+,,Velez Sarsfield,CA Velez Sarsfield,2,4-3-3,,ARG,argentineprimera,velezsarsfield,,,,-
+,,Talleres,CA Talleres de Cordoba,2,4-3-3,,ARG,argentineprimera,talleres,,,,-
+,,Corinthians,Corinthians Paulista SC,3,4-3-3,,BRA,brasileiraoseriea,corinthians,,,,-
+,,Gremio,Grêmio Foot-Ball Porto Alegrense,3,4-3-3,,BRA,brasileiraoseriea,gremio,,,,-
+,,Palmeiras,Palmeiras SE,3,4-3-3,,BRA,brasileiraoseriea,palmeiras,,,,-
+,,Sao Paulo,Sao Paulo FC,3,4-3-3,,BRA,brasileiraoseriea,saopaulo,,,,-
+,,Santos,Santos FC,3,4-3-3,,BRA,brasileiraoseriea,santos,,,,-
+,,Botafogo,Botafogo de Futebol e Regatas,2,4-3-3,,BRA,brasileiraoseriea,botafogo,,,,-
+,,Flamengo,Flamengo CR,2,4-3-3,,BRA,brasileiraoseriea,flamengo,,,,-
+,,Fluminense,Fluminense FC,2,4-3-3,,BRA,brasileiraoseriea,fluminense,,,,-
+,,Cruzeiro,Cruzeiro Esporte Clube,2,4-3-3,,BRA,brasileiraoseriea,cruzeiro,,,,-
+,,Internacional,Internacional SC,2,4-3-3,,BRA,brasileiraoseriea,internacional,,,,-
+,,Wolfsburg,Wolfsburg Vfl,2,4-3-3,,GER,bundesliga2,wolfsburg,,,,-
+,,Fortuna Dusseldorf,Fortuna Dusseldorf 1895,2,4-4-2,,GER,bundesliga2,fortuna,,,,dark
+,,Hertha,Hertha BSC,2,4-3-3,,GER,bundesliga2,hertha,,,,light
+,,Augsburg,Augsburg FC,2,4-3-3,,GER,bundesliga2,augsburg,,,,-
+,,Bochum,Bochum 1848 VfL,2,4-3-3,,GER,bundesliga2,bochum,,,,-
+,,Freiburg,Freiburg SC,2,4-3-3,,GER,bundesliga2,freiburg,,,,-
+,,Mainz 05,Mainz 05 1. FSV,2,4-3-3,,GER,bundesliga2,mainz,,,,-
+,,Union Berlin,Union Berlin 1. FC,2,4-3-3,,GER,bundesliga2,unionberlin,,,,dark
+,,Granada,Granada CF,2,4-3-3,,ESP,laliga2,granada,,,,dark
+,,Celta Vigo,Celta Vigo RC,2,4-3-3,,ESP,laliga2,celtavigo,,,,-
+,,Elche,Elche CF,2,4-3-3,,ESP,laliga2,elche,,,,-
+,,Espanyol,Espanyol RCD,2,4-3-3,,ESP,laliga2,espanyol,,,,-
+,,Girona,Girona FC,2,4-3-3,,ESP,laliga2,girona,,,,-
+,,Mallorca,Mallorca RCD,2,4-3-3,,ESP,laliga2,mallorca,,,,-
+,,Osasuna,Osasuna CA,2,4-3-3,,ESP,laliga2,osasuna,,,,-
+,,Real Valladolid,Real Valladolid CF,2,4-3-3,,ESP,laliga2,valladolid,,,,-
+,,Angers,Angers SCO,2,4-3-3,,FRA,ligue2,angers,,,,light
+,,Nantes,Nantes FC,2,4-2-1-3,,FRA,ligue2,nantes,,,,light
+,,Souchaux,Souchaux-Montbeliard FC,2,4-2-1-3,,FRA,ligue2,sochaux,,,,-
+,,Toulouse,Toulouse FC,2,4-2-1-3,,FRA,ligue2,toulouse,,,,dark
+,,Paris,Paris FC,2,4-3-3,,FRA,ligue2,parisfc,,,,-
+,,Reims,Stade de Reims,2,4-2-1-3,,FRA,ligue2,reims,,,,dark
+,,Rennais,Stade Rennais FC,2,4-3-3,,FRA,ligue2,rennais,,,,dark
+,,Auxerre,Auxerre AJ,2,4-3-3,,FRA,ligue2,auxerre,,,,-
+,,Chievo,Chievo Verona AC,2,4-3-3,,ITA,serieb,chievo,,,,light
+,,Palermo,Palermo FC,2,4-3-3,,ITA,serieb,palermo,,,,light
+,,Parma,Parma Calcio 1913,2,3-5-2,,ITA,serieb,parma,,,,light
+,,Empoli,Empoli FC,2,4-4-2,,ITA,serieb,empoli,,,,dark
+,,Genoa,Genoa CFC,2,4-3-3,,ITA,serieb,genoa,,,,-
+,,Lecce,Lecce US,2,4-3-3,,ITA,serieb,lecce,,,,-
+,,Monza,Monza AC,2,4-3-3,,ITA,serieb,monza,,,,-
+,,Verona,Hellas Verona FC,2,4-3-3,,ITA,serieb,verona,,,,-

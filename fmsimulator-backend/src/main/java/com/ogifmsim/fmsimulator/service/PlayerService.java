@@ -3,7 +3,6 @@ package com.ogifmsim.fmsimulator.service;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,18 +10,22 @@ import java.util.Map;
 import java.util.Scanner;
 
 import com.ogifmsim.fmsimulator.config.DatabaseConnection;
-import com.ogifmsim.fmsimulator.model.country.Country;
+import com.ogifmsim.fmsimulator.dto.PlayerDTO;
 import com.ogifmsim.fmsimulator.model.enums.Role;
+import com.ogifmsim.fmsimulator.model.player.Contract;
 import com.ogifmsim.fmsimulator.model.player.Player;
-import com.ogifmsim.fmsimulator.model.simulator.game.World;
+import com.ogifmsim.fmsimulator.model.team.Club;
 
 public class PlayerService {
+    private final static String CSV_URL = "db_players.csv";
+
     private static PlayerService instance = null;
     private static CountryService countryService = CountryService.getInstance();
+    private static ClubService clubService = ClubService.getInstance();
     private static List<Player> players = null;
 
     private PlayerService() {
-        if(players == null) players = loadAllPlayers("db_players.csv");
+        if(players == null) players = loadAllPlayers(CSV_URL);
     }
 
     public static PlayerService getInstance() {
@@ -34,9 +37,35 @@ public class PlayerService {
 
     public List<Player> getAllPlayers() {
         if(players == null) {
-            players = loadAllPlayers("db_players.csv");
+            players = loadAllPlayers(CSV_URL);
         }
         return players;
+    }
+
+    public List<PlayerDTO> getAllPlayersDTO() {
+        List<PlayerDTO> playersDTO = new ArrayList<>();
+        for(Player player : getAllPlayers()) {
+            playersDTO.add(new PlayerDTO(player));
+        }
+        return playersDTO;
+    }
+
+    public Map<String, Object> getAllPlayersByPageDTO(int pageNumber, int limit) {
+        Map<String, Object> page = new HashMap<>();
+        int totalPages = (int) Math.ceil((double)getAllPlayers().size() / limit);
+        if(pageNumber < 0 || pageNumber >= totalPages) return null;
+        List<PlayerDTO> playersDTO = new ArrayList<>();
+        int startIndex = pageNumber * limit;
+        int endIndex = Math.min(startIndex + limit, getAllPlayers().size());
+        for(int i=startIndex; i<endIndex; i++) {
+            playersDTO.add(new PlayerDTO(getAllPlayers().get(i)));
+        }
+        page.put("players", playersDTO);
+        page.put("totalPlayers", getAllPlayers().size());
+        page.put("page", pageNumber);
+        page.put("totalPages", totalPages);
+
+        return page;
     }
      
     private List<Player> loadAllPlayers(String filename) {
@@ -47,16 +76,23 @@ public class PlayerService {
             while (sc.hasNext()) {
                 String loadedPlayerString = sc.nextLine();
                 String[] playerArray = loadedPlayerString.split(",");
+                
+                Club club = clubService.getClubById(playerArray[13]);
+                
                 Player playerNew = new Player(Integer.parseInt(playerArray[0]), playerArray[6], playerArray[5],
                         Integer.parseInt(playerArray[8]),
                         countryService.getCountryById(playerArray[3]), playerArray[7],
                         (2025 - Integer.parseInt(playerArray[9])), Integer.parseInt(playerArray[10]),
                         Integer.parseInt(playerArray[11]),
-                        playerArray[13], Double.parseDouble(playerArray[14]), 2025,
-                        2025 + Integer.parseInt(playerArray[15]),
-                        Role.generateRole(playerArray[16]), Integer.parseInt(playerArray[4]),
-                        Role.generateRole(playerArray[1]), 0, 100);
+                        new Contract(club, Double.parseDouble(playerArray[14]), 2025,
+                        2025 + Integer.parseInt(playerArray[15]), Integer.parseInt(playerArray[4]),
+                        Role.generateRole(playerArray[16])),null, 100);
                 playerList.add(playerNew);
+
+                if(club != null) {
+                    club.addPlayer(playerNew);
+                    club.getRoster().getLineup().save();
+                }
             }
 
             sc.close();

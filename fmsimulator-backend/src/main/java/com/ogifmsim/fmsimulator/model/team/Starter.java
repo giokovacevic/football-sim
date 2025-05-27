@@ -25,7 +25,7 @@ public class Starter {
         if (this.player != null) {
             this.currentRating = this.player.getRating();
             if (this.getOutOfPosition()) {
-                if (this.player.getContract().getRoleDTO().getStringValue().equals(Role.GK.getStringValue()) || this.player.getPreferredPositions().getPrimaryPosition().isGoalkeeper()) {
+                if (this.player.getContract().getRole().getStringValue().equals(Role.GK.getStringValue()) || this.player.getPreferredPositions().getPrimaryPosition().isGoalkeeper()) {
                     this.currentRating = this.currentRating - 49;
                 }else{
                     this.currentRating = this.currentRating - 30;
@@ -59,10 +59,6 @@ public class Starter {
 
     public boolean getOutOfPosition() {
         return this.outOfPosition;
-    }
-
-    public String getRatingColor() {
-        return TacticalFormation.getRatingColor(currentRating);
     }
 }
 

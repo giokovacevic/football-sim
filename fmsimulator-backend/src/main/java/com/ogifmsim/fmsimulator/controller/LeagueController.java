@@ -3,7 +3,7 @@ package com.ogifmsim.fmsimulator.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ogifmsim.fmsimulator.model.competition.league.League;
+import com.ogifmsim.fmsimulator.dto.LeagueDTO;
 import com.ogifmsim.fmsimulator.service.LeagueService;
 
 import java.util.List;
@@ -18,8 +18,8 @@ public class LeagueController {
     private LeagueService leagueService = LeagueService.getInstance();
     
     @GetMapping("/all")
-    public List<League> getAllLeagues() {
-        return leagueService.getAllLeagues();
+    public List<LeagueDTO> getAllLeagues() {
+        return leagueService.getAllLeaguesDTO();
     }
     
 }

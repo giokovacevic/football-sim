@@ -1,6 +1,7 @@
 package com.ogifmsim.fmsimulator.model.player;
 
 import com.ogifmsim.fmsimulator.model.enums.Role;
+import com.ogifmsim.fmsimulator.model.team.Team;
 
 public final class Contract extends Arrangement {
 
@@ -8,15 +9,15 @@ public final class Contract extends Arrangement {
     private int signDate;
     private int expireDate;
 
-    public Contract(String teamId, double salary, int signDate, int expireDate, int jerseyNumber, Role role) {
-        super(teamId, jerseyNumber, role);
+    public Contract(Team team, double salary, int signDate, int expireDate, int jerseyNumber, Role role) {
+        super(team, jerseyNumber, role);
         setSalary(salary);
         setSignDate(signDate);
         setExpireDate(expireDate);
     }
 
     public Contract(Contract copy) {
-        super(copy.getTeamId(), copy.getJerseyNumber(), copy.getRole());
+        super(copy.getTeam(), copy.getJerseyNumber(), copy.getRole());
         this.salary = copy.getSalary();
         this.signDate = copy.getSignDate();
         this.expireDate = copy.getExpireDate();

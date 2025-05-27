@@ -2,21 +2,22 @@ package com.ogifmsim.fmsimulator.model.player;
 
 import com.ogifmsim.fmsimulator.dto.RoleDTO;
 import com.ogifmsim.fmsimulator.model.enums.Role;
+import com.ogifmsim.fmsimulator.model.team.Team;
 
 public class Arrangement {
 
-    protected String teamId;
+    protected Team team;
     protected int jerseyNumber;
     protected Role role;
 
-    public Arrangement(String teamId, int jerseyNumber, Role role) {
-        this.teamId = teamId;
+    public Arrangement(Team team, int jerseyNumber, Role role) {
+        this.team = team;
         this.jerseyNumber = jerseyNumber;
         this.role = role;
     }
 
     public Arrangement(Arrangement copy) {
-        this.teamId = copy.getTeamId();
+        this.team = copy.getTeam();
         this.jerseyNumber = copy.getJerseyNumber();
         this.role = copy.getRole();
     }
@@ -26,8 +27,8 @@ public class Arrangement {
                 && (!this.role.getStringValue().equals(Role.UD.getStringValue())));
     }
 
-    public void setTeamId(String teamId) {
-        this.teamId = teamId;
+    public void setTeam(Team team) {
+        this.team = team;
     }
 
     public void setJerseyNumber(int jerseyNumber) {
@@ -38,8 +39,8 @@ public class Arrangement {
         this.role = role;
     }
 
-    public String getTeamId() {
-        return this.teamId;
+    public Team getTeam() {
+        return this.team;
     }
 
     public int getJerseyNumber() {
@@ -48,9 +49,5 @@ public class Arrangement {
 
     public Role getRole() {
         return this.role;
-    }
-
-    public RoleDTO getRoleDTO() {
-        return new RoleDTO(this.role);
     }
 }

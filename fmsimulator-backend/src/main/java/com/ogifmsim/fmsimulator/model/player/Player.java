@@ -2,8 +2,8 @@ package com.ogifmsim.fmsimulator.model.player;
 
 import com.ogifmsim.fmsimulator.model.country.Country;
 import com.ogifmsim.fmsimulator.model.enums.Role;
-import com.ogifmsim.fmsimulator.model.enums.TacticalFormation;
-import com.ogifmsim.fmsimulator.model.simulator.game.World;
+import com.ogifmsim.fmsimulator.model.team.Club;
+import com.ogifmsim.fmsimulator.model.team.Team;
 
 public final class Player {
 
@@ -23,8 +23,7 @@ public final class Player {
     private int stamina;
 
     public Player(int id, String name, String lastname, int rating, Country country, String positions, int birthYear,
-            int height, int potential, String clubId, double salary, int signDate, int expireDate, Role role,
-            int clubJerseyNumber, Role nationalTeamRole, int nationalTeamJerseyNumber, int stamina) {
+            int height, int potential, Contract contract, Arrangement nationalArrangement, int stamina) {
         setId(id);
         setName(name);
         setLastname(lastname);
@@ -35,8 +34,8 @@ public final class Player {
         setPotential(potential);
         this.preferredPositions = new PreferredPositions(positions);
         setStatusDuration(0); // Status and status duration are not done ...
-        setContract(clubId, salary, signDate, expireDate, clubJerseyNumber, role);
-        setNationalArrangement(country.getId().toLowerCase(), nationalTeamJerseyNumber, role);
+        setContract(contract);
+        setNationalArrangement(nationalArrangement);
         setStamina(stamina);
     }
 
@@ -61,9 +60,6 @@ public final class Player {
                 this.preferredPositions.toString());
     }
 
-    public String getRatingColor() {
-        return TacticalFormation.getRatingColor(rating);
-    }
 
     // Set
     public void setId(int id) {
@@ -106,12 +102,12 @@ public final class Player {
         this.statusDuration = statusDuration;
     }
 
-    public void setContract(String teamId, double salary, int signDate, int expireDate, int jerseyNumber, Role role) {
-        this.contract = new Contract(teamId, salary, signDate, expireDate, jerseyNumber, role);
+    public void setContract(Contract contract) {
+        this.contract = contract;
     }
 
-    public void setNationalArrangement(String teamId, int jerseyNumber, Role role) {
-        this.nationalArrangement = new Arrangement(teamId, jerseyNumber, role);
+    public void setNationalArrangement(Arrangement nationalArrangement) {
+        this.nationalArrangement = nationalArrangement;
     }
 
     public void setStamina(int stamina) {
