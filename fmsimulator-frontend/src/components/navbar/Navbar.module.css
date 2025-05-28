@@ -23,9 +23,10 @@
     font-size: 18px;
 }
 .item_active{
-    background-color: #2b2b2b;
+    background-color: #494949;
     cursor: default;
     pointer-events: none;
+    color: rgb(214, 214, 214);
 }
 .item:hover{
     color: #dddddd; 

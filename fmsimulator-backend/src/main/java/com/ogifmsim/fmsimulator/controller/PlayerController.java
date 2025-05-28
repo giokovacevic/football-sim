@@ -27,8 +27,14 @@ public class PlayerController {
     }
     
     @GetMapping("/all/paginated")
-    public ResponseEntity<Map<String, Object>> getAllPlayersByPage(@RequestParam int pageNumber, @RequestParam int limit) {
-        Map<String, Object> page = playerService.getAllPlayersByPageDTO(pageNumber, limit);
+    public ResponseEntity<Map<String, Object>> getAllPlayersByPage(
+        @RequestParam int pageNumber, 
+        @RequestParam int limit,
+        @RequestParam(required = false) String sortingKey,
+        @RequestParam(required = false, defaultValue = "asc") String sortingOrder,
+        @RequestParam(required = false) String sortingOrientation) 
+    {
+        Map<String, Object> page = playerService.getAllPlayersByPageDTO(pageNumber, limit, sortingKey, sortingOrder, sortingOrientation);
         if(page == null) {
             return ResponseEntity.notFound().build();
         }

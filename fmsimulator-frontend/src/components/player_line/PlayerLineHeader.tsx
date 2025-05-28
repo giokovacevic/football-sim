@@ -2,7 +2,7 @@ import type { Player } from '../../types/models/player/Player';
 import styles from './PlayerLine.module.css';
 
 type PlayerLineHeaderProps = {
-    onHeaderClicked: (sortingKey: keyof Player, orientation?:string) => void;
+    onHeaderClicked: (sortingKey: keyof Player, sortingOrientation?:string) => void;
 };
 
 const PlayerLineHeader = ({onHeaderClicked}: PlayerLineHeaderProps) => {

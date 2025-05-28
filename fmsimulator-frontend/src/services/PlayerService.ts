@@ -15,9 +15,13 @@ export const getAllPlayers = async ():Promise<Player[]> => {
     }
 }
 
-export const getAllPlayersByPage = async (page: number, limit: number):Promise<PlayersPageResponse> => {
+export const getAllPlayersByPage = async (page: number, limit: number, sortingKey?: keyof Player, sortingOrder?: "asc" | "desc", sortingOrientation?: string):Promise<PlayersPageResponse> => {
     try {
-        const response = await fetch(`${API_URL}players/all/paginated?pageNumber=${page}&limit=${limit}`);
+        let query: string = `?pageNumber=${page}&limit=${limit}`;
+        if(sortingKey) query+=`&sortingKey=${sortingKey}`;
+        if(sortingOrder) query+=`&sortingOrder=${sortingOrder}`;
+        if(sortingOrientation) query+=`&sortingOrientation=${sortingOrientation}`;
+        const response = await fetch(`${API_URL}players/all/paginated${query}`);
         if(!response.ok) {
             throw new Error(`Error fetching in PlayerService: getAllPlayersByPage (${page}, ${limit}) | ` + response.statusText);
         }

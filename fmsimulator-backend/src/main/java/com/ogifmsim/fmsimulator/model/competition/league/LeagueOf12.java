@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import com.ogifmsim.fmsimulator.model.competition.Competitor;
 import com.ogifmsim.fmsimulator.model.competition.Match;
 import com.ogifmsim.fmsimulator.model.competition.Schedule;
-import com.ogifmsim.fmsimulator.model.competition.ScheduleGenerator;
 import com.ogifmsim.fmsimulator.model.team.Team;
+import com.ogifmsim.fmsimulator.util.ScheduleGenerator;
 
 public class LeagueOf12 extends League {
 

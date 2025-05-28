@@ -16,7 +16,7 @@ export const getRatingColor = (rating:number) =>  {
         }else if(rating >= 65) {
             return "#ffa10a";
         }else if(rating >= 60) {
-            return "#f25405";
+            return "#ff6b21";
         }else{
             return "#ff0000";
         }  

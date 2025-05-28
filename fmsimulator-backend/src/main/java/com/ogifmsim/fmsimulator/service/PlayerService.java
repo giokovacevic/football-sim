@@ -15,6 +15,7 @@ import com.ogifmsim.fmsimulator.model.enums.Role;
 import com.ogifmsim.fmsimulator.model.player.Contract;
 import com.ogifmsim.fmsimulator.model.player.Player;
 import com.ogifmsim.fmsimulator.model.team.Club;
+import com.ogifmsim.fmsimulator.util.PlayerComparator;
 
 public class PlayerService {
     private final static String CSV_URL = "db_players.csv";
@@ -50,18 +51,26 @@ public class PlayerService {
         return playersDTO;
     }
 
-    public Map<String, Object> getAllPlayersByPageDTO(int pageNumber, int limit) {
+    public Map<String, Object> getAllPlayersByPageDTO(int pageNumber, int limit, String sortingKey, String sortingOrder, String sortingOrientation) {
         Map<String, Object> page = new HashMap<>();
-        int totalPages = (int) Math.ceil((double)getAllPlayers().size() / limit);
+        List<Player> playersCopy = new ArrayList<>(getAllPlayers());
+        if(sortingKey != null && sortingOrder != null) {
+            playersCopy.sort((p1, p2) -> {
+                int cmp = PlayerComparator.compare(p1, p2, sortingKey, sortingOrientation);
+                return sortingOrder.equalsIgnoreCase("desc") ? -cmp : cmp;
+            });
+        }
+        
+        int totalPages = (int) Math.ceil((double)playersCopy.size() / limit);
         if(pageNumber < 0 || pageNumber >= totalPages) return null;
         List<PlayerDTO> playersDTO = new ArrayList<>();
         int startIndex = pageNumber * limit;
-        int endIndex = Math.min(startIndex + limit, getAllPlayers().size());
+        int endIndex = Math.min(startIndex + limit, playersCopy.size());
         for(int i=startIndex; i<endIndex; i++) {
-            playersDTO.add(new PlayerDTO(getAllPlayers().get(i)));
+            playersDTO.add(new PlayerDTO(playersCopy.get(i)));
         }
         page.put("players", playersDTO);
-        page.put("totalPlayers", getAllPlayers().size());
+        page.put("totalPlayers", playersCopy.size());
         page.put("page", pageNumber);
         page.put("totalPages", totalPages);
 

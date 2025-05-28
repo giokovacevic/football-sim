@@ -1,8 +1,9 @@
-package com.ogifmsim.fmsimulator.model.competition;
+package com.ogifmsim.fmsimulator.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.ogifmsim.fmsimulator.model.competition.Match;
 import com.ogifmsim.fmsimulator.model.team.Team;
 
 public final class ScheduleGenerator {
