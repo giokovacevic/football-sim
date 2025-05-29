@@ -70,7 +70,7 @@ public class PlayerComparator {
         if(p1.getContract() != null && p2.getContract() == null) return 1;
         if(p1.getContract() == null && p2.getContract() != null) return -1;
         if(sortingOrientation.equals("salary")) {   
-            return (int)(p1.getContract().getSalary() - p2.getContract().getSalary());
+            return Double.compare(p1.getContract().getSalary(), p2.getContract().getSalary());
         }else if(sortingOrientation.equals("expireDate")) {
             return p1.getContract().getExpireDate() - p2.getContract().getExpireDate();
         }else if(sortingOrientation.equals("teamName")) {
