@@ -73,7 +73,7 @@ public class PlayerComparator {
             return (int)(p1.getContract().getSalary() - p2.getContract().getSalary());
         }else if(sortingOrientation.equals("expireDate")) {
             return p1.getContract().getExpireDate() - p2.getContract().getExpireDate();
-        }else if(sortingOrientation.equals("teamId")) {
+        }else if(sortingOrientation.equals("teamName")) {
             String teamName1 = p1.getContract().getTeam() != null ? p1.getContract().getTeam().getName() : "Freeagent";
             String teamName2 = p2.getContract().getTeam() != null ? p2.getContract().getTeam().getName() : "Freeagent";
             return teamName1.compareTo(teamName2);

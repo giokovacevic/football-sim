@@ -21,8 +21,8 @@ const PlayerLineHeader = ({onHeaderClicked}: PlayerLineHeaderProps) => {
             </div>
             <div className={styles.header_age} onClick={() => onHeaderClicked('currentAge')}>Age</div>
             <div className={styles.header_role}>Role</div>
-            <div className={styles.header_stamina}>Stamina</div>
-            <div className={styles.header_club} onClick={() => onHeaderClicked('contract', 'teamId')}>Club</div>
+            <div className={styles.header_stamina} onClick={() => onHeaderClicked('stamina')}>Stamina</div>
+            <div className={styles.header_club} onClick={() => onHeaderClicked('contract', 'teamName')}>Club</div>
             <div className={styles.header_salary} onClick={() => onHeaderClicked('contract', 'salary')}>Salary</div>
             <div className={styles.header_contract} onClick={() => onHeaderClicked('contract', 'expireDate')}>Expiring</div>
             <div className={styles.header_rating} onClick={() => onHeaderClicked('rating')}>Rtg.</div>
