@@ -18,6 +18,7 @@ import Home from './pages/home/Home';
 import Leagues from './pages/leagues/Leagues';
 import Clubs from './pages/clubs/Clubs';
 import Players from './pages/players/Players';
+import { AuthContext, AuthProvider } from './contexts/AuthContext';
 
 function App() {
   const [countries, setCountries] = useState<Country[]>([]);
@@ -112,14 +113,16 @@ function App() {
           <Route path='/lineup' element={<Lineup/>}></Route>
         </Routes>
       </Router> */}
+      <AuthProvider>
       <Router>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/leagues'  element={<Leagues/>}></Route>
-          <Route path='/clubs'  element={<Clubs/>}></Route>
-          <Route path='/players'  element={<Players/>}></Route>
+            <Route path='/' element={<Home/>}></Route>
+            <Route path='/leagues'  element={<Leagues/>}></Route>
+            <Route path='/clubs'  element={<Clubs/>}></Route>
+            <Route path='/players'  element={<Players/>}></Route>
         </Routes>
       </Router>
+      </AuthProvider>
     </>
   )
 }

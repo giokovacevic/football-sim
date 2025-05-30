@@ -1,8 +1,12 @@
 import type { Player } from "../models/player/Player";
 
 export interface PlayersPageResponse{
-    players: Player[],
-    totalPlayers: number,
-    page: number,
-    totalPages: number;
+    readonly players: Player[],
+    readonly totalPlayers: number,
+    readonly page: number,
+    readonly totalPages: number;
+}
+export interface LoginResponse{
+    readonly message: string,
+    readonly token: string | null;
 }
