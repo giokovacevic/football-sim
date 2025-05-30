@@ -19,6 +19,7 @@ import Leagues from './pages/leagues/Leagues';
 import Clubs from './pages/clubs/Clubs';
 import Players from './pages/players/Players';
 import { AuthContext, AuthProvider } from './contexts/AuthContext';
+import ProtectedRoute from './components/auth/ProtectedRoute';
 
 function App() {
   const [countries, setCountries] = useState<Country[]>([]);
@@ -117,7 +118,7 @@ function App() {
       <Router>
         <Routes>
             <Route path='/' element={<Home/>}></Route>
-            <Route path='/leagues'  element={<Leagues/>}></Route>
+            <Route path='/leagues'  element={<ProtectedRoute><Leagues/></ProtectedRoute>}></Route>
             <Route path='/clubs'  element={<Clubs/>}></Route>
             <Route path='/players'  element={<Players/>}></Route>
         </Routes>
