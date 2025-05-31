@@ -1,10 +1,11 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import { getToken, isAuthenticated, unauthenticate } from "../services/AuthService";
+import { getToken, getUser, isAuthenticated, unauthenticate } from "../services/AuthService";
+import type { User } from "../types/models/user/User";
 
 interface AuthContext{
     token: string | null,
-    username: string | null,
-    handleLogin: (token:string) => void,
+    user: User | null,
+    handleLogin: (token:string, user:User) => void,
     handleLogout: () => void;
 }
 
@@ -12,28 +13,28 @@ export const AuthContext = createContext<AuthContext | undefined>(undefined);
 
 export const AuthProvider = ({children}:{children: ReactNode}) => {
     const [token, setToken] = useState<string | null>(null);
-    const [username, setUsername] = useState<string | null>(null);
+    const [user, setUser] = useState<User | null>(null);
 
     useEffect(() => {
         if(isAuthenticated()) {
             setToken(getToken());
-            setUsername("MrTousty");
+            setUser(getUser());
         }
     }, []);
 
-    const handleLogin = (token: string) => {
+    const handleLogin = (token: string, user: User) => {
         setToken(token);
-        setUsername("MrTousty");
+        setUser(user);
     }
 
     const handleLogout = () => {
-        unauthenticate();
         setToken(null);
-        setUsername(null);
+        setUser(null);
+        unauthenticate();
     }
 
     return (
-        <AuthContext.Provider value={{token, username, handleLogin, handleLogout}}>
+        <AuthContext.Provider value={{token, user, handleLogin, handleLogout}}>
             {children}
         </AuthContext.Provider>
     );

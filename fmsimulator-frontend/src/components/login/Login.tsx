@@ -23,8 +23,8 @@ const Login = () => {
 
         try {
             const data:LoginResponse = await login(username, password);
-            if(data.token && authenticate(data.token)){
-                handleLogin(data.token);
+            if(data.token && data.user && authenticate(data.token, data.user)){
+                handleLogin(data.token, data.user);
                 setFeedback(data.message);
                 navigate(previousPathname, {replace: true});
             }else{

@@ -1,7 +1,7 @@
 import type { LoginResponse } from "../types/responses/Responses";
 import { API_URL } from "../utils/Config";
 
-export const login = async (username:string, password:string) => {
+export const login = async (username:string, password:string):Promise<LoginResponse> => {
     const response = await fetch(`${API_URL}login`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},

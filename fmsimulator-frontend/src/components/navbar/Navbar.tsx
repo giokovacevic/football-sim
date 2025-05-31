@@ -3,13 +3,14 @@ import styles from './Navbar.module.css';
 import { useAuth } from '../../contexts/AuthContext';
 import { useState } from 'react';
 import { isAuthenticated, unauthenticate } from '../../services/AuthService';
+import Logo from '../logo/Logo';
 
 type NavbarProps = {
     items: {name: string, path: string}[],
 };
 
 const Navbar = ({items}: NavbarProps) => {
-    const {token, username, handleLogout} = useAuth();
+    const {token, user, handleLogout} = useAuth();
     const location = useLocation();
     const currentPath = location.pathname;
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Navbar = ({items}: NavbarProps) => {
     const handleLoginButtonClicked = () => {
         if(isAuthenticated()) {
             handleLogout();
-            navigate('/');
+            //navigate('/');
         }else{
             navigate('/');
         }
@@ -31,7 +32,12 @@ const Navbar = ({items}: NavbarProps) => {
                 ))}
             </div>
             <div className={styles.user_section}>
-                <span className={styles.username}>{token ? username : ""}</span>
+                {(token && user) ? 
+                <div className={styles.logo}>
+                    <Logo url={`./assets/${user.role.url}`} text={user.role.name}></Logo>
+                </div>
+                : null}
+                <span className={styles.username}>{token ? user?.username : ""}</span>
                 <button className={styles.login_button} onClick={handleLoginButtonClicked}>{token ? "Logout" : "Login"}</button>
             </div>
         </nav>
