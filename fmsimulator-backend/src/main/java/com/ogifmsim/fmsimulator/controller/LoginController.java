@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("api/football/login")
 public class LoginController { 
-    private User user = new User("MrTousty", UserRole.ADMIN);
+    private User user = new User("MrTousty", "wasdwasd", UserRole.ADMIN);
     
     @PostMapping("")
     public ResponseEntity<?> login(@RequestBody LoginRequestDTO loginRequstDTO) {
