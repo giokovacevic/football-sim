@@ -1,12 +1,12 @@
-import type { Competition } from "./Competition";
-import type { Competitor } from "./Competitor";
-import type { Match } from "./Match";
+import type { ICompetition } from "./Competition";
+import type { ICompetitor } from "./Competitor";
+import type { IMatch } from "./Match";
 
-export interface League extends Competition{
+export interface ILeague extends ICompetition{
     readonly round: number,
     readonly cicle: number,
     readonly relegation: number;
     readonly parentLeagueId: string,
-    readonly competitors: Competitor[],
-    readonly schedule?: Match[][];
+    readonly competitors: ICompetitor[],
+    readonly schedule?: IMatch[][];
 }

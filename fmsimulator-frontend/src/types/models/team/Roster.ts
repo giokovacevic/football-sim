@@ -1,10 +1,10 @@
-import type { Player } from "../player/Player";
-import type { Lineup } from "./lineup/Lineup";
+import type { IPlayer } from "../player/Player";
+import type { ILineup } from "./lineup/Lineup";
 
-export interface Roster{
+export interface IRoster{
     readonly capacity: number,
     readonly currentSize: number,
     readonly currentSalaries: number,
-    readonly bench: Player[],
-    readonly lineup: Lineup;
+    readonly bench: IPlayer[],
+    readonly lineup: ILineup;
 }

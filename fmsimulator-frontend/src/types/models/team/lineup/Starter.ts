@@ -1,9 +1,9 @@
-import type { Player } from "../../player/Player";
-import type { Role } from "./Role";
+import type { IPlayer } from "../../player/Player";
+import type { IRole } from "./Role";
 
-export interface Starter{
-    readonly player?: Player,
+export interface IStarter{
+    readonly player?: IPlayer,
     readonly currentRating: number,
     readonly wrongPosition: boolean,
-    readonly requiredRole:Role;
+    readonly requiredRole: IRole;
 }

@@ -4,21 +4,21 @@ import PlayerList from '../../components/player_list/PlayerList';
 import { mainNavbarItems } from '../../constants/NavbarItems';
 import pageStyles from './../Page.module.css';
 import styles from './Players.module.css';
-import type {Player} from '../../types/models/player/Player';
+import type {IPlayer} from '../../types/models/player/Player';
 import { getAllPlayers, getAllPlayersByPage } from '../../services/PlayerService';
 import type { PlayersPageResponse } from '../../types/responses/Responses';
 
 const Players = () => {
-    const [players, setPlayers] = useState<Player[]>([]);
+    const [players, setPlayers] = useState<IPlayer[]>([]);
     const [page, setPage] = useState<number>(0);
     const [totalPages, setTotalPages] = useState<number>(1);
     const [totalPlayers, setTotalPlayers] = useState<number>(0);
-    const [lastSortingKey, setLastSortingKey] = useState<keyof Player | undefined>(undefined);
+    const [lastSortingKey, setLastSortingKey] = useState<keyof IPlayer | undefined>(undefined);
     const [lastSortingOrder, setLastSortingOrder] = useState<"asc" | "desc">("asc");
     const [lastSortingOrientation, setLastSortingOrientation] = useState<string>("");
     const playerLimitPerPage = 26; 
 
-    const loadData = async (page: number, sortingKey?: keyof Player, sortingOrder?: "asc" | "desc", sortingOrientation?: string) => {
+    const loadData = async (page: number, sortingKey?: keyof IPlayer, sortingOrder?: "asc" | "desc", sortingOrientation?: string) => {
         try {
             const data = await getAllPlayersByPage(page, playerLimitPerPage, sortingKey, sortingOrder, sortingOrientation);
             setPlayers(data.players);
@@ -53,7 +53,7 @@ const Players = () => {
         loadData(totalPages-1, lastSortingKey, lastSortingOrder, lastSortingOrientation);
     }
 
-    const handleHeaderClicked = (sortingKey: keyof Player, sortingOrientation?: string) => {
+    const handleHeaderClicked = (sortingKey: keyof IPlayer, sortingOrientation?: string) => {
         if(lastSortingKey === sortingKey && sortingKey !== 'positions') {
             if(lastSortingOrder === 'desc') {
                 loadData(0, sortingKey, "asc", sortingOrientation);

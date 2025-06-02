@@ -7,7 +7,7 @@ const Leagues = () => {
         <div className={pageStyles.root}>
             <div className={pageStyles.navbar}><Navbar items={mainNavbarItems}></Navbar></div>
             <div className={pageStyles.content}>
-                Leagues
+                <div style={{color: 'white'}}>Leagues, not implemented</div>
             </div>
         </div>
     );

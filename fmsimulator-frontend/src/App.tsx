@@ -4,14 +4,14 @@ import Flag from './components/flag/Flag';
 import Data from './components/data/Data';
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
 import { getAllCountries, getCountryById } from './services/CountryService';
-import type { Country } from './types/models/country/Country';
+import type { ICountry } from './types/models/country/Country';
 import { getAllPlayers } from './services/PlayerService';
-import type { Player } from './types/models/player/Player';
-import type { Club as IClub } from './types/models/team/Club';
+import type { IPlayer } from './types/models/player/Player';
+import type { IClub } from './types/models/team/Club';
 import { getAllClubs, getClubById } from './services/ClubService';
 import { extractFullSquad } from './utils/TeamUtils';
 import { getAllLeagues } from './services/LeagueService';
-import type { League } from './types/models/competition/League';
+import type { ILeague } from './types/models/competition/League';
 import Pitch from './components/pitch/Pitch';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
@@ -24,12 +24,12 @@ import Club from './pages/club/Club';
 import ClubWrapper from './pages/club/ClubWrapper';
 
 function App() {
-  const [countries, setCountries] = useState<Country[]>([]);
+  const [countries, setCountries] = useState<ICountry[]>([]);
   const [clubs, setClubs] = useState<IClub[]>([]);
   const [club, setClub] = useState<IClub | null>(null);
-  const [players, setPlayers] = useState<Player[]>([]);
-  const [country, setCountry] = useState<Country | null>(null);
-  const [leagues, setLeagues] = useState<League[]>([]);
+  const [players, setPlayers] = useState<IPlayer[]>([]);
+  const [country, setCountry] = useState<ICountry | null>(null);
+  const [leagues, setLeagues] = useState<ILeague[]>([]);
 
   useEffect(() => {
     //loadPlayers();

@@ -1,6 +1,6 @@
-import type { Team } from "./Team";
+import type { ITeam } from "./Team";
 
-export interface Club extends Team{
+export interface IClub extends ITeam{
     readonly rating: number,
     readonly budgetMoney: number,
     readonly transferMoney: number;

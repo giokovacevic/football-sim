@@ -1,11 +1,11 @@
-import type { Role } from "../../types/models/team/lineup/Role";
-import type { Starter } from "../../types/team/lineup/Starter";
+import type { IRole } from "../../types/models/team/lineup/Role";
+import type { IStarter } from "../../types/models/team/lineup/Starter";
 import { getPositionColor, getRatingColor } from "../../utils/ColorUtils";
 import "./pitch_style.css";
 
 type PitchMemberProps = {
-    _role: Role,
-    starter: Starter,
+    _role: IRole,
+    starter: IStarter,
     teamId: string,
     kits: string;
 };

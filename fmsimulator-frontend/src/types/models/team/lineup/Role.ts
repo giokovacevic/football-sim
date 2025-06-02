@@ -1,8 +1,8 @@
-import type { Position } from "./../../position/Position";
+import type { IPosition } from "./../../position/Position";
 
-export interface Role{
+export interface IRole{
     readonly stringValue: string,
     readonly x: number,
     readonly y: number,
-    readonly position: Position;
+    readonly position: IPosition;
 }

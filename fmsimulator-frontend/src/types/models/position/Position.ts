@@ -1,4 +1,4 @@
-export interface Position{
+export interface IPosition{
     readonly stringValue: string,
     readonly name: string,
     readonly type: string,

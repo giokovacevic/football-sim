@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import type { Country } from '../../types/models/country/Country';
+import type { ICountry } from '../../types/models/country/Country';
 import Tooltip from '../tooltip/Tooltip';
 import styles from './Flag.module.css';
 
-const Flag = ({country}:{country:Country}) => {
+const Flag = ({country}:{country: ICountry}) => {
     const [hovered, setHovered] = useState<boolean>(false);
 
     return (

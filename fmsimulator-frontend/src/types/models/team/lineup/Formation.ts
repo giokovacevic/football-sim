@@ -1,8 +1,8 @@
-import type { Role } from "./Role";
+import type { IRole } from "./Role";
 
-export interface Formation{
+export interface IFormation{
     readonly id: string,
-    readonly requiredRoles: Role[],
+    readonly requiredRoles: IRole[],
     readonly defensiveBonus: number,
     readonly offensiveBonus: number;
 }

@@ -1,21 +1,21 @@
 import {useEffect, useState} from 'react';
-import type { League } from '../../types/models/competition/League';
+import type { ILeague } from '../../types/models/competition/League';
 import styles from './Data.module.css';
 import DropdownMenu from '../dropdown_menu/DropdownMenu';
 import LeagueTable from '../league_table/LeagueTable';
 import Pitch from '../pitch/Pitch';
-import type { Team } from '../../types/models/team/Team';
-import type { Player } from '../../types/models/player/Player';
+import type { ITeam } from '../../types/models/team/Team';
+import type { IPlayer } from '../../types/models/player/Player';
 import PlayerList from '../old_player_list/PlayerList';
 import { getAllLeagues } from '../../services/LeagueService';
 import { extractFullSquad } from '../../utils/TeamUtils';
 import Navbar from '../navbar/Navbar';
 
 const Data = () => {
-    const [leagues, setLeagues] = useState<League[]>([]);
-    const [currentLeague, setCurrentLeague] = useState<League | undefined>(undefined);
-    const [currentTeam, setCurrentTeam] = useState<Team | undefined>(undefined);
-    const [players, setPlayers] = useState<Player[]>([]);
+    const [leagues, setLeagues] = useState<ILeague[]>([]);
+    const [currentLeague, setCurrentLeague] = useState<ILeague | undefined>(undefined);
+    const [currentTeam, setCurrentTeam] = useState<ITeam | undefined>(undefined);
+    const [players, setPlayers] = useState<IPlayer[]>([]);
 
     useEffect(() => {
         loadAllLeagues();
@@ -26,11 +26,11 @@ const Data = () => {
         setLeagues(data);
     }
 
-    const handleDropdownMenuOnSelect = (item:League) => {
+    const handleDropdownMenuOnSelect = (item: ILeague) => {
         setCurrentLeague(item);
     }
 
-    const handleLeagueTableOnClick = (team:Team) => {
+    const handleLeagueTableOnClick = (team: ITeam) => {
         setCurrentTeam(team);
         if(team) setPlayers(extractFullSquad(team));
     }

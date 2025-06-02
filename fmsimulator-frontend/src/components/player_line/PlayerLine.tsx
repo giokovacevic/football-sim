@@ -1,4 +1,4 @@
-import type { Player } from '../../types/models/player/Player';
+import type { IPlayer } from '../../types/models/player/Player';
 import { getContractColor, getPositionColor, getRatingColor, getStaminaColor } from '../../utils/ColorUtils';
 import { getCurrentStaminaWidth } from '../../utils/PlayerUtils';
 import Flag from '../flag/Flag';
@@ -7,9 +7,9 @@ import Positions from '../position/Positions';
 import styles from './PlayerLine.module.css';
 
 type PlayerLineProps = {
-    player: Player,
+    player: IPlayer,
     currentYear: number,
-    onPlayerClicked?: (player:Player) => void;
+    onPlayerClicked?: (player:IPlayer) => void;
 };
 
 const PlayerLine = ({player, currentYear, onPlayerClicked}:PlayerLineProps) => {

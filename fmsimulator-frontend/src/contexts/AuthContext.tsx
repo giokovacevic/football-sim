@@ -2,12 +2,12 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from "
 import { getToken, getUser, isAuthenticated, unauthenticate } from "../services/AuthService";
 import type { User } from "../types/models/user/User";
 
-interface AuthContext{
+type AuthContext = {
     token: string | null,
     user: User | null,
     handleLogin: (token:string, user:User) => void,
     handleLogout: () => void;
-}
+};
 
 export const AuthContext = createContext<AuthContext | undefined>(undefined);
 

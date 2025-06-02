@@ -1,17 +1,17 @@
-import type { Competitor } from "../../types/models/competition/Competitor";
-import type { League } from "../../types/models/competition/League";
-import type { Team } from "../../types/models/team/Team";
+import type { ICompetitor } from "../../types/models/competition/Competitor";
+import type { ILeague } from "../../types/models/competition/League";
+import type { ITeam } from "../../types/models/team/Team";
 import styles from './LeagueTable.module.css';
 
 type LeagueTableProps = {
-    league: League,
-    onCompetitorClick: ((team:Team) => void) | undefined;
+    league: ILeague,
+    onCompetitorClick: ((team: ITeam) => void) | undefined;
 };
 
 function LeagueTable({league, onCompetitorClick} : LeagueTableProps) {
     return (
         <div className={styles.root}>
-            {league.competitors.map((competitor:Competitor, index:number) => (
+            {league.competitors.map((competitor: ICompetitor, index:number) => (
                 <div key={competitor.team.id} className={styles.leaguemember_root} onClick={onCompetitorClick ? () => onCompetitorClick(competitor.team) : undefined} style={{cursor: onCompetitorClick ? 'pointer' : 'arrow'}}>
                     <div className={styles.leaguemember_placement}>{index + 1}</div>
                     <div className={styles.leaguemember_logo}>

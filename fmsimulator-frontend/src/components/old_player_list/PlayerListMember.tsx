@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Player } from '../../types/models/player/Player';
+import type { IPlayer } from '../../types/models/player/Player';
 import { getContractColor, getPositionColor, getRatingColor, getStaminaColor } from '../../utils/ColorUtils';
 import { getCurrentStaminaWidth } from '../../utils/PlayerUtils';
 import Flag from '../flag/Flag';
@@ -9,9 +9,9 @@ import type { PlayerListVariant } from './PlayerList';
 import styles from './PlayerList.module.css';
 
 type PlayerListMemberProps = {
-    player: Player,
+    player: IPlayer,
     currentYear: number,
-    onPlayerClicked?: (player:Player) => void,
+    onPlayerClicked?: (player: IPlayer) => void,
     variant: PlayerListVariant;
 };
 

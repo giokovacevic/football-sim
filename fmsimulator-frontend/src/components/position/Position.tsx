@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Position as IPosition} from '../../types/models/position/Position';
+import type { IPosition } from '../../types/models/position/Position';
 import styles from './Positions.module.css';
 import Tooltip from '../tooltip/Tooltip';
 import { getPositionColor } from '../../utils/ColorUtils';

@@ -1,8 +1,8 @@
-import type { Role } from "../team/lineup/Role";
+import type { IRole } from "../team/lineup/Role";
 
-export interface Arrangement{
+export interface IArrangement{
     readonly teamId: string,
     readonly teamName: string,
     readonly jerseyNumber: number,
-    readonly role: Role;
+    readonly role: IRole;
 }

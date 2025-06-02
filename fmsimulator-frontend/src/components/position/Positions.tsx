@@ -1,6 +1,6 @@
 import styles from './Positions.module.css';
 import Position  from './Position';
-import type { Position as IPosition} from "../../types/models/position/Position";
+import type { IPosition } from "../../types/models/position/Position";
 
 function Positions({positions}:{positions:IPosition[]}) {
 

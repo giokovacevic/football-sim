@@ -1,6 +1,6 @@
-import type { UserRole } from "./UserRole";
+import type { IUserRole } from "./UserRole";
 
-export interface User{
+export interface IUser{
     username: string,
-    role: UserRole;
+    role: IUserRole;
 }

@@ -1,9 +1,9 @@
-import type { Player } from '../../types/models/player/Player';
+import type { IPlayer } from '../../types/models/player/Player';
 import type { PlayerListVariant } from './PlayerList';
 import styles from './PlayerList.module.css';
 
 type PlayerListHeaderProps = {
-    onHeaderClicked: (sortingKey: keyof Player, orientation?:string) => void;
+    onHeaderClicked: (sortingKey: keyof IPlayer, orientation?:string) => void;
     variant: PlayerListVariant;
 };
 

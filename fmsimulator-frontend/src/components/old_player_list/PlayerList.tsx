@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { Player } from '../../types/models/player/Player';
+import type { IPlayer } from '../../types/models/player/Player';
 import styles from './PlayerList.module.css';
 import PlayerListHeader from './PlayerListHeader';
 import PlayerListMember from './PlayerListMember';
@@ -8,7 +8,7 @@ import { comparePlayer } from '../../utils/PlayerUtils';
 export type PlayerListVariant = 'lineup' | 'squad' | 'preview';
 
 type PlayerListProps = {
-    players: Player[];
+    players: IPlayer[];
     currentYear: number;
     variant: PlayerListVariant;
     includeHeader: boolean;
@@ -17,15 +17,15 @@ type PlayerListProps = {
 type SortingOrder = 'desc' | 'asc';
 
 const PlayerList = ({players, currentYear, variant, includeHeader}:PlayerListProps) => {
-    const [sortedPlayers, setSortedPlayers] = useState<Player[]>([...players]);
-    const lastSortingKey = useRef<keyof Player>('contract');
+    const [sortedPlayers, setSortedPlayers] = useState<IPlayer[]>([...players]);
+    const lastSortingKey = useRef<keyof IPlayer>('contract');
     const lastSortingOrder = useRef<SortingOrder>('desc');
 
     useEffect(() => {
         setSortedPlayers([...players])
     }, [players]);
 
-    const handleHeaderOnClick = (sortingKey:(keyof Player), orientation?:string) => {
+    const handleHeaderOnClick = (sortingKey:(keyof IPlayer), orientation?:string) => {
         if(lastSortingKey.current === sortingKey && sortingKey !== 'positions') {
             if(lastSortingOrder.current === 'desc') {
                 sortPlayers(sortingKey, 'asc', orientation);
@@ -37,7 +37,7 @@ const PlayerList = ({players, currentYear, variant, includeHeader}:PlayerListPro
         }
     }
 
-    const sortPlayers = (sortingKey:(keyof Player), sortingOrder:SortingOrder, orientation?:string) => {
+    const sortPlayers = (sortingKey:(keyof IPlayer), sortingOrder:SortingOrder, orientation?:string) => {
         const sorted = [...players].sort((a, b) => {
             const result = comparePlayer(a, b, sortingKey, orientation);
             return sortingOrder === 'asc' ? result : -result;

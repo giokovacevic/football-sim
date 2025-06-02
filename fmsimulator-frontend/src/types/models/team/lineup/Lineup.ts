@@ -1,10 +1,10 @@
-import type { Formation } from "./Formation";
-import type { Starter } from "./Starter";
+import type { IFormation } from "./Formation";
+import type { IStarter } from "./Starter";
 
-export interface Lineup{
-    readonly formation: Formation,
+export interface ILineup{
+    readonly formation: IFormation,
     readonly viability: boolean,
     readonly defense: number,
     readonly offense: number,
-    readonly starters: Starter[];
+    readonly starters: IStarter[];
 }

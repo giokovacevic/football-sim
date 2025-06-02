@@ -1,12 +1,12 @@
-import type { Country } from "../country/Country";
-import type { Roster } from "./Roster";
+import type { ICountry } from "../country/Country";
+import type { IRoster } from "./Roster";
 
-export interface Team{
+export interface ITeam{
     readonly type: string,
     readonly id: string,
     readonly name: string,
     readonly fullname: string,
     readonly preferredJersey: string,
-    readonly country: Country;
-    readonly roster: Roster;
+    readonly country: ICountry;
+    readonly roster: IRoster;
 }

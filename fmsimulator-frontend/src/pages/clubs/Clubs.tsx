@@ -4,11 +4,11 @@ import { mainNavbarItems } from '../../constants/NavbarItems';
 import pageStyles from './../Page.module.css';
 import styles from './Clubs.module.css';
 import { getAllClubs } from '../../services/ClubService';
-import type { Club } from '../../types/models/team/Club';
+import type { IClub } from '../../types/models/team/Club';
 import { Link } from 'react-router-dom';
 
 const Clubs = () => {
-    const [clubs, setClubs] = useState<Club[]>([]);
+    const [clubs, setClubs] = useState<IClub[]>([]);
 
     useEffect(() => {
         loadClubs();
