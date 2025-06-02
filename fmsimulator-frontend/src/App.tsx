@@ -7,7 +7,7 @@ import { getAllCountries, getCountryById } from './services/CountryService';
 import type { Country } from './types/models/country/Country';
 import { getAllPlayers } from './services/PlayerService';
 import type { Player } from './types/models/player/Player';
-import type { Club } from './types/models/team/Club';
+import type { Club as IClub } from './types/models/team/Club';
 import { getAllClubs, getClubById } from './services/ClubService';
 import { extractFullSquad } from './utils/TeamUtils';
 import { getAllLeagues } from './services/LeagueService';
@@ -20,11 +20,13 @@ import Clubs from './pages/clubs/Clubs';
 import Players from './pages/players/Players';
 import { AuthContext, AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import Club from './pages/club/Club';
+import ClubWrapper from './pages/club/ClubWrapper';
 
 function App() {
   const [countries, setCountries] = useState<Country[]>([]);
-  const [clubs, setClubs] = useState<Club[]>([]);
-  const [club, setClub] = useState<Club | null>(null);
+  const [clubs, setClubs] = useState<IClub[]>([]);
+  const [club, setClub] = useState<IClub | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [country, setCountry] = useState<Country | null>(null);
   const [leagues, setLeagues] = useState<League[]>([]);
@@ -121,6 +123,8 @@ function App() {
             <Route path='/leagues'  element={<ProtectedRoute><Leagues/></ProtectedRoute>}></Route>
             <Route path='/clubs'  element={<Clubs/>}></Route>
             <Route path='/players'  element={<Players/>}></Route>
+            <Route path={`/clubs/:clubId`}  element={<ClubWrapper />}></Route>
+            <Route path='*'  element={<Home/>}></Route>
         </Routes>
       </Router>
       </AuthProvider>
