@@ -12,7 +12,7 @@ type PitchMemberProps = {
 
 function PitchMember({_role, starter, teamId, kits}:PitchMemberProps) {
     const jersey = "/team_assets/" + teamId + "/" + teamId + "_";
-    const defaultJersey = `/team_assets/default/default_${kits}.png`;
+    const defaultJersey = (kits != 'light' && kits != 'dark') ? `/team_assets/default/default_light.png` : `/team_assets/default/default_${kits}.png`;
     const role = _role;
     const player = starter.player || null;
     
