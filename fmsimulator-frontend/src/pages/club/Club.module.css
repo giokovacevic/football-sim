@@ -1,0 +1,19 @@
+.section_left{
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.section_right{
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.kits{
+    padding: 20px;
+}
+.lineup{
+}
+.squad{
+    width: 1090px;
+    
+}

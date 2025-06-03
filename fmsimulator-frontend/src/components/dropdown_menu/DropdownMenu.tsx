@@ -35,7 +35,7 @@ function DropdownMenu<T, K extends keyof T>({items, onSelect, valueProperty, ima
                     {selectedItem ? String(selectedItem[valueProperty]) : placeholder}
                 </div>
                 <div className={styles.header_icon}>
-                    <img src={"./assets/dropdown_arrow_" + getToggleStateActivity() + ".png"} alt={isOpen.toString()}></img>
+                    <img src={"/assets/dropdown_arrow_" + getToggleStateActivity() + ".png"} alt={isOpen.toString()}></img>
                 </div>
             </div>
             {isOpen && (

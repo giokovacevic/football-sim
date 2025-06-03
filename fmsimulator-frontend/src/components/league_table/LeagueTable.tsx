@@ -15,7 +15,7 @@ function LeagueTable({league, onCompetitorClick} : LeagueTableProps) {
                 <div key={competitor.team.id} className={styles.leaguemember_root} onClick={onCompetitorClick ? () => onCompetitorClick(competitor.team) : undefined} style={{cursor: onCompetitorClick ? 'pointer' : 'arrow'}}>
                     <div className={styles.leaguemember_placement}>{index + 1}</div>
                     <div className={styles.leaguemember_logo}>
-                        <img src={"club_logo_icons/"+ competitor.team.id +".png"}></img>
+                        <img src={"/club_logo_icons/"+ competitor.team.id +".png"}></img>
                     </div>
                     <div className={styles.leaguemember_name}>{competitor.team.name}</div>
                     <div className={styles.leaguemember_wins}>{competitor.wins}</div>

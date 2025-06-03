@@ -9,7 +9,7 @@ const Flag = ({country}:{country: ICountry}) => {
     return (
         <div className={styles.flag_root}>
             <div className={styles.flag_wrapper} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                <img src={`./country_flag_icons/${country.id}.png`}></img>
+                <img src={`/country_flag_icons/${country.id}.png`}></img>
                 <Tooltip text={country.name} visible={hovered}></Tooltip>
             </div>
         </div>

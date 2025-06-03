@@ -6,7 +6,7 @@ import styles from './PlayerList.module.css';
 type PlayerListProps = {
     players: IPlayer[],
     currentYear: number,
-    onHeaderClicked: (sortingKey: keyof IPlayer, sortingOrientation?: string) => void;
+    onHeaderClicked?: (sortingKey: keyof IPlayer, sortingOrientation?: string) => void;
     onLineClicked?: (player: IPlayer) => void;
 };
 

@@ -44,7 +44,7 @@ const PlayerListMember = ({player, currentYear, variant}: PlayerListMemberProps)
             {variant === 'preview' && (
                 <div className={styles.playerlistmember_club}>
                     <div className={styles.playerlistmember_club_logo} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                        <img src={`./club_logo_icons/${player.contract.teamId}.png`}></img>
+                        <img src={`/club_logo_icons/${player.contract.teamId}.png`}></img>
                         <Tooltip key={player.id} text={player.contract.teamName} visible={hovered}></Tooltip> 
                     </div>
                 </div>

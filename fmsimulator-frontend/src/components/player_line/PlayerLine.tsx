@@ -34,7 +34,7 @@ const PlayerLine = ({player, currentYear, onPlayerClicked}:PlayerLineProps) => {
                 </div>
             </div>
             <div className={styles.line_club}>
-                <Logo url={`./club_logo_icons/${player.contract.teamId}.png`} text={player.contract.teamName}></Logo>
+                <Logo url={`/club_logo_icons/${player.contract.teamId}.png`} text={player.contract.teamName}></Logo>
             </div>
             <div className={styles.line_salary}>{player.contract.salary}</div>
             <div className={styles.line_contract}>

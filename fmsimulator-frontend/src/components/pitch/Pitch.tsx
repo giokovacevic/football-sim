@@ -1,8 +1,5 @@
-
-import type { IRole } from "../../types/models/team/lineup/Role";
 import type { IStarter } from "../../types/models/team/lineup/Starter";
 import type { ITeam } from "../../types/models/team/Team";
-import { extractStarterByRole } from "../../utils/TeamUtils";
 import "./pitch_style.css";
 import PitchMember from "./PitchMember";
 
