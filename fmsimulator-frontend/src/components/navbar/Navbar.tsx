@@ -34,7 +34,7 @@ const Navbar = ({items}: NavbarProps) => {
             <div className={styles.user_section}>
                 {(token && user) ? 
                 <div className={styles.logo}>
-                    <Logo url={`./assets/${user.role.url}`} text={user.role.name}></Logo>
+                    <Logo url={`/assets/${user.role.url}`} text={user.role.name}></Logo>
                 </div>
                 : null}
                 <span className={styles.username}>{token ? user?.username : ""}</span>
