@@ -3,7 +3,6 @@ import type { ILeague } from '../../types/models/competition/League';
 import styles from './Data.module.css';
 import DropdownMenu from '../dropdown_menu/DropdownMenu';
 import LeagueTable from '../league_table/LeagueTable';
-import Pitch from '../pitch_old/Pitch';
 import type { ITeam } from '../../types/models/team/Team';
 import type { IPlayer } from '../../types/models/player/Player';
 import PlayerList from '../old_player_list/PlayerList';

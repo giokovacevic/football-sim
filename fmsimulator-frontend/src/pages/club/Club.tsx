@@ -5,7 +5,6 @@ import pageStyles from './../Page.module.css';
 import { getClubById } from '../../services/ClubService';
 import type { IClub } from '../../types/models/team/Club';
 import styles from './Club.module.css';
-import Pitch from '../../components/pitch_old/Pitch';
 import PlayerList from '../../components/player_list/PlayerList';
 import { extractFullSquad } from '../../utils/TeamUtils';
 import Lineup from '../../components/lineup/Lineup';
