@@ -1,36 +1,50 @@
-import DropdownMenu from "../dropdown_menu/DropdownMenu";
-import Pitch from "../pitch/Pitch";
-import "./lineup_style.css";
+import { useState } from 'react';
+import type { ITeam } from '../../types/models/team/Team';
+import { getRatingColor } from '../../utils/ColorUtils';
+import styles from './Lineup.module.css';
+import LineupMember from './LineupMember';
 
-function Lineup({myClub, formations, currentFormation, changeFormation, dragData, setDragData, substitute, save}:any) {
-    
+type LineupProps = {
+    team: ITeam;
+};
+
+const Lineup = ({team}: LineupProps) => {
+    const [currentKits, setCurrentKits] = useState<string>(team.preferredJersey);
+
+    const switchKits = () => {
+        setCurrentKits(currentKits !== 'dark' ? 'dark' : 'light');
+    }
+
     return (
-        <div className="lineup">
-            <div className="header">
-                <div className="header-formation-menu"> 
-                   
+        <div className={styles.root}>
+            <div className={styles.header}>
+                <div className={styles.header_formation}>
+                    <div className={styles.header_formation_content}>{team.roster.lineup.formation.id}</div>
                 </div>
-                <div className="header-ratings">
-                    <div className="defense">
-                        <div className="defense-icon">
-                            <img src="assets/defense_icon.png"></img>
+                <div className={styles.header_ratings}>
+                    <div className={styles.header_ratings_defense}>
+                        <div className={styles.header_ratings_content_icon}>
+                            <img src='/assets/defense_icon.png'></img>
                         </div>
-                        <div className="defense-text" style={{color: `${myClub.roster.lineup.defenseRatingColor}`}}>{myClub.roster.lineup.defense}</div>
+                        <div className={styles.header_ratings_content_text} style={{color: `${getRatingColor(team.roster.lineup.defense)}`}}>{team.roster.lineup.defense}</div>
                     </div>
-                    <div className="offense">
-                        <div className="offense-icon">
-                            <img src="assets/offense_icon.png"></img>
+                    <div className={styles.header_ratings_offense}>
+                        <div className={styles.header_ratings_content_icon}>
+                            <img src='/assets/offense_icon.png'></img>
                         </div>
-                        <div className="offense-text" style={{color: `${myClub.roster.lineup.offenseRatingColor}`}}>{myClub.roster.lineup.offense}</div>
+                        <div className={styles.header_ratings_content_text} style={{color: `${getRatingColor(team.roster.lineup.offense)}`}}>{team.roster.lineup.offense}</div>
                     </div>
                 </div>
-                <div className="header-save">
-                    <button className="save-button" onClick={save}>Save Lineup</button>
+                <div className={styles.header_kits}>
+                    <button className={styles.header_kits_content} onClick={switchKits}>Switch kits</button>
                 </div>
             </div>
-            
-            <Pitch team={myClub} kits={"dark"}/*{myClub.preferredJersey} */></Pitch>
-        </div> //myClub.preferredJersey
+            <div className={styles.pitch}>
+                {team.roster.lineup.starters.map((starter) => (
+                    <LineupMember key={starter.requiredRole.stringValue} starter={starter} teamId={team.id} kit={currentKits}></LineupMember>
+                ))}
+            </div>
+        </div>
     );
 }
 export default Lineup;

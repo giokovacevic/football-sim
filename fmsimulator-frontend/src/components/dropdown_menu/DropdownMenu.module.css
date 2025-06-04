@@ -2,7 +2,6 @@
     height: 24px;
     width: 300px;
     position: relative;
-    background-color: red;
 }
 
 .header {
@@ -19,7 +18,7 @@
     cursor: pointer;
 }
 .header:hover > .header_text{
-    color: rgb(214, 214, 214);
+    color: #d6d6d6;
 }
 
 .header_text {

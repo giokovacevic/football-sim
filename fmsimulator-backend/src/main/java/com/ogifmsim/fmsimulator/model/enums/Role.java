@@ -1,26 +1,32 @@
 package com.ogifmsim.fmsimulator.model.enums;
 
 public enum Role {
-    GK("GK", 295, 460, Position.GK),
-    CB("CB", 295, 370, Position.CB),
-    LCB("LCB", 150, 370, Position.CB),
-    RCB("RCB", 440, 370, Position.CB),
-    LB("LB", 5, 330, Position.LB),
-    RB("RB", 585, 330, Position.RB),
-    DM("DM", 295, 280, Position.DM),
-    CM("CM", 295, 190, Position.CM),
-    LCM("LCM", 150, 190, Position.CM),
-    RCM("RCM", 440, 190, Position.CM),
-    LM("LM", 5, 190, Position.LM),
-    RM("RM", 585, 190, Position.RM),
-    AM("AM", 295, 100, Position.AM),
-    LAM("LAM", 150, 100, Position.AM),
-    RAM("RAM", 440, 100, Position.AM),
-    LW("LW", 5, 45, Position.LW),
-    RW("RW", 585, 45, Position.RW),
-    SS("SS", 440, 5, Position.SS),
-    ST("ST", 150, 5, Position.ST),
-    CF("CF", 295, 5, Position.CF),
+    GK("GK", 325, 560, Position.GK),
+
+    CB("CB", 325, 470, Position.CB),
+    LCB("LCB", 170, 470, Position.CB),
+    RCB("RCB", 480, 470, Position.CB),
+    LB("LB", 10, 440, Position.LB),
+    RB("RB", 640, 440, Position.RB),
+
+    DM("DM", 325, 370, Position.DM),
+    CM("CM", 325, 260, Position.CM),
+    LCM("LCM", 170, 260, Position.CM),
+    RCM("RCM", 480, 260, Position.CM),
+    LM("LM", 10, 260, Position.LM),
+    RM("RM", 640, 260, Position.RM),
+
+    AM("AM", 325, 150, Position.AM),
+    LAM("LAM", 170, 150, Position.AM),
+    RAM("RAM", 480, 150, Position.AM),
+
+    LW("LW", 10, 80, Position.LW),
+    RW("RW", 640, 80, Position.RW),
+
+    ST("ST", 170, 20, Position.ST),
+    SS("SS", 480, 20, Position.SS),
+    CF("CF", 325, 20, Position.CF),
+
     BENCH("sub", 0, 0, Position.UD),
     UD("undefined", 0, 0, Position.UD);
 

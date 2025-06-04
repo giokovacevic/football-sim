@@ -1,0 +1,139 @@
+.root{
+    width: 800px;
+}
+
+.header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #141414;
+}
+.header_formation,
+.header_ratings,
+.header_kits{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header_formation{
+    width: 40%;
+    padding-left: 10px;
+}
+.header_formation_content{
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: solid 1px #676767;
+    width: 90%;
+    color: #bcbcbc;
+    cursor: default;
+}
+.header_ratings{
+    width: 25%;
+    justify-content: center;
+}
+.header_ratings_defense,
+.header_ratings_offense{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.header_ratings_content_icon{
+    position: relative;
+}
+.header_ratings_content_icon img{
+    display: block;
+}
+.header_ratings_content_text{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 15px 0px 8px;
+}
+.header_kits{
+    width: 15%;
+}
+.header_kits_content{
+    background: linear-gradient(#444444, #252525);
+    height: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #a7a7a7;
+}
+.header_kits_content:hover{
+    color: #e0e0e0;
+}
+
+.pitch{
+    width: 100%;
+    height: 650px;
+    background-color: #1c1c1c;
+    position:relative;
+}
+.member{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+}
+.member:hover{
+    background-color: #222222;
+}
+.member_name,
+.member_jersey,
+.member_flag,
+.member_rating,
+.member_number,
+.member_warning{
+    position: absolute;
+}
+.member_name{
+    background-color: #161616;
+    width: 100%;
+    bottom: 0px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.member_jersey{
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.member_jersey img{
+    display:block;
+    width: 60px;
+}
+.member_flag{
+    bottom: 30px;
+    left: 15px;
+}
+.member_rating{
+    top: 0px;
+    right: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.member_number{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    padding: 0px 2px;
+    font-size: 18px;
+    top:6px;
+    left: 15px;
+    color: #b9b9b9;
+}
+.member_warning{
+    color: red;
+    right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 30px;
+}

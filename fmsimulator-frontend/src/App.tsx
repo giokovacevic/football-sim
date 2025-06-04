@@ -12,7 +12,7 @@ import { getAllClubs, getClubById } from './services/ClubService';
 import { extractFullSquad } from './utils/TeamUtils';
 import { getAllLeagues } from './services/LeagueService';
 import type { ILeague } from './types/models/competition/League';
-import Pitch from './components/pitch/Pitch';
+import Pitch from './components/pitch_old/Pitch';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import Leagues from './pages/leagues/Leagues';
