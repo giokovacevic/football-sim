@@ -6,7 +6,7 @@ type DropdownMenuProps<T, K extends keyof T> = {
     onSelect: (item: T) => void,
     valueProperty: K,
     imageProperty?: K,
-    imagePath: string,
+    imagePath?: string,
     placeholder: string;
 };
 
@@ -43,9 +43,9 @@ function DropdownMenu<T, K extends keyof T>({items, onSelect, valueProperty, ima
                     {items.map((item:T, index:number) => (
                         <div key={index} className={styles.item} onClick={() => handleSelection(item)}>
                             <div className={styles.item_icon}>
-                                {imageProperty 
+                                {imagePath 
                                 ?
-                                <img src={imagePath + item[imageProperty] + ".png"} alt={imagePath}></img> 
+                                <img src={imagePath + (imageProperty ? item[imageProperty] : '') + ".png"} alt={imagePath}></img> 
                                 : 
                                 null
                                 }
