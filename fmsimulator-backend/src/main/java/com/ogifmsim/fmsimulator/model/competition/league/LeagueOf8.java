@@ -46,18 +46,18 @@ public class LeagueOf8 extends League {
 
             sort(this.competitors);
             this.round++;
-            if (isCicleOver()) {
+            if (isCycleOver()) {
                 ScheduleGenerator sg = new ScheduleGenerator(getTeams());
                 this.schedule.fill((getCapacity()-1)*2, sg.getSchedule());
                 sg.invert();
                 this.schedule.fill((getCapacity()-1)*3, sg.getSchedule());
-                this.cicle++;
+                this.cycle++;
             }
         }
     }
 
     @Override
-    public boolean isCicleOver() {
+    public boolean isCycleOver() {
         return this.round == (((getCapacity() - 1) * 2) + 1);
     }
 

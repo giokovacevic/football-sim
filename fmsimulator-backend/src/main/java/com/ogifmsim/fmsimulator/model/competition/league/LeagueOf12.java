@@ -47,7 +47,7 @@ public class LeagueOf12 extends League {
 
             sort(this.competitors);
             this.round++;
-            if (isCicleOver()) {
+            if (isCycleOver()) {
                 Team[] half1teams = new Team[6];
                 half1teams[0] = this.competitors.get(0).getTeam();
                 half1teams[1] = this.competitors.get(3).getTeam();
@@ -70,13 +70,13 @@ public class LeagueOf12 extends League {
                 sg.sort(half2teams);
                 this.schedule.fill((getCapacity()-1)*2, sg.getSchedule(), ((getCapacity()/2)/2));
 
-                this.cicle++;
+                this.cycle++;
             }
         }
     }
 
     @Override
-    public boolean isCicleOver() {
+    public boolean isCycleOver() {
         return this.round == (((getCapacity() - 1) * 2) + 1);
     }
 

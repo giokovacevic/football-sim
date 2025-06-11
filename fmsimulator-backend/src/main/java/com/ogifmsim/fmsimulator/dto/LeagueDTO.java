@@ -7,7 +7,7 @@ import com.ogifmsim.fmsimulator.model.competition.Match;
 import com.ogifmsim.fmsimulator.model.competition.league.League;
 
 public class LeagueDTO extends CompetitionDTO{
-    private final int round, cicle, relegation;
+    private final int round, cycle, relegation;
     private final String parentLeagueId/*, parentLeagueName*/; // TODO: Parent league name 
     private final ArrayList<CompetitorDTO> competitors;
     private final ArrayList<ArrayList<MatchDTO>> schedule;
@@ -16,7 +16,7 @@ public class LeagueDTO extends CompetitionDTO{
     public LeagueDTO(League league) {
         super(league);
         this.round = league.getRound();
-        this.cicle = league.getCicle();
+        this.cycle = league.getCycle();
         this.relegation = league.getRelegation();
         this.parentLeagueId = league.getParentLeagueId();
         this.competitors = new ArrayList<>();
@@ -33,7 +33,7 @@ public class LeagueDTO extends CompetitionDTO{
     }
 
     public int getRound() { return this.round;}
-    public int getCicle() { return this.cicle;}
+    public int getCycle() { return this.cycle;}
     public int getRelegation() { return this.relegation;}
     public String getParentLeagueId() { return this.parentLeagueId; }
     public ArrayList<CompetitorDTO> getCompetitors(){ return this.competitors; }

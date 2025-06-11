@@ -45,17 +45,17 @@ public class LeagueOf10 extends League{
 
             sort(this.competitors);
             this.round++;
-            if (isCicleOver()) {
+            if (isCycleOver()) {
                 ScheduleGenerator sg = new ScheduleGenerator(getTeams());
                 sg.sort(getTeams());
                 this.schedule.fill((getCapacity()-1)*2, sg.getSchedule());
-                this.cicle++;
+                this.cycle++;
             }
         }
     }
 
     @Override
-    public boolean isCicleOver() {
+    public boolean isCycleOver() {
         return this.round == (((getCapacity() - 1) * 2) + 1);
     }
 

@@ -50,7 +50,7 @@ public class LeagueOf14 extends League {
     }
 
     @Override
-    public boolean isCicleOver() {
+    public boolean isCycleOver() {
         return this.round == (((getCapacity() - 1) * 2) + 1);
     }
 

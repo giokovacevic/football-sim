@@ -3,12 +3,23 @@ package com.ogifmsim.fmsimulator.model.competition;
 import com.ogifmsim.fmsimulator.model.team.Team;
 
 public class Match {
-
+    private Integer id;
     private Team host, guest;
     private int score[];
     private final boolean neutral;
 
+    public Match(int id, Team host, Team guest, boolean neutral) {
+        this.id = id;
+        this.host = host;
+        this.guest = guest;
+        this.score = new int[2];
+        this.score[0] = -1;
+        this.score[1] = -1;
+        this.neutral = neutral;
+    }
+
     public Match(Team host, Team guest, boolean neutral) {
+        this.id = null;
         this.host = host;
         this.guest = guest;
         this.score = new int[2];
@@ -23,6 +34,11 @@ public class Match {
     public boolean isSet() {
         return !((this.guest == null) || (this.host == null));
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    public Integer getId() { return this.id; }
 
     public Team getHost() {
         return this.host;

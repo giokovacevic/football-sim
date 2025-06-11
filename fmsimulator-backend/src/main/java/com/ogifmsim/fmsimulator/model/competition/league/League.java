@@ -12,15 +12,15 @@ import com.ogifmsim.fmsimulator.model.team.Team;
 
 public class League extends Competition {
 
-    protected int round, cicle, relegation;
+    protected int round, cycle, relegation;
     protected String parentLeagueId;
     protected ArrayList<Competitor> competitors;
     protected Schedule schedule;
     protected HashMap<Integer, Placement> placements;
 
-    public League(String id, String name, int cicle, int round, String parentLeagueId, int relegation, Schedule schedule) {
+    public League(String id, String name, int cycle, int round, String parentLeagueId, int relegation, Schedule schedule) {
         super("League", id, name);
-        this.cicle = cicle;
+        this.cycle = cycle;
         this.round = round;
         this.parentLeagueId = parentLeagueId;
         this.relegation = relegation;
@@ -31,7 +31,7 @@ public class League extends Competition {
 
     @Override
     public void print() {
-        System.out.printf("\n %s     Cicle: %d     Round:  %d", getName(), cicle, round);
+        System.out.printf("\n %s     Cicle: %d     Round:  %d", getName(), cycle, round);
         System.out.printf("\n=========================================================================");
         System.out.printf("\n %3s | %20s  | %3s | %3s | %3s |  %3s  |  %3s  |  %4s  |", "Pos", "Name", "W", "D", "L", "GS", "GA", "P");
         System.out.printf("\n-------------------------------------------------------------------------");
@@ -58,7 +58,7 @@ public class League extends Competition {
         return this.round > getLastRound();
     }
 
-    public boolean isCicleOver() {
+    public boolean isCycleOver() {
         return true;
     }
 
@@ -75,8 +75,8 @@ public class League extends Competition {
         this.round = round;
     }
 
-    public void setCicle(int cicle) {
-        this.cicle = cicle;
+    public void setCycle(int cycle) {
+        this.cycle = cycle;
     }
 
     public void setRelegation(int relegation) {
@@ -91,8 +91,8 @@ public class League extends Competition {
         return this.round;
     }
 
-    public int getCicle() {
-        return this.cicle;
+    public int getCycle() {
+        return this.cycle;
     }
 
     public int getRelegation() {
