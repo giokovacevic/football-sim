@@ -24,8 +24,8 @@ const PlayerLine = ({player, currentYear, onPlayerClicked}:PlayerLineProps) => {
             <div className={styles.line_positions}><Positions key={player.id} positions={player.positions}></Positions></div>
             <div className={styles.line_age}>{player.currentAge}</div>
             <div className={styles.line_role}>
-                <div className={styles.line_role_content} style={(player.contract.role.stringValue === "sub") ? {backgroundColor: 'transparent'} : {backgroundColor: `${getPositionColor(player.contract.role.position)}`}}>
-                    {player.contract.role.stringValue === "sub" ? "" : player.contract.role.stringValue}
+                <div className={styles.line_role_content} style={(player.contract && (player.contract.role.stringValue !== "sub")) ? {backgroundColor: `${getPositionColor(player.contract.role.position)}`} : {backgroundColor: 'transparent'}}>
+                    {player.contract && (player.contract.role.stringValue !== "sub") ? player.contract.role.stringValue : ""}
                 </div>
             </div>
             <div className={styles.line_stamina}>
@@ -34,11 +34,11 @@ const PlayerLine = ({player, currentYear, onPlayerClicked}:PlayerLineProps) => {
                 </div>
             </div>
             <div className={styles.line_club}>
-                <Logo url={`/club_logo_icons/${player.contract.teamId}.png`} text={player.contract.teamName}></Logo>
+                <Logo url={`/club_logo_icons/${player.contract ? player.contract.teamId : "default"}.png`} text={player.contract ? player.contract.teamName : "Free Agent"}></Logo>
             </div>
-            <div className={styles.line_salary}>{player.contract.salary}</div>
+            <div className={styles.line_salary}>{player.contract ? player.contract.salary : "0"}</div>
             <div className={styles.line_contract}>
-                <div className={styles.line_contract_content} style={{backgroundColor: `${getContractColor(player.contract.expireDate, currentYear)}`}}>{(player.contract.expireDate === currentYear) ?  "-" : player.contract.expireDate}</div>
+                <div className={styles.line_contract_content} style={{backgroundColor: `${getContractColor(player.contract ? player.contract.expireDate : currentYear, currentYear)}`}}>{player.contract ? player.contract.expireDate : ""}</div>
             </div>
         
             <div className={styles.line_rating} style={{color: `${getRatingColor(player.rating)}`}}>{player.rating}</div>

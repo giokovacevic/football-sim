@@ -1,4 +1,4 @@
-import type { Position } from "../types/models/position/Position";
+import type { IPosition } from "../types/models/position/Position";
 
 export const getRatingColor = (rating:number) =>  {
     if(rating >= 95) {
@@ -22,7 +22,7 @@ export const getRatingColor = (rating:number) =>  {
         }  
 }
 
-export const getPositionColor = (position:Position) =>  {
+export const getPositionColor = (position:IPosition) =>  {
     if (position.type === "mf") {
         return "#fa332f";
     } else if (position.type === "df") {
