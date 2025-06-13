@@ -15,6 +15,7 @@ import com.ogifmsim.fmsimulator.model.enums.Role;
 import com.ogifmsim.fmsimulator.model.player.Contract;
 import com.ogifmsim.fmsimulator.model.player.Player;
 import com.ogifmsim.fmsimulator.model.team.Club;
+import com.ogifmsim.fmsimulator.repository.PlayerRepository;
 import com.ogifmsim.fmsimulator.util.PlayerComparator;
 
 public class PlayerService {
@@ -24,9 +25,11 @@ public class PlayerService {
     private static CountryService countryService = CountryService.getInstance();
     private static ClubService clubService = ClubService.getInstance();
     private static List<Player> players = null;
+    
+    private static PlayerRepository playerRepository = PlayerRepository.getInstance();
 
     private PlayerService() {
-        if(players == null) players = loadAllPlayers(CSV_URL);
+        if(players == null) players = playerRepository.loadAllPlayers();
     }
 
     public static PlayerService getInstance() {
@@ -38,7 +41,7 @@ public class PlayerService {
 
     public List<Player> getAllPlayers() {
         if(players == null) {
-            players = loadAllPlayers(CSV_URL);
+            players = playerRepository.loadAllPlayers();
         }
         return players;
     }
@@ -77,7 +80,7 @@ public class PlayerService {
         return page;
     }
      
-    private List<Player> loadAllPlayers(String filename) {
+    /*private List<Player> loadAllPlayers(String filename) {
         List<Player> playerList = new ArrayList<>();
         
         try {
@@ -110,7 +113,7 @@ public class PlayerService {
         }
 
         return playerList;
-    }
+    }*/
 
     public void insertAllPlayers() { // TODO: Move to PlayerRepository and add loadAllPlayers with sql
         String query = "INSERT INTO Player(`player_id`, `player_name`, `player_lastname`, `player_country_id`, `player_positions`, `player_rating`, `player_potential`, `player_birth_year`, `player_height`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"; // , ?, ?, ?, ?, ?, ?

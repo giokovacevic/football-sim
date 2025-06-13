@@ -3,6 +3,7 @@ package com.ogifmsim.fmsimulator.dto;
 import java.util.ArrayList;
 
 import com.ogifmsim.fmsimulator.model.enums.Position;
+import com.ogifmsim.fmsimulator.model.player.Contract;
 import com.ogifmsim.fmsimulator.model.player.Player;
 
 public class PlayerDTO{
@@ -29,7 +30,7 @@ public class PlayerDTO{
             this.positions.add(new PositionDTO(position));
         }
         }
-        this.contract = (player.getContract() != null) ? new ContractDTO(player.getContract()) : null;
+        this.contract = (player.getContract() != null) ? new ContractDTO(player.getContract()) : new ContractDTO(new Contract(null, 0.0, 0, -1*Integer.MAX_VALUE, 0, null));
         this.nationalArrangement = (player.getNationalArrangement() != null) ? new ArrangementDTO(player.getNationalArrangement()) : null;
         this.projectedPotential = player.getProjectedPotential();
         this.currentAge = player.getCurrentAge();
