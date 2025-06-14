@@ -13,7 +13,7 @@ import java.util.Scanner;
 import com.ogifmsim.fmsimulator.config.DatabaseConnection;
 import com.ogifmsim.fmsimulator.dto.CountryDTO;
 import com.ogifmsim.fmsimulator.model.country.Country;
-import com.ogifmsim.fmsimulator.repository.CountryRepository;
+import com.ogifmsim.fmsimulator.repository.preview.CountryRepository;
 
 public class CountryService {
     private static CountryService instance = null;
@@ -30,7 +30,7 @@ public class CountryService {
     }
 
     public List<Country> getAllCountries() {
-        return countryRepository.loadAllCountries();
+        return countryRepository.loadAll();
     }
 
     public List<CountryDTO> getAllCountriesDTO() {
@@ -42,7 +42,7 @@ public class CountryService {
     }
 
     public Country getCountryById(String countryId) {
-        return countryRepository.loadCountryById(countryId);
+        return countryRepository.loadById(countryId);
     }
 
     public CountryDTO getCountryByIdDTO(String countryId) {

@@ -9,6 +9,7 @@ import java.util.List;
 import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
 import com.ogifmsim.fmsimulator.config.DatabaseConnection;
 import com.ogifmsim.fmsimulator.model.country.Country;
+import com.ogifmsim.fmsimulator.util.ResultSetMapper;
 
 public class CountryRepository extends Repository<Country, String>{
     private static CountryRepository instance = null;
@@ -28,7 +29,7 @@ public class CountryRepository extends Repository<Country, String>{
         try (PreparedStatement statement = DatabaseConnection.getConnection().prepareStatement(query)){
             statement.setString(1, id); 
             try(ResultSet rs = statement.executeQuery()){
-                if(rs.next()) return extract(rs, "c");  
+                if(rs.next()) return ResultSetMapper.extractCountry(rs, "c");  
             }
         } catch (SQLException sqlError) {
             System.out.println(" Error in: CountryRepository.loadCountryById(): " + sqlError.getMessage());
@@ -48,7 +49,7 @@ public class CountryRepository extends Repository<Country, String>{
              ResultSet rs = statement.executeQuery()){
             
             while(rs.next()) {
-                Country country = extract(rs, "c");
+                Country country = ResultSetMapper.extractCountry(rs, "c");
                 if(country!=null) countries.add(country);
             }
         } catch (SQLException sqlError) {
@@ -57,20 +58,4 @@ public class CountryRepository extends Repository<Country, String>{
 
         return countries;
     }  
-
-    @Override
-    public Country extract(ResultSet rs, String alias){
-        String prefix = alias.equals("") ? "" :  alias + ".";
-        try {
-            String id = rs.getString(prefix + "country_id");
-            if(id == null) return null;
-            
-            String name = rs.getString(prefix + "country_name");
-
-            return new Country(id, name);
-        } catch (SQLException sqlError) {
-            System.out.println(" Error in: CountryRepository.extractCountryById(): " + sqlError.getMessage());
-            return null;
-        }
-    }
 }

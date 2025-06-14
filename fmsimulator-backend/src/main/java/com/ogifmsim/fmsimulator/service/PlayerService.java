@@ -21,7 +21,7 @@ import com.ogifmsim.fmsimulator.util.PlayerComparator;
 public class PlayerService {
     private static PlayerService instance = null;
     
-    private static PlayerRepository playerRepository = PlayerRepository.getInstance();
+    private PlayerRepository playerRepository = PlayerRepository.getInstance();
 
     private PlayerService() {}
 
@@ -33,7 +33,7 @@ public class PlayerService {
     }
 
     public List<Player> getAllPlayers() {
-        return playerRepository.loadAllPlayers();
+        return playerRepository.loadAll();
     }
 
     public List<PlayerDTO> getAllPlayersDTO() {
