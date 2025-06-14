@@ -19,18 +19,11 @@ import com.ogifmsim.fmsimulator.repository.PlayerRepository;
 import com.ogifmsim.fmsimulator.util.PlayerComparator;
 
 public class PlayerService {
-    private final static String CSV_URL = "db_players.csv";
-
     private static PlayerService instance = null;
-    private static CountryService countryService = CountryService.getInstance();
-    private static ClubService clubService = ClubService.getInstance();
-    private static List<Player> players = null;
     
     private static PlayerRepository playerRepository = PlayerRepository.getInstance();
 
-    private PlayerService() {
-        if(players == null) players = playerRepository.loadAllPlayers();
-    }
+    private PlayerService() {}
 
     public static PlayerService getInstance() {
         if(instance == null) {
@@ -40,10 +33,7 @@ public class PlayerService {
     }
 
     public List<Player> getAllPlayers() {
-        if(players == null) {
-            players = playerRepository.loadAllPlayers();
-        }
-        return players;
+        return playerRepository.loadAllPlayers();
     }
 
     public List<PlayerDTO> getAllPlayersDTO() {
@@ -79,43 +69,8 @@ public class PlayerService {
 
         return page;
     }
-     
-    /*private List<Player> loadAllPlayers(String filename) {
-        List<Player> playerList = new ArrayList<>();
-        
-        try {
-            Scanner sc = new Scanner(new File(filename));
-            while (sc.hasNext()) {
-                String loadedPlayerString = sc.nextLine();
-                String[] playerArray = loadedPlayerString.split(",");
-                
-                Club club = clubService.getClubById(playerArray[13]);
-                
-                Player playerNew = new Player(Integer.parseInt(playerArray[0]), playerArray[6], playerArray[5],
-                        Integer.parseInt(playerArray[8]),
-                        countryService.getCountryById(playerArray[3]), playerArray[7],
-                        (2025 - Integer.parseInt(playerArray[9])), Integer.parseInt(playerArray[10]),
-                        Integer.parseInt(playerArray[11]),
-                        new Contract(club, Double.parseDouble(playerArray[14]), 2025,
-                        2025 + Integer.parseInt(playerArray[15]), Integer.parseInt(playerArray[4]),
-                        Role.generateRole(playerArray[16])),null, 100);
-                playerList.add(playerNew);
 
-                if(club != null) {
-                    club.addPlayer(playerNew);
-                    club.getRoster().getLineup().save();
-                }
-            }
-
-            sc.close();
-        } catch (FileNotFoundException | NumberFormatException e) {
-            System.out.println(" Error: Player Loader");
-        }
-
-        return playerList;
-    }*/
-
-    public void insertAllPlayers() { // TODO: Move to PlayerRepository and add loadAllPlayers with sql
+    /*public void insertAllPlayers() { // TODO: Move to PlayerRepository and add loadAllPlayers with sql
         String query = "INSERT INTO Player(`player_id`, `player_name`, `player_lastname`, `player_country_id`, `player_positions`, `player_rating`, `player_potential`, `player_birth_year`, `player_height`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"; // , ?, ?, ?, ?, ?, ?
         try(PreparedStatement statement = DatabaseConnection.getConnection().prepareStatement(query)) { // , `player_contract_club_id`, `player_contract_salary`, `player_contract_sign_date`, `player_contract_expire_date`, `player_contract_role`, `player_contract_number`
                 players.forEach(player -> {
@@ -134,7 +89,7 @@ public class PlayerService {
                         statement.setInt(12, player.getContract().getSignDate());
                         statement.setInt(13, player.getContract().getExpireDate());
                         statement.setString(14, player.getContract().getRole().getStringValue());
-                        statement.setInt(15, player.getContract().getJerseyNumber());*/
+                        statement.setInt(15, player.getContract().getJerseyNumber());
 
                         if(statement.executeUpdate() < 1) {
                             System.out.println(" Failed to insert: " + player.getLastname() + " in insertPlayers()");
@@ -149,5 +104,5 @@ public class PlayerService {
         } finally{
             DatabaseConnection.closeConnection();
         }
-    }
+    }*/
 }

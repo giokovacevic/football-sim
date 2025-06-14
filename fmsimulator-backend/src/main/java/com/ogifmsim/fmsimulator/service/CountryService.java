@@ -13,16 +13,14 @@ import java.util.Scanner;
 import com.ogifmsim.fmsimulator.config.DatabaseConnection;
 import com.ogifmsim.fmsimulator.dto.CountryDTO;
 import com.ogifmsim.fmsimulator.model.country.Country;
+import com.ogifmsim.fmsimulator.repository.CountryRepository;
 
 public class CountryService {
-    private final static String CSV_URL = "db_countries.csv";
-
     private static CountryService instance = null;
-    private static Map<String, Country> countries = null;
 
-    private CountryService() {
-        if(countries == null) countries = loadAllCountries(CSV_URL);
-    }
+    private static CountryRepository countryRepository = CountryRepository.getInstance();
+
+    private CountryService() {}
 
     public static CountryService getInstance() {
         if(instance == null) {
@@ -32,10 +30,7 @@ public class CountryService {
     }
 
     public List<Country> getAllCountries() {
-        if(countries == null) {
-            countries = loadAllCountries(CSV_URL);
-        }
-        return new ArrayList<>(countries.values());
+        return countryRepository.loadAllCountries();
     }
 
     public List<CountryDTO> getAllCountriesDTO() {
@@ -47,11 +42,7 @@ public class CountryService {
     }
 
     public Country getCountryById(String countryId) {
-        if(countries == null) {
-            countries = loadAllCountries(CSV_URL);
-        }
-        if(countries.containsKey(countryId)) return countries.get(countryId);
-        return null;
+        return countryRepository.loadCountryById(countryId);
     }
 
     public CountryDTO getCountryByIdDTO(String countryId) {
@@ -59,30 +50,8 @@ public class CountryService {
         if(country != null) return new CountryDTO(getCountryById(countryId));
         return null;
     }
-     
-    private Map<String, Country> loadAllCountries(String filename) {
-        Map<String, Country> countries = new HashMap<>();
-        String lastCountryLoadedId = "";
-        
-        try {
-            Scanner sc = new Scanner(new File(filename));
-            while (sc.hasNext()) {
-                String loadedCountryString = sc.nextLine();
-                String[] countryArray = loadedCountryString.split(",");
-                Country country = new Country(countryArray[1], countryArray[2]);
-                countries.put(country.getId(), country);
-                lastCountryLoadedId = country.getId();
-            }
 
-            sc.close();
-        } catch (FileNotFoundException e) {
-            System.out.println(" Error: Country Loader. Last Country loaded ID:  " + lastCountryLoadedId);
-        }
-
-        return countries;
-    }
-
-    public void insertAllCountries() { // TODO: Move to CountryRepository and add loadAllCountries with sql
+    /*public void insertAllCountries() { // TODO: Move to CountryRepository and add loadAllCountries with sql
         String query = "INSERT INTO Country(`country_id`, `country_name`) VALUES (?, ?)";
         try(PreparedStatement statement = DatabaseConnection.getConnection().prepareStatement(query);) {
             countries.forEach((key, value) -> {
@@ -102,5 +71,5 @@ public class CountryService {
         } finally {
             DatabaseConnection.closeConnection();
         }
-    }
+    }*/
 }

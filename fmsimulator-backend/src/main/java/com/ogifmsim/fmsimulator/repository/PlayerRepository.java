@@ -20,6 +20,8 @@ import com.ogifmsim.fmsimulator.model.team.Team;
 public class PlayerRepository {
     private static PlayerRepository instance = null;
 
+    private static CountryRepository countryRepository = CountryRepository.getInstance();
+
     private PlayerRepository() { }
 
     public static PlayerRepository getInstance() {
@@ -29,7 +31,6 @@ public class PlayerRepository {
     
     public List<Player> loadAllPlayers() {
         List<Player> players = new ArrayList<>();
-        Map<String, Country> countriesCache = new HashMap<>();
         Map<String, Team> teamsCache = new HashMap<>();
 
         String query = "SELECT * FROM player" +
@@ -43,14 +44,7 @@ public class PlayerRepository {
             ResultSet rs = statement.executeQuery()) {
 
             while(rs.next()) {
-                Country playerCountry = null;
-                String countryId = rs.getString("country_id");
-                if(!countriesCache.containsKey(countryId)) {
-                    playerCountry = new Country(countryId, rs.getString("country_name"));
-                    countriesCache.put(countryId, playerCountry);
-                }else{
-                    playerCountry = countriesCache.get(countryId);
-                }
+                Country playerCountry = countryRepository.extractCountry(rs, "");
 
                 Contract playerContract = null;
                 Team playerClub = null;
@@ -58,14 +52,7 @@ public class PlayerRepository {
                 if(teamId != null) {
                     if(!teamsCache.containsKey(teamId)) {
                         if(rs.getString("team_type").equals("club")) {
-                            Country clubCountry = null;
-                            String clubCountryId = rs.getString("t.country_id");
-                            if(!countriesCache.containsKey(clubCountryId)) {
-                                clubCountry = new Country(clubCountryId, rs.getString("t.country_name"));
-                                countriesCache.put(clubCountryId, clubCountry);
-                            }else{
-                                clubCountry = countriesCache.get(clubCountryId);
-                            }
+                            Country clubCountry = countryRepository.extractCountry(rs, "t");
                             
                             playerClub = new Club(teamId, rs.getString("team_name"), rs.getString("team_fullname"), clubCountry, rs.getString("team_preferred_jersey"), TacticalFormation.generateFormation(rs.getString("team_formation")), rs.getInt("club_rating"), rs.getDouble("club_money"));
                             teamsCache.put(teamId, playerClub);
@@ -101,6 +88,10 @@ public class PlayerRepository {
     }
 
     public Player loadPlayer() {
+        return null;
+    }
+
+    private Player extractPlayer(ResultSet rs) {
         return null;
     }
 }
