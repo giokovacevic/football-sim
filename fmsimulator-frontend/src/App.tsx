@@ -35,7 +35,7 @@ function App() {
     //loadCountries();
     //loadCountry('SRB');
     //loadClubs();
-    loadClub('parma');
+    //loadClub('parma');
     //loadLeagues();
   }, []);
 
