@@ -1,7 +1,7 @@
-import type { League } from "../types/models/competition/League";
+import type { ILeague } from "../types/models/competition/League";
 import { API_URL } from "../utils/Config";
 
-export const getAllLeagues = async ():Promise<League[]> => {
+export const getAllLeagues = async ():Promise<ILeague[]> => {
     try {
         const response = await fetch(`${API_URL}leagues/all`);
         if(!response.ok) {
@@ -14,7 +14,7 @@ export const getAllLeagues = async ():Promise<League[]> => {
     }
 }
 
-export const getLeagueById = async (id:string):Promise<League> => {
+export const getLeagueById = async (id:string):Promise<ILeague> => {
     try {
         const response = await fetch(`${API_URL}leagues/${id}`);
         if(!response.ok) {

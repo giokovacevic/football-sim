@@ -1,8 +1,8 @@
-import type { Player } from "../types/models/player/Player";
+import type { IPlayer } from "../types/models/player/Player";
 import type { PlayersPageResponse } from "../types/responses/Responses";
 import { API_URL } from "../utils/Config";
 
-export const getAllPlayers = async ():Promise<Player[]> => {
+export const getAllPlayers = async ():Promise<IPlayer[]> => {
     try {
         const response = await fetch(`${API_URL}players/all`);
         if(!response.ok) {
@@ -15,7 +15,7 @@ export const getAllPlayers = async ():Promise<Player[]> => {
     }
 }
 
-export const getAllPlayersByPage = async (pageNumber: number, limit: number, sortingKey?: keyof Player, sortingOrder?: "asc" | "desc", sortingOrientation?: string):Promise<PlayersPageResponse> => {
+export const getAllPlayersByPage = async (pageNumber: number, limit: number, sortingKey?: keyof IPlayer, sortingOrder?: "asc" | "desc", sortingOrientation?: string):Promise<PlayersPageResponse> => {
     try {
         let query: string = `?pageNumber=${pageNumber}&limit=${limit}`;
         if(sortingKey) query+=`&sortingKey=${sortingKey}`;
@@ -32,7 +32,7 @@ export const getAllPlayersByPage = async (pageNumber: number, limit: number, sor
     }
 }
 
-export const getPlayerById = async (id: number):Promise<Player> => {
+export const getPlayerById = async (id: number):Promise<IPlayer> => {
     try {
         const response = await fetch(`${API_URL}players/${id}`);
         if(!response.ok) {

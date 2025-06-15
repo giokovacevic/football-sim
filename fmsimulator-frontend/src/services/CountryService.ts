@@ -1,7 +1,7 @@
-import type { Country } from "../types/models/country/Country";
+import type { ICountry } from "../types/models/country/Country";
 import { API_URL } from "../utils/Config";
 
-export const getAllCountries = async ():Promise<Country[]> => {
+export const getAllCountries = async ():Promise<ICountry[]> => {
     try {
         const response = await fetch(`${API_URL}countries/all`);
         if(!response.ok) {
@@ -14,7 +14,7 @@ export const getAllCountries = async ():Promise<Country[]> => {
     }
 }
 
-export const getCountryById = async (id:string):Promise<Country> => {
+export const getCountryById = async (id:string):Promise<ICountry> => {
     try {
         const response = await fetch(`${API_URL}countries/${id}`);
         if(!response.ok) {

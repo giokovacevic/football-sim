@@ -1,7 +1,7 @@
-import type { Club } from "../types/models/team/Club";
+import type { IClub } from "../types/models/team/Club";
 import { API_URL } from "../utils/Config";
 
-export const getAllClubs = async ():Promise<Club[]> => {
+export const getAllClubs = async ():Promise<IClub[]> => {
     try {
         const response = await fetch(`${API_URL}clubs/all`);
         if(!response.ok) {
@@ -14,7 +14,7 @@ export const getAllClubs = async ():Promise<Club[]> => {
     }
 }
 
-export const getClubById = async (id:string):Promise<Club> => {
+export const getClubById = async (id:string):Promise<IClub> => {
     try {
         const response = await fetch(`${API_URL}clubs/${id}`);
         if(!response.ok) {

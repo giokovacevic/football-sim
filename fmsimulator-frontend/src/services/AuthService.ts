@@ -1,6 +1,6 @@
-import type { User } from "../types/models/user/User";
+import type { IUser } from "../types/models/user/User";
 
-export const authenticate = (token: string | null, user: User | null):boolean => {
+export const authenticate = (token: string | null, user: IUser | null):boolean => {
     if(token){
         localStorage.setItem('token', token);
         localStorage.setItem('user', JSON.stringify(user));
@@ -18,7 +18,7 @@ export const unauthenticate = () => {
 export const getToken = () => {
     return localStorage.getItem('token');
 }
-export const getUser = ():User|null => {
+export const getUser = (): IUser|null => {
     const user = localStorage.getItem('user');
     return user ? JSON.parse(user) : null;
 }
