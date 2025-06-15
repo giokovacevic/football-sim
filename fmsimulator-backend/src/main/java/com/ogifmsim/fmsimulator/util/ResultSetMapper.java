@@ -12,8 +12,11 @@ import com.ogifmsim.fmsimulator.model.team.Club;
 
 public class ResultSetMapper {
 
-    public static Country extractCountry(ResultSet rs, String alias) {
-        String prefix = alias.equals("") ? "" :  alias + ".";
+    private ResultSetMapper() {}
+
+    public static final Country extractCountry(ResultSet rs, String alias) {
+        String prefix = getPrefix(alias);
+
         try {
             String id = rs.getString(prefix + "country_id");
             if(id == null) return null;
@@ -21,14 +24,16 @@ public class ResultSetMapper {
             String name = rs.getString(prefix + "country_name");
 
             return new Country(id, name);
+        
         } catch (SQLException sqlError) {
-            System.out.println(" Error in: ResultSetMapper.extractCountry(): " + sqlError.getMessage());
+            System.err.println(" Error in: ResultSetMapper.extractCountry(): " + sqlError.getMessage());
             return null;
         }
     }
 
-    public static Player extractPlayer(ResultSet rs, String alias) {
-        String prefix = alias.equals("") ? "" : alias + ".";
+    public static final Player extractPlayer(ResultSet rs, String alias) {
+        String prefix = getPrefix(alias);
+
         try {
             int id = rs.getInt(prefix + "player_id");
             if(rs.wasNull()) return null;
@@ -47,21 +52,22 @@ public class ResultSetMapper {
             
             Contract contract = extractContract(rs, "");
 
-            return new Player(id, name, lastname, rating, country, positions, birthYear, height, potential, null, null, stamina);
+            return new Player(id, name, lastname, rating, country, positions, birthYear, height, potential, contract, null, stamina);
+        
         } catch (SQLException sqlError) {
-            System.out.println(" Error in ResultSetMapper.extractPlayer(): " + sqlError.getMessage());
+            System.err.println(" Error in ResultSetMapper.extractPlayer(): " + sqlError.getMessage());
             return null;
         }
     }
 
-    public static Contract extractContract(ResultSet rs, String alias) {
-        String prefix = alias.equals("") ? "" : alias + ".";
+    public static final Contract extractContract(ResultSet rs, String alias) {
+        String prefix = getPrefix(alias);
 
         try {
             int id = rs.getInt(prefix + "contract_player_id");
             if(rs.wasNull()) return null;
 
-            Club club = extractClub(rs, alias);
+            Club club = extractClub(rs, "");
             if(club == null) return null;
 
             int signDate = rs.getInt(prefix + "contract_sign_date");
@@ -71,14 +77,16 @@ public class ResultSetMapper {
             Role role = Role.generateRole(rs.getString(prefix + "contract_role"));
 
             return new Contract(club, salary, signDate, expireDate, number, role);
+        
         } catch (SQLException sqlError) {
-            System.out.println(" Error in ResultSetMapper.extractContract(): " + sqlError.getMessage());
+            System.err.println(" Error in ResultSetMapper.extractContract(): " + sqlError.getMessage());
             return null;
         }
     }
 
-    public static Club extractClub(ResultSet rs, String alias) {
-        String prefix = alias.equals("") ? "" : alias + ".";
+    public static final Club extractClub(ResultSet rs, String alias) {
+        String prefix = getPrefix(alias);
+        
         try {
             String id = rs.getString(prefix + "club_team_id");
             if(id == null) return null;
@@ -94,9 +102,15 @@ public class ResultSetMapper {
             double money = rs.getDouble(prefix + "club_money");
 
             return new Club(id, name, fullname, country, preferred_jersey, formation, rating, money);
+        
         } catch (SQLException sqlError) {
-            System.out.println(" Error in ResultSetMapper.extractClub(): " + sqlError.getMessage());
+            System.err.println(" Error in ResultSetMapper.extractClub(): " + sqlError.getMessage());
             return null;
         }
+    }
+
+    private static String getPrefix(String alias) {
+        if(alias == null || alias.isEmpty()) return "";
+        return alias + ".";
     }
 }
