@@ -11,17 +11,16 @@ public class DatabaseConnection {
 
     private static Connection connection = null;
 
-    private DatabaseConnection() {
-
-    }
+    private DatabaseConnection() { }
 
     public static Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
             try {
                 connection = DriverManager.getConnection(URL, USER, PASSWORD);
                 System.out.println(" Connected");
-            } catch (SQLException e) {
-                System.out.println(" Error: DatabaseConnection.getConnection()");
+            } catch (SQLException sqlError) {
+                System.err.println(" Error in: DatabaseConnection.getConnection(): " + sqlError.getMessage());
+                throw sqlError;
             }
         }
         return connection;
@@ -31,9 +30,10 @@ public class DatabaseConnection {
         if (connection != null) {
             try {
                 connection.close();
+                connection = null;
                 System.out.println(" Disconnected");
-            } catch (Exception e) {
-                System.out.println(" Error: DatabaseConnection.closeConnection()");
+            } catch (SQLException sqlError) {
+                System.err.println(" Error in: DatabaseConnection.closeConnection(): " + sqlError.getMessage());
             }
         }
     }
