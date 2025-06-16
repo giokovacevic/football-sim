@@ -32,6 +32,16 @@ public class PlayerService {
         return instance;
     }
 
+    public Player getPlayerById(Integer id) {
+        return playerRepository.loadById(id);
+    }
+
+    public PlayerDTO getPlayerByIdDTO(Integer id) {
+        Player player = getPlayerById(id);
+        if(player == null) return null;
+        return new PlayerDTO(player);
+    }
+
     public List<Player> getAllPlayers() {
         return playerRepository.loadAll();
     }

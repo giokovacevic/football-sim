@@ -13,18 +13,15 @@ import com.ogifmsim.fmsimulator.model.country.Country;
 import com.ogifmsim.fmsimulator.model.enums.TacticalFormation;
 import com.ogifmsim.fmsimulator.model.player.Player;
 import com.ogifmsim.fmsimulator.model.team.Club;
+import com.ogifmsim.fmsimulator.repository.preview.ClubRepository;
 
 public class ClubService {
-    private final static String CSV_URL = "db_clubs.csv";
 
     private static ClubService instance = null;
-    private static CountryService countryService = CountryService.getInstance();
-    private static LeagueService leagueService = LeagueService.getInstance();
-    private static List<Club> clubs = null;
 
-    private ClubService() {
-         if(clubs == null) clubs = loadAllClubs(CSV_URL);
-    }
+    private ClubRepository clubRepository = ClubRepository.getInstance();
+
+    private ClubService() { }
 
     public static ClubService getInstance() {
         if(instance == null) {
@@ -34,10 +31,7 @@ public class ClubService {
     }
 
     public List<Club> getAllClubs() {
-        if(clubs == null) {
-            clubs = loadAllClubs(CSV_URL);
-        }
-        return clubs;
+        return clubRepository.loadAll();
     }
 
     public List<ClubDTO> getAllClubsDTO() {
@@ -49,60 +43,12 @@ public class ClubService {
     }
 
     public Club getClubById(String id) {
-        for(Club club : getAllClubs()) {
-            if(club.getId().equals(id)) return club;
-        }
-        return null;
+        return clubRepository.loadById(id);
     }
 
     public ClubDTO getClubByIdDTO(String id) {
         Club club = getClubById(id);
         if(club != null) return new ClubDTO(club);
         return null;
-    }
-
-    private List<Club> loadAllClubs(String filename) {
-        ArrayList<Club> clubList = new ArrayList<>();
-        String lastIdLoaded = "";
-        
-        try {
-            Scanner sc = new Scanner(new File(filename));
-            while (sc.hasNext()) {
-                String loadedClubString = sc.nextLine();
-                String[] clubArray = loadedClubString.split(",");
-
-                Country country = countryService.getCountryById(clubArray[7]);
-                if (country == null) {
-                    country = countryService.getCountryById("ALL");
-                }
-                
-                Club clubNew = new Club(clubArray[9], clubArray[2], clubArray[3],
-                        country, clubArray[13],
-                        TacticalFormation.generateFormation(clubArray[5]), Integer.parseInt(clubArray[4]), 100.0);
-
-                String leagueId = clubArray[8];
-                
-                clubNew.getRoster().getLineup().save();
-                
-                lastIdLoaded = clubNew.getId(); 
-
-                leagueService.getAllLeagues().forEach(league -> {
-                    if(league instanceof League) {
-                        if(league.getId().equals(leagueId)) {
-                            league.getCompetitors().add(new Competitor(clubNew, 0, 0, 0, 0, 0));
-                            if(league.getCompetitors().size() == league.getCapacity()) league.createSchedule();
-                        }
-                    }
-                });
- 
-                clubList.add(clubNew);
-            }
-
-            sc.close();
-        } catch (FileNotFoundException | NumberFormatException e) {
-            System.out.println(" Error: Club Loader   (Last id loaded:   " + lastIdLoaded + ")");
-        }
-
-        return clubList;
     }
 }

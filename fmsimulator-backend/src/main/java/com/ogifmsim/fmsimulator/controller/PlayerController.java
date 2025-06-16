@@ -4,7 +4,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ogifmsim.fmsimulator.dto.PlayerDTO;
-import com.ogifmsim.fmsimulator.model.player.Player;
 import com.ogifmsim.fmsimulator.service.PlayerService;
 
 import java.util.List;
@@ -20,6 +19,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("api/football/players")
 public class PlayerController {
     PlayerService playerService = PlayerService.getInstance();
+
+    @GetMapping("/{id}")
+    public ResponseEntity<PlayerDTO> getPlayerById(@PathVariable Integer id) {
+        PlayerDTO player = playerService.getPlayerByIdDTO(id);
+        if(player == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(player);
+    }
     
     @GetMapping("/all")
     public List<PlayerDTO> getAllPlayers() {

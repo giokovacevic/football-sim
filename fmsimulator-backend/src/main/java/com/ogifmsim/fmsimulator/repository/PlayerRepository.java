@@ -23,8 +23,6 @@ import com.ogifmsim.fmsimulator.util.ResultSetMapper;
 public class PlayerRepository extends Repository<Player, Integer>{
     private static PlayerRepository instance = null;
 
-    private static CountryRepository countryRepository = CountryRepository.getInstance();
-
     private PlayerRepository() { }
 
     public static PlayerRepository getInstance() {
@@ -34,19 +32,43 @@ public class PlayerRepository extends Repository<Player, Integer>{
 
     @Override
     public Player loadById(Integer id) {
-        return null;
+        String query = "SELECT * FROM player" +
+        " INNER JOIN country player_country on player_country_id = player_country.country_id" +
+        " LEFT JOIN Contract on player_id = contract_player_id" + 
+        " LEFT join club on contract_club_id = club_team_id" +
+        " LEFT JOIN team on club_team_id = team_id" +
+        " LEFT JOIN Country team_country on team_country_id = team_country.country_id" + 
+        " WHERE player_id = ?;";
+
+        try (PreparedStatement statement = DatabaseConnection.getConnection().prepareStatement(query)){
+            statement.setInt(1, id);
+            try (ResultSet rs = statement.executeQuery()){
+                if(rs.next()) {
+                    Player player = ResultSetMapper.extractPlayer(rs, "");
+                    return player;    
+                }
+            }
+
+            return null;
+
+        } catch (SQLException sqlError) {
+            System.err.println(" Error in:" + getClass().getName() + ".loadById(): " + sqlError.getMessage());
+            return null;
+        } finally {
+            DatabaseConnection.closeConnection();
+        }
     }
     
     @Override
-    public List<Player> loadAll() {
-        List<Player> players = new ArrayList<>();
-
+    public List<Player> loadAll() {       
         String query = "SELECT * FROM player" +
         " INNER JOIN country player_country on player_country_id = player_country.country_id" +
         " LEFT JOIN Contract on player_id = contract_player_id" + 
         " LEFT join club on contract_club_id = club_team_id" +
         " LEFT JOIN team on club_team_id = team_id" +
         " LEFT JOIN Country team_country on team_country_id = team_country.country_id;";
+
+        List<Player> players = new ArrayList<>();
 
         try(PreparedStatement statement = DatabaseConnection.getConnection().prepareStatement(query);
             ResultSet rs = statement.executeQuery()) {

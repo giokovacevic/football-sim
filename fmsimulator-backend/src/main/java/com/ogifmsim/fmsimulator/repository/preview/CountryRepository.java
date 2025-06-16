@@ -54,6 +54,8 @@ public class CountryRepository extends Repository<Country, String>{
             }
         } catch (SQLException sqlError) {
             System.out.println(" Error in: CountryRepository.loadAllCountries(): " + sqlError.getMessage());
+        } finally {
+            DatabaseConnection.closeConnection();
         }
 
         return countries;

@@ -5,7 +5,7 @@ import Data from './components/data/Data';
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
 import { getAllCountries, getCountryById } from './services/CountryService';
 import type { ICountry } from './types/models/country/Country';
-import { getAllPlayers } from './services/PlayerService';
+import { getAllPlayers, getPlayerById } from './services/PlayerService';
 import type { IPlayer } from './types/models/player/Player';
 import type { IClub } from './types/models/team/Club';
 import { getAllClubs, getClubById } from './services/ClubService';
@@ -31,6 +31,7 @@ function App() {
   const [leagues, setLeagues] = useState<ILeague[]>([]);
 
   useEffect(() => {
+    //loadPlayer();
     //loadPlayers();
     //loadCountries();
     //loadCountry('SRB');
@@ -38,6 +39,15 @@ function App() {
     //loadClub('parma');
     //loadLeagues();
   }, []);
+
+  const loadPlayer = async () => {
+    try {
+      const data = await getPlayerById(6);
+      console.log(data);
+    } catch (error) {
+      console.error("loadPlayer()");
+    }
+  }
 
   const loadCountries = async () => {
     try {
